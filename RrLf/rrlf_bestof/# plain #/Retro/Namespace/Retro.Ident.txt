@@ -1,0 +1,73 @@
+/*
+	Simple Ident Server by Retro/rRlf
+	28th May 2006
+	http://retro.host.sk
+	
+	Ident server which will listen on port 113, where it recieves a request,
+	the server will then send a specially designed response that identifies 
+	the username of the current user.
+
+	http://en.wikipedia.org/wiki/Ident
+	
+	1.  Include the namespace to your program
+	2.  Start it with Identd.Start(nickname); 
+*/
+
+using System;
+using System.IO;
+using System.Net;
+using System.Net.Sockets;
+using System.Text;
+using System.Threading;
+
+namespace Retro.Identd
+{
+    public class Identd
+    {
+        private static string username;
+        private const int IdentdPort = 113;
+
+        public static void Start(string UserName)
+        {
+            username = UserName;
+            Thread SocketThread = new Thread(new ThreadStart(Identd.Run));
+            SocketThread.Start();
+        }
+
+        private static void Run()
+        {
+            try
+            {
+                TcpListener tcpListener = new TcpListener(IPAddress.Any, IdentdPort);
+                tcpListener.Start();
+
+                Console.WriteLine("Ident Started...");
+
+                Socket socketClient = tcpListener.AcceptSocket();
+
+                try
+                {
+                    if (socketClient.Connected)
+                    {
+                        Console.WriteLine("Client Connected");
+
+                        NetworkStream networkStream = new NetworkStream(socketClient);
+                        StreamReader streamReader = new StreamReader(networkStream);
+                        StreamWriter streamWriter = new StreamWriter(networkStream);
+                        streamWriter.AutoFlush = true;
+
+                        string recvLine = streamReader.ReadLine();
+                        recvLine = recvLine.ToUpper() + " : USERID : UNIX : " + username;
+
+                        streamWriter.WriteLine(recvLine);
+
+                        Console.WriteLine("Send : " + recvLine);
+                    }
+                }
+                catch { }
+                socketClient.Close();
+            }
+            catch { }
+		}
+   }
+}

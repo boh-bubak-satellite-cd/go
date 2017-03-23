@@ -1,0 +1,624 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+
+     ..#######..##.....##....###....##....##.########.##.....##.##.....##
+     .##.....##.##.....##...##.##...###...##....##....##.....##.###...###
+     .##.....##.##.....##..##...##..####..##....##....##.....##.####.####
+     .##.....##.##.....##.##.....##.##.##.##....##....##.....##.##.###.##
+     .##..##.##.##.....##.#########.##..####....##....##.....##.##.....##
+     .##....##..##.....##.##.....##.##...###....##....##.....##.##.....##
+     ..#####.##..#######..##.....##.##....##....##.....#######..##.....##
+
+   .##.....##....###.....######......###....########.####.##....##.########
+   .###...###...##.##...##....##....##.##........##...##..###...##.##......
+   .####.####..##...##..##.........##...##......##....##..####..##.##......
+   .##.###.##.##.....##.##...####.##.....##....##.....##..##.##.##.######..
+   .##.....##.#########.##....##..#########...##......##..##..####.##......
+   .##.....##.##.....##.##....##..##.....##..##.......##..##...###.##......
+   .##.....##.##.....##..######...##.....##.########.####.##....##.########
+
+                                 +MMMMMMMMM:                                   
+                                =MMMN~. .+MMMM,                                 
+                               NMM8.       .MMMZ                                
+                             .MMM:           ?MMN                               
+                            .MMM.             :MMN                              
+                            NMM.               ~MMO                             
+                           ?MM+                 ZMM,                            
+                          .MMD                   MMM                            
+                          NMM.                   ,MM$                           
+         .:ZMMMMMMMMMMO?,,MM?                     8MM.,?OMMMMMMMMMMZ~.          
+       $MMMMMMMMMMMMMMMMMMMMMZ:..              .~OMMMMMMMMMMMMMMMMMMMMM$        
+     +MMM8.            .,MMMMMMMMM7.       .$MMMMMMMMM..            .8MMM+      
+    ~MMN.               $MM...+NMMMMMN~.~NMMMMMN=. :MM~               .NMM~     
+    MMN                 MMN       ,OMMMMMMMZ.       MMD                 NMM     
+    MM:                ,MM+      .DMMMMMMMMM8. .    OMM                 ~MM     
+    MM,                7MM.   .8MMMM$.   .ZMMMM8.   :MM:                :MM     
+    MMZ                NMM .7MMMM$..        .ZMMMMI..MMZ                ZMM     
+    8MM.               MM8NMMMD.               .DMMMNMMN               .MM8     
+    .MMN              .MMMMM~                     =MMMMM.              NMM.     
+     +MM7           .=MMMM:                         :MMMM~            $MM+      
+      $MMI         +MMMMM.                           ~MMMMM=         7MM7       
+       $MMO      =MMMD$MM.                           .MM=DMMM~      OMM7        
+        +MMM.  ,MMMD. 8MM.          =MMMMM:          .MM+ .NMMM,  .MMM=         
+         ,MMM:NMMM.   DMM          NMMMMMMM8         .MMI   .MMMN~MMM.          
+           NMMMM,     NMM         :MMMMMMMMM.        .MM7     :MMMMD.           
+           NMMMM,     NMM         :MMMMMMMMM,        .MM7     ,MMMMD            
+         ,MMM~MMMN.   DMM          NMMMMMMMD         .MM7   .MMMN~MMM.          
+        +MMM.  :MMM8..8MM.          ?MMMMM=          .MM+ .DMMM,  .MMM+         
+       $MMZ      +MMM8$MM..                          .MM=DMMM=      OMM$        
+      $MMI         ?MMMMM.                           ~MMMMM+         7MM$       
+     ?MM?.         . +MMMM,                         ,MMMM=.           7MM?      
+    .MMD              .MMMMM:                     ~MMMMM               NMM.     
+    DMM.               MMDMMMMO.               .8MMMMMMM               .MMD     
+    MM7                NMM .$MMMMI.         .7MMMM$..MMO                $MM     
+    MM.                7MM.   .DMMMM7.   .7MMMMD.   :MM:                ,MM     
+    MM.                ,MM+      ,NMMMMNMMMMD,      OMM                 ,MM     
+    MMO                 MMN       .$MMMMMMM7.       MMN                .OMM     
+    IMMO                ZMM. .~8MMMMMM+.+MMMMMM8~..:MM~                OMMI     
+     $MMM7.             ,MMMMMMMMMO,       ,8MMMMMMMMM.             .7MMM$      
+      .DMMMMMMMMNMMMMMMMMMMMMD=.               .+DMMMMMMMMMMMNNNMMMMMMMD.       
+         .?NMMMMMMMMMMD7~:MM?                     8MM.~$NMMMMMMMMMMN?.          
+                          NMM.                   ,MM$                           
+                          .MM8                   MMM                            
+                           ?MM+                 ZMM,                            
+                            NMM.               :MMO                             
+                            .MMM.             ,MMN                               
+                             .MMM,           +MMN      Issue #1                        
+                               DMM8.       .NMMZ       August 2015                         
+                                ~MMMN:. .=MMMM,                                 
+                                  =MMMMMMMMM:                                   
+                                    .=8MO:.                                     
+
+Table of Contents:
+0. Welcome to Quantum Magazine
+
+1. "What is GPG and why should i use it" by Quantum7765
+2. "An Introduction to StingRay" by Quantum7765
+3. "Metadata: The dangers and how to scrub it from common files" by Quantum7765
+
+4. Questions & Answers: Questions and comments received by readers
+5. Where to get copies of this magazine
+6. How to submit to this magazine
+
+================================================================================
+0. Welcome to Quantum Magazine
+
+This magazine has been issued as a text file only for added security and 
+compatibility. No JavaScript or malicious code in a text file.
+
+This magazine hopes to address issues of Cyber-security, Technology, 
+Cryptography, Anonymity, Privacy and Free Speech.
+
+Permission is given to distribute this freely as long as its not modified.
+
+We need writers! Send us your articles and comments!
+
+================================================================================
+
+
+
+
+
+                               MMMMMMMMMMMMMMMMM                                
+                            MMMMMMMMMMMMMMMMMMMMMMM                             
+                          MMMMMMMMMMMMMMMMMMMMMMMMMMM                           
+                        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM                         
+                       MMMMMMMMMMMM         MMMMMMMMMMMM                        
+                      MMMMMMMMMM               MMMMMMMMMM                       
+                     MMMMMMMMM                   MMMMMMMMM                      
+                    MMMMMMMMM                     MMMMMMMMM                     
+                    MMMMMMMM                       MMMMMMMMM                    
+                   MMMMMMMM                         MMMMMMMM                    
+                   MMMMMMM                           MMMMMMM                    
+                   MMMMMMM                           MMMMMMM                    
+                   MMMMMMM                           MMMMMMM                    
+                   MMMMMMM                           MMMMMMM                    
+                 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM                  
+              MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+             MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+            MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+            MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+           MMMMMMMM                                         MMMMMMMM
+           MMMMMMMM  What is GPG and why should I use it?   MMMMMMMM
+           MMMMMMMM                                         MMMMMMMM
+           MMMMMMMM                    MM                   MMMMMMMM
+           MMMMMMMM                   MMMM                  MMMMMMMM
+           MMMMMMMM                    MM                   MMMMMMMM
+           MMMMMMMM                    MM                   MMMMMMMM
+           MMMMMMMM                    MM                   MMMMMMMM
+           MMMMMMMM                                         MMMMMMMM
+           MMMMMMMM             By Quantum7765              MMMMMMMM
+           MMMMMMMM                                         MMMMMMMM
+           MMMMMMMM                                         MMMMMMMM
+            MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+            MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+             MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+              MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+                 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+
+
+1. What is GPG and why should I use it?
+By Quantum7765
+
+It used to be that as an average citizen if you wanted to speak privately with 
+someone it was easy to do. You wouldn't worry about someone reading your letters
+in the mail, or someone recording your phone calls when you order out for food. 
+You could reasonably count on being able to have a private conversation with 
+another person.
+
+In the digital age, thats no longer true. Many conversations happen online. 
+E-Mails, instant messages, texts, documents are passed around without much 
+thought given to who's really looking. You are given the illusion that when you 
+send an email or other communications that only you and the person you are 
+communicating with are able to see the message.
+
+Sadly, this is not the truth.
+
+There's now a long list of people who have access to everything you do and say 
+online. Internet service providers commonly monitor and carefully record your 
+activities and messages. A few internet service providers have even been caught 
+injecting malicious tracking numbers into requests for websites(Sometimes called
+Super-Cookies) to collect data on its customers. Marketing companies buy and 
+sell your shopping habits, personal data and search requests on a daily basis. 
+Governments watch and record what you do in order to find if you are a criminal,
+an activist, or even just if you are someone who holds a view thats contrary to 
+the current political agenda.
+
+For example, the commonly used e-mail provider GMail (and many others like it) 
+searches all messages you send and receive for keywords. These keywords allow 
+them to learn more about you and to offer ads to you based on what you are 
+sending and receiving. If you're receiving or sending messages about shoes, you 
+may get ads for shoes. If you're sending a message about cars you'll get ads for
+cars. Over time it will learn and the ads will get more specific as it builds a 
+profile about you. That data is then used to show you more ads that you are 
+likely to click. They also may sell this data to other marketing companies for 
+use in their own ads.
+
+A private conversation is no longer private.
+
+But there is a way to take back your digital privacy.
+
+I recommend a program called GNU Privacy Guard.
+
+GNU Privacy Guard (also called OpenPGP, PGP or GPG) is a data encryption and 
+decryption computer program that provides cryptographic privacy and 
+authentication for data communication. GPG is often used for signing, 
+encrypting, and decrypting texts, e-mails, files, directories, and whole disk 
+partitions and to increase the security of e-mail communications.
+
+You can run the program on Windows, Linux, Mac and Android.
+Windows: GPG4WIN (http://www.gpg4win.org/)
+Linux: GPG (https://www.gnupg.org/)
+Mac: GPG Tools (https://gpgtools.org/)
+Android: APG (http://www.thialfihar.org/projects/apg/)
+
+Why do i keep hearing about PGP/GPG/OpenPGP/etc? Whats with all the different 
+names?
+
+PGP was the original commercial program written back in 1991. The source code 
+for it was released to the public in the form of a book when the United States 
+Government tried to shut them down. In the form of a book, it was covered by
+the First Amendment as free speech. Also with the code released to the public
+it was no longer possible for the government to "put the genie back in the 
+bottle" so to speak. GPG was based on that source code and is by far the most 
+commonly used version as it was created and distributed as an open source 
+program free to all forever. In order to keep compatibility between the different 
+programs a standard was written called the "OpenPGP Standard" which defines how 
+PGP/GPG based programs should function so they can work with each other.
+Most of these terms are interchangeable in that as long as you're referring an 
+OpenPGP standard compatible program it doesn't matter if you call it PGP or GPG.
+
+So what can GPG do for me?
+1. Encryption
+
+Encryption allows you to take messages and/or data that you wish to keep private
+and modify it in such a way that it is impossible to read without the correct 
+password. But GPG takes it a step further and uses a public/private key pair as 
+well as a password to secure your messages. The public key file can be shared 
+with anyone freely. Thats why its called the public key, its meant to be public.
+It can be used to encrypt a message and to verify the authenticity of a message 
+but it cannot be used to decrypt or sign a message. The private key file is the 
+one you keep secret. It allows you to decrypt a message signed with your key and
+it also allows you to sign a message or file so that others can verify its 
+authenticity and that it has not been modified in any way. Without the private 
+key file AND the password it is not possible to decrypt the message.
+
+2. Signature
+As mentioned above GPG is able to digitally sign an e-mail, attachments, 
+documents and files so that anyone who has your public key can verify that it is
+authentic and has not been tampered with. If even one bit of the message or file
+has been altered in any way GPG will notify you that the file is NOT authentic. 
+This is very useful if you're concerned about "man in the middle" attacks where 
+messages are intercepted and changed between people exchanging information.
+You simply distribute your GPG public key and anyone who has it can use it along
+with the program to authenticate the message.
+
+Common questions:
+Question: I heard the government can break any encryption easily.
+Answer: FALSE. If you had EVERY single computer in the world trying to crack a
+GPG encrypted file with a strong password it would take well beyond your
+lifespan to break. Instead agencies like the FBI/NSA/CIA rely on backdoors 
+hidden in the encryption software, poor passwords or malware to spy on you and 
+get the key that way. Encryption WORKS when applied properly. Thats why the 
+United States Government has been pushing for more backdoors so hard in the last
+few years.
+
+Question: What is a backdoor?
+Answer: A backdoor is a hidden piece of code in a program to allow someone access.
+In this context, a backdoor would be a hidden piece of code in the encryption 
+program that alters the encrypted data in such a way that the government 
+(or hackers) can bypass the encryption with the right secret code.
+
+Question: How can i check for a backdoor?
+Answer: For most commercial applications, you can't. In order to really tell
+for sure you need to look at the source code and typically only the programmers 
+have access to this. The source code is what programmers write that gets turned 
+into a working program you can use. This is where GPG really shines as its 
+completely open source. Anyone can examine the source code and have your own 
+computer build it into a program if you wish. The source code for GPG is peer 
+reviewed and analyzed for hidden code and security weaknesses regularly and in
+an open manner.
+
+Question: How common are these backdoors?
+Answer: Very common. For decades the NSA and other organizations have put a 
+large amount of pressure on various companies to either build a backdoor into 
+encryption software that would allow them access to messages that have been 
+encrypted or to force them to use very weak encryption protocols so that its 
+easy for them to break. Examples include banking software, pharmacy software, 
+popular websites, operating systems, cell phones, etc. We'll never know for 
+sure how many as most companies when pressured to do this are also placed under 
+a secret court order not to reveal that its been done.
+
+Question: This sounds really technical. I'm not really a "tech" guy. 
+Can someone like me use it?
+Answer: Yes. The process to use it is actually pretty simple and there are many 
+tutorials and youtube videos that show you how. No math or advanced IT knowledge
+is required to use the program.
+
+Question: Will it work on Tor?
+Answer: Yes! In fact many sites on Tor require a working knowledge of
+GPG for security.
+
+I hope you find this article useful and take a look into encrypting your data
+and communications.
+
+If you want to learn more about GPG and how to use it i recommend this tutorial 
+for the windows version (GPG4WIN) at: 
+https://www.deepdotweb.com/2015/02/21/pgp-tutorial-for-windows-kleopatra-gpg4win/
+
+And of course the main homepage as well: https://www.gnupg.org/
+
+- - Quantum7765
+
+================================================================================
+
+                Z: +M                                                           
+              O =Z.ZM$                                                          
+            D. $=+8 +M =M                                                       
+          .N?.MZZ,$?,O~~O8                                                      
+         8.  : ~~IZ8NN:OM:?                                                     
+       ~:       $=I$M=ZI?.  N                                                   
+      O  ? =~8MMNMMMONNZ~?N.  O                                                 
+     .. . M ..M. I ,7MD+MN$7,MDM M                                              
+   MZ.  . MM  ,   .  DMNOM.ZNM=N=M8                                             
+  M= D    :     :   .~      ?  ,MDIDMNI:8$M                               .M    
+  MM$+.:..    : =   .:INMMD.+~+NDMNN== .        IM+ . ,     MMN~    .M. I       
+   M  =M+DMMM        +,+DM: .   MOM7D.Z7~. M                                    
+     DZ N.,Z:       ,MMMM$O+MDMM7?I                                             
+      ~ ::M=  O Z D:,DD. ~.~MNO$M M                                             
+       8  , IO,MM8 Z .=N7$:MM. Z                                                
+        D . , D?8,8D NO.NZM8MN         Introduction to StingRay                                         
+         DO?$87. =8=N8MMM $.?~                By Quantum7765                                  
+          88MM     . N.OD   D                                                   
+           ~ZM . M?  ~ 7INZ~                                                    
+            MO: ~ZN                                                             
+               D,=NM                                
+
+
+2. Introduction to StingRay
+
+Over the past few years you may have heard about the secretive device used by 
+the FBI, DEA and various state and local law enforcement agencies called 
+"StingRay". StingRay is essentially a portable fake cell phone tower that can 
+be deployed anywhere to track people and to intercept data, messages and phone 
+calls. Law enforcement have a standing policy to keep all details on StingRay 
+hidden from the public, at almost any cost.
+
+StingRays can come in many sizes, designed for a car, or plane; for small mobile
+deployments or large scale towers. There are even cases of StingRays that can be
+worn or carried by hand to assist in the short-range location of suspects.
+
+Perhaps one of the more worrying uses of the StingRay is the practice of using 
+it on a large aircraft flying over an entire city or across the country by the 
+FBI and other law enforcement agencies. When using a plane or other large size 
+StingRays they can intercept cell phone signals for entire cities.
+
+It works by simulating a cell tower. When a cell phone detects this tower it 
+attempts to connect to it and the device forwards the calls/texts/etc to another
+separate but real tower. This is known as a "Man in the middle" attack or MITM 
+for short.
+
+Man in the middle attacks work by intercepting and possibly even tampering with 
+messages and data going in between two points.
+
+For example:
+
+When you turn on your cell phone to make a call, your phone will search for a 
+tower to connect to. It will attempt to connect to whatever tower is closest.
+It will find the StingRay device (simulating an AT&T/Verizon/T-Mobile/etc. 
+tower) and will make contact. The StingRay will accept the connection and route 
+it to the nearest real tower.
+
+In the meantime, it gets to intercept all data going back and forth and 
+potentially tamper with it if desired by the StingRay operator.
+
+
+/-\             /-----\        ( ( (  ------- ) ) )
+| |             |Sting|                  |
+| |   ------>   | Ray |  ----->          |
+\-/   <------   \-----/  <-----      Cell|Tower
+
+Outgoing call: Cell phone ----> StingRay ----> Real Cell Tower
+Incoming call: Cell phone <---- StingRay <---- Real Cell Tower
+
+All incoming and outgoing calls/data/messages are intercepted by the StingRay.
+
+Many cell phones incorporate encryption to prevent such attacks but the 
+encryption used is very weak. Also, most phones include a "rollback" 
+feature which allows the cell phone to revert to its most weak form of 
+encryption in order to function with old cell towers. This is the primary 
+mechanism by which the Stingray operates. See this technical paper for 
+additional information: 
+
+(Warning: Clearnet PDF)
+http://www.cs.technion.ac.il/users/wwwb/cgi-bin/tr-get.cgi/2006/CS/CS-2006-07.pdf
+
+Once the encryption is broken, it's a trivial matter to intercept all calls and 
+messages sent and received by the cell phone.
+
+Another troubling way StingRay can be used is to identify members of a protest 
+or group. Imagine being with a group of people protesting a new law, or 
+protesting police brutality. Meanwhile, the identities of everyone in the crowd 
+at the time are being recorded by StingRay and could be added to a "Watch List".
+
+How can I protect myself?
+
+At this time, there are no foolproof, easily deployable ways to deal with this. 
+That being said, there are a few options...
+
+1. If you don't need to use your cell phone, turn it off. Leave it at home. 
+Or turn it to Airplane mode. This will disconnect it completely from the cell 
+phone networks and any StingRay devices.
+
+2. If you accept that you can be physically tracked while the phone is ON, but 
+don't want someone to be able to listen in on your phone calls or text messages, 
+use encrypted programs like:
+ ChatSecure - https://chatsecure.org/
+ RedPhone - https://whispersystems.org/
+
+3. Use experimental software like Android IMSI-Catcher Detector. This is highly 
+experimental and may not work as you expect. But it's leading the way (at the 
+time this article was written) in software detection of StingRay devices and 
+other major security issues with modern smart phones. It's worth having a look, 
+but understand it is not 100% and may not work.
+
+Android ISMI-Catcher Detector: 
+https://github.com/SecUpwN/Android-IMSI-Catcher-Detector
+
+- - Quantum7765
+
+================================================================================
+ .--.   ,-.  ,-. .--.  .--.  .--.   ,-.  ,-. .--.   ,-.  ,-.  ,-. .--.   ,-.
+: ,. :.'  :.'  :: ,. :: ,. :: ,. :.'  :.'  :: ,. :.'  :.'  :.'  :: ,. :.'  :
+: :: : `: : `: :: :: :: :: :: :: : `: : `: :: :: : `: : `: : `: :: :: : `: :
+: :; :  : :  : :: :; :: :; :: :; :  : :  : :: :; :  : :  : :  : :: :; :  : :
+`.__.'  :_;  :_;`.__.'`.__.'`.__.'  :_;  :_;`.__.'  :_;  :_;  :_;`.__.'  :_;
+            .-..-. .--. .-----. .--. .---.  .--. .-----. .--. 
+            : `' :: .--'`-. .-': .; :: .  :: .; :`-. .-': .; :
+            : .. :: `;    : :  :    :: :: ::    :  : :  :    :
+            : :; :: :__   : :  : :: :: :; :: :: :  : :  : :: :
+            :_;:_;`.__.'  :_;  :_;:_;:___.':_;:_;  :_;  :_;:_;
+                                                                            
+3. Metadata: The dangers and how to scrub it from common files
+by Quantum7765
+
+How often have you ever posted a document online? Or a photo? Most of us simply 
+examine the contents of the document or picture before posting.
+
+But hidden within these files are hidden pieces of information called Metadata 
+that tell much more about you than you would like.
+
+In this article i'd like to give you a brief primer on what Metadata is, how it 
+could be used against you and how to protect yourself from it.
+
+Metadata is data about data. For example, in a document the metadata might be 
+the author, date/time it was written, how many words, what word processor it was
+made on, the kind of computer it was written on, a history of the changes that 
+have been made to the document and so on.
+
+For a picture it could be the camera settings, the date/time the picture was 
+taken, the GPS coordinates of where it was taken, what model of camera, the 
+serial number of the camera, and much more.
+
+Imagine you are writing a document that you intend to place on Tor. You 
+carefully write the document and make sure that there's nothing written in it 
+that could be used to identify you. You save the document and post it online.
+
+Then someone downloads your document. They put it under a metadata analysis 
+program and find:
+
+Name: John Q. Public
+Company: John's Plumbing Services
+Software: OpenOffice 4.0.1
+Computer: John's PC
+Written on: 08/08/2015 2:16 PM CST
+
+You carefully took out everything in the document itself without thinking about 
+the metadata that comes with it.
+Using the above information, it would be trivial to locate you. I could pick up 
+a phone book and do it.
+
+Also, knowing the exact software you're using could allow a hacker to look up 
+known vulnerabilities for the version you're running and send you one in return.
+
+In this case, OpenOffice 4.0.1 contains a serious vulnerability in its Calc 
+program that would allow a hacker to create a Calc spreadsheet that contains 
+malware.
+
+There have been cases where photos have been used to arrest people based on its 
+metadata. For example, assume the following scenario:
+
+Lets say you're a vendor on a Tor marketplace. You sell "recreational" 
+substances. You want to take a picture of the goods you are selling so you take 
+out your iPhone and snap a quick picture. You're careful that nothing in the 
+picture itself could be used to identify you.
+
+You then post it online under your vendor account.
+
+A few days later, the DEA/FBI/LE show up at your door.
+How did they find you?
+
+Modern smart phones have cameras and will always by default include the GPS 
+coordinates in the picture. In this case, the photo would have the name of the 
+iPhone "John's iPhone", the date and time the picture was taken, the GPS 
+coordinates, the model of iPhone, etc.
+
+It would be a simple matter for anyone to examine the picture and look up the 
+GPS coordinates on Google Maps or any other mapping website.
+
+The solution to this is actually fairly simple:
+1. Use formats that contain very little metadata when possible 
+	(TXT files instead of PDFs, DOCX, etc)
+2. Use a metadata scrubbing program.
+	These programs will detect and remove unwanted metadata from files.
+	Metadata Anonymization Toolkit: (Linux) https://mat.boum.org/
+	ExifTool: (Windows & Linux): http://owl.phy.queensu.ca/~phil/exiftool/
+
+Always run a metadata scrubber on files before posting them online.
+
+Metadata is everywhere and its found in almost every type of file you can 
+imagine. So next time you consider posting something online take a moment to 
+carefully scan the data and scrub out the unwanted Metadata. Or it could come 
+back to haunt you in the future.
+
+- - Quantum7765
+
+================================================================================
+ #####                                                    
+#     # #    # ######  ####  ##### #  ####  #    #  ####  
+#     # #    # #      #        #   # #    # ##   # #      
+#     # #    # #####   ####    #   # #    # # #  #  ####  
+#   # # #    # #           #   #   # #    # #  # #      # 
+#    #  #    # #      #    #   #   # #    # #   ## #    # 
+ #### #  ####  ######  ####    #   #  ####  #    #  ####  
+                                                          
+ #####                                                  
+#     #  ####  #    # #    # ###### #    # #####  ####  
+#       #    # ##  ## ##  ## #      ##   #   #   #      
+#       #    # # ## # # ## # #####  # #  #   #    ####  
+#       #    # #    # #    # #      #  # #   #        # 
+#     # #    # #    # #    # #      #   ##   #   #    # 
+ #####   ####  #    # #    # ###### #    #   #    ####  
+
+4. Questions & Comments
+
+Have a question for us? Comments? We'll try to answer them.
+Send them to us at: Quantum7765@sigaintevyh2rzvw.onion
+
+
+================================================================================
+5. Where to find the latest copy of Quantum Magazine
+
+As of this writing, Quantum Magazine is hosted by the following websites:
+
+mywuwj5f76usg7eo.onion (Stable Mirror)
+yuc3i3hat65rpl7t.onion (Primary Server - Most up to date but very unstable)
+
+It is also posted to various pastebin sites as they are available.
+
+Always verify the PGP signature to make sure you have an authentic copy!
+
+- -----BEGIN PGP PUBLIC KEY BLOCK-----
+
+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
+10uf6oQszRZiykZzXa5q62bJDiCXihvI0vM=
+=aT0Q
+- -----END PGP PUBLIC KEY BLOCK-----
+
+
+================================================================================
+6. How to write to Quantum
+
+We are always looking for good articles, comments, and any other items of note.
+Send them to us at:
+
+Quantum7765@sigaintevyh2rzvw.onion (Tor)
+Quantum7765@sigaint.org (Clearnet)
+
+It is strongly recommended that you write to us using a Tor based e-mail server
+and it is also strongly recommended that you use PGP to encrypt your messages.
+
+================================================================================
+
+-----BEGIN PGP SIGNATURE-----
+
+iQIcBAEBCgAGBQJVx8hVAAoJEFRuWrsetuPsJJ4P/id64dZMVpVTmqUleh3caHnS
+v/YaIj9Lg/5+4NWnj/t6yGLBSqY37ZeZ9ZOfv1GTDT6ll2c+7dwHD73fLr/VEM5t
+yb88nqUZXYxauuWNgrzAFkTd4frnRaWVr4wZC4a0OLyuFINBxMBWFcadMLv8aklL
+HwVTHirIfLbby8WXs/QGGNkSt0dzvoOlLx7JOWgRKLYPjfosVQscgek+WgKFyz+0
+U+z7XryhQAgyaOawGICVVgcx2bTqjGTP6a7iw3mjXNA+6cvG+5dqtpXbVyKt3W2H
+Sy3PBG3bqCS4Kq/kbahl8j34V+narlVOhJrpm4OKFqxjYle1nQGJltZYJ0kh0Qk3
+0b9UX26Pqr14kgW700eZ8cpV02lVsnXp4olRO5O3JNC0fNXgEF0vkVuju54r4beE
+zlqojh/3lBm5OGVckovJs+ft72Uae6IjHNETKdZFP1mvByucWfxXufoS8eAdmFe0
+NeckFxmsa9eJ6amknrxfKIx+YYssrHG5DI/v4MXJFNnyueEULjuvArEIl+HEdkfq
+0TGuADvX7mE+MipplVlnQxHIny2/NsyEwY3iGg9qxGrGfAwu9RmExY2YHOK7p9gQ
+Xl58fHq3AvEFTW8kCBsM7tSLaLrV5lexTAtWF5pU6aoNprusOBXPB6fYOI1zS24+
++PjRusEscVivxtWiM0Sd
+=/zWa
+-----END PGP SIGNATURE-----

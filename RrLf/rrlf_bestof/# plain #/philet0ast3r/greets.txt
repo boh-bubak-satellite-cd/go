@@ -1,0 +1,14 @@
+@echo off
+set x=you
+set y=philet0ast3r
+:23
+if %x%=know(s)/like(s) %y% goto next else exit
+:next
+if %ok%=ok goto greets
+set a=%x%
+set x=%y%
+set y=%a%
+set ok=ok
+goto 23
+:greets
+echo Greets to you :]

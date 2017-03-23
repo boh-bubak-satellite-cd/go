@@ -1,0 +1,611 @@
+/*
+	FTP Client by Retro/rRlf
+	12th May 2006
+	http://retro.host.sk
+	
+	Connect to an FTP server to transfer files.
+
+	http://en.wikipedia.org/wiki/Ftp_client
+	
+	1.  Include the namespace to your program
+ 
+	2.  Create and Init
+	     FTPClient ftp = new FTPClient();
+		 
+	3. Set variables
+	     ftp.setHost("ftp.microsoft.com");
+	     ftp.setPort(21);
+	     ftp.setUser("username");
+	     ftp.setPass("password");
+		 
+	4. Connect and login
+	     ftp.Login();
+		
+	5. List of Commands:		
+ *       ftp.getFileList("mask")		ftp.getFileSize("filename")			    ftp.setBinaryMode(true/false)
+		 ftp.upload("filename")			ftp. deleteRemoteFile("filename")		ftp.renameRemoteFile("oldFilename","newFilename")
+		 ftp.mkdir("dirName")			ftp.rmdir("dirName")				    ftp.ckdir("dirName)
+		 ftp.close()					ftp.download("remfilename","dirname")
+		
+*/
+
+using System;
+using System.Net;
+using System.IO;
+using System.Text;
+using System.Net.Sockets;
+
+namespace Retro.FTP
+{
+    public class FTPClient
+    {
+        private string Host, fPath, User, Pass, l;
+        private int Port, bytes;
+        private Socket ftpSocket;
+
+        private int value;
+        private Boolean logined;
+        private string reply;
+        
+        private static int BLOCK_SIZE = 512;
+
+        Byte[] b = new Byte[BLOCK_SIZE];
+        Encoding ASCII = Encoding.ASCII;
+
+        public FTPClient()
+        {
+
+            Host = "localhost";
+            fPath = ".";
+            User = "anonymous";
+            Pass = "test@test.com";
+            Port = 21;
+            logined = false;
+
+        }
+
+        public void setHost(string Host)
+        {
+            this.Host = Host;
+        }
+
+        public string getHost()
+        {
+            return Host;
+        }
+
+        public void setPort(int Port)
+        {
+            this.Port = Port;
+        }
+
+        public int getPort()
+        {
+            return Port;
+        }
+
+        public void setPath(string Path)
+        {
+            this.fPath = Path;
+        }
+
+        public string getPath()
+        {
+            return fPath;
+        }
+
+        public void setUser(string User)
+        {
+            this.User = User;
+        }
+
+        public void setPass(string Pass)
+        {
+            this.Pass = Pass;
+        }
+
+        public string[] getFileList(string mask)
+        {
+
+            if (!logined)
+            {
+                login();
+            }
+
+            Socket cSocket = createDataSocket();
+
+            sendCommand("NLST " + mask);
+
+            if (!(value == 150 || value == 125))
+            {
+                throw new IOException(reply.Substring(4));
+            }
+
+            l = "";
+
+            while (true)
+            {
+
+                int bytes = cSocket.Receive(b, b.Length, 0);
+                l += ASCII.GetString(b, 0, bytes);
+
+                if (bytes < b.Length)
+                {
+                    break;
+                }
+            }
+
+            char[] seperator = { '\n' };
+            string[] ls = l.Split(seperator);
+
+            cSocket.Close();
+
+            readReply();
+
+            if (value != 226)
+            {
+                throw new IOException(reply.Substring(4));
+            }
+            return ls;
+
+        }
+
+        public long getFileSize(string fileName)
+        {
+
+            if (!logined)
+            {
+                login();
+            }
+
+            sendCommand("SIZE " + fileName);
+            long size = 0;
+
+            if (value == 213)
+            {
+                size = Int64.Parse(reply.Substring(4));
+            }
+            else
+            {
+                throw new IOException(reply.Substring(4));
+            }
+
+            return size;
+
+        }
+
+        public void login()
+        {
+
+            ftpSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            IPEndPoint ep = new IPEndPoint(Dns.GetHostEntry(Host).AddressList[0], Port);
+
+            try
+            {
+                ftpSocket.Connect(ep);
+            }
+            catch (Exception)
+            {
+                throw new IOException("Couldn't connect to remote server");
+            }
+
+            readReply();
+            if (value != 220)
+            {
+                close();
+                throw new IOException(reply.Substring(4));
+            }
+
+            sendCommand("USER " + User);
+
+            if (!(value == 331 || value == 230))
+            {
+                cleanup();
+                throw new IOException(reply.Substring(4));
+            }
+
+            if (value != 230)
+            {
+                sendCommand("PASS " + Pass);
+                if (!(value == 230 || value == 202))
+                {
+                    cleanup();
+                    throw new IOException(reply.Substring(4));
+                }
+            }
+
+            logined = true;
+            Console.WriteLine("Connected to " + Host);
+
+            chdir(fPath);
+
+        }
+
+        public void setBinaryMode(Boolean mode)
+        {
+
+            if (mode)
+            {
+                sendCommand("TYPE I");
+            }
+            else
+            {
+                sendCommand("TYPE A");
+            }
+            if (value != 200)
+            {
+                throw new IOException(reply.Substring(4));
+            }
+        }
+
+        public void upload(string fileName)
+        {
+            upload(fileName, false);
+        }
+
+        public void upload(string fileName, Boolean resume)
+        {
+
+            if (!logined)
+            {
+                login();
+            }
+
+            Socket cSocket = createDataSocket();
+            long offset = 0;
+
+            if (resume)
+            {
+
+                try
+                {
+
+                    setBinaryMode(true);
+                    offset = getFileSize(fileName);
+
+                }
+                catch (Exception)
+                {
+                    offset = 0;
+                }
+            }
+
+            if (offset > 0)
+            {
+                sendCommand("REST " + offset);
+                if (value != 350)
+                {
+                    offset = 0;
+                }
+            }
+
+            sendCommand("STOR " + Path.GetFileName(fileName));
+
+            if (!(value == 125 || value == 150)) { }
+
+            // open input stream to read source file
+            FileStream input = new FileStream(fileName, FileMode.Open);
+
+            if (offset != 0)
+            {
+                input.Seek(offset, SeekOrigin.Begin);
+            }
+
+            while ((bytes = input.Read(b, 0, b.Length)) > 0)
+            {
+
+                cSocket.Send(b, bytes, 0);
+
+            }
+            input.Close();
+
+            if (cSocket.Connected)
+            {
+                cSocket.Close();
+            }
+
+            readReply();
+            if (!(value == 226 || value == 250))
+            {
+                throw new IOException(reply.Substring(4));
+            }
+        }
+
+        public void download(string remFileName, string locFileName)
+        {
+            download(remFileName, locFileName, false);
+        }
+
+        public void download(string remFileName, string locFileName, Boolean resume)
+        {
+            int timeoutSeconds = 10;
+            
+            if (!logined)
+            {
+                login();
+            }
+
+            setBinaryMode(true);
+
+            if (locFileName.Equals(""))
+            {
+                locFileName = remFileName;
+            }
+
+            FileStream output = null;
+
+            locFileName += remFileName;
+
+            if (!File.Exists(locFileName))
+                output = File.Create(locFileName);
+
+            else
+                output = new FileStream(locFileName, FileMode.Open);
+
+            Socket cSocket = createDataSocket();
+
+            long offset = 0;
+
+            if (resume)
+            {
+                offset = output.Length;
+
+                if (offset > 0)
+                {
+                    this.sendCommand("REST " + offset);
+                    if (value != 350)
+                    {
+                        //Server dosnt support resuming
+                        offset = 0;
+                    }
+                    else
+                    {
+                        output.Seek(offset, SeekOrigin.Begin);
+                    }
+                }
+            }
+
+            sendCommand("RETR " + remFileName);
+
+            if (value != 150 && value != 125)
+            {
+               
+            }
+
+            DateTime timeout = DateTime.Now.AddSeconds(timeoutSeconds);
+
+            while (timeout > DateTime.Now)
+            {
+                this.bytes = cSocket.Receive(b, b.Length, 0);
+                output.Write(b, 0, bytes);
+
+                if (this.bytes <= 0)
+                {
+                    break;
+                }
+            }
+
+            output.Close();
+
+            if (cSocket.Connected) cSocket.Close();
+
+            readReply();
+
+            if (value != 226 && value != 250)
+                throw new IOException(reply.Substring(4));
+        }
+
+        public void deleteRemoteFile(string fileName)
+        {
+
+            if (!logined)
+            {
+                login();
+            }
+
+            sendCommand("DELE " + fileName);
+
+            if (value != 250) { }
+
+        }
+
+        public void renameRemoteFile(string oldFileName, string newFileName)
+        {
+
+            if (!logined)
+            {
+                login();
+            }
+
+            sendCommand("RNFR " + oldFileName);
+
+            if (value != 350)
+            {
+                throw new IOException(reply.Substring(4));
+            }
+
+            //  known problem
+            //  rnto will not take care of existing file.
+            //  i.e. It will overwrite if newFileName exist
+            sendCommand("RNTO " + newFileName);
+            if (value != 250)
+            {
+                throw new IOException(reply.Substring(4));
+            }
+
+        }
+
+        public void mkdir(string dirName)
+        {
+
+            if (!logined)
+            {
+                login();
+            }
+
+            sendCommand("MKD " + dirName);
+
+            if (value != 250) { }
+
+        }
+
+        public void rmdir(string dirName)
+        {
+
+            if (!logined)
+            {
+                login();
+            }
+
+            sendCommand("RMD " + dirName);
+
+            if (value != 250) { }
+
+        }
+
+        public void chdir(string dirName)
+        {
+
+            if (dirName.Equals("."))
+            {
+                return;
+            }
+
+            if (!logined)
+            {
+                login();
+            }
+
+            sendCommand("CWD " + dirName);
+
+            if (value != 250) { }
+
+            this.fPath = dirName;
+        }
+
+        public void close()
+        {
+
+            if (ftpSocket != null)
+            {
+                sendCommand("QUIT");
+            }
+
+            cleanup();
+        }
+
+        private void readReply()
+        {
+            l = "";
+            reply = readLine();
+            value = Int32.Parse(reply.Substring(0, 3));
+        }
+
+        private void cleanup()
+        {
+            if (ftpSocket != null)
+            {
+                ftpSocket.Close();
+                ftpSocket = null;
+            }
+            logined = false;
+        }
+
+        private string readLine()
+        {
+
+            while (true)
+            {
+                bytes = ftpSocket.Receive(b, b.Length, 0);
+                l += ASCII.GetString(b, 0, bytes);
+                if (bytes < b.Length)
+                {
+                    break;
+                }
+            }
+
+            char[] seperator = { '\n' };
+            string[] ls = l.Split(seperator);
+
+            if (l.Length > 2)
+            {
+                l = ls[ls.Length - 2];
+            }
+            else
+            {
+                l = ls[0];
+            }
+
+            if (!l.Substring(3, 1).Equals(" "))
+            {
+                return readLine();
+            }
+            return l;
+        }
+
+        private void sendCommand(String command)
+        {
+
+            Byte[] cmdBytes = Encoding.ASCII.GetBytes((command + "\r\n").ToCharArray());
+            ftpSocket.Send(cmdBytes, cmdBytes.Length, 0);
+            readReply();
+        }
+
+        private Socket createDataSocket()
+        {
+
+            sendCommand("PASV");
+
+            if (value != 227)
+            {
+                throw new IOException(reply.Substring(4));
+            }
+
+            int index1 = reply.IndexOf('(');
+            int index2 = reply.IndexOf(')');
+            string ipData = reply.Substring(index1 + 1, index2 - index1 - 1);
+            int[] parts = new int[6];
+
+            int len = ipData.Length;
+            int partCount = 0;
+            string buf = "";
+
+            for (int i = 0; i < len && partCount <= 6; i++)
+            {
+
+                char ch = Char.Parse(ipData.Substring(i, 1));
+                if (Char.IsDigit(ch))
+                    buf += ch;
+                else if (ch != ',') { }
+
+                if (ch == ',' || i + 1 == len)
+                {
+
+                    try
+                    {
+                        parts[partCount++] = Int32.Parse(buf);
+                        buf = "";
+                    }
+                    catch (Exception) { }
+                }
+            }
+
+            string ipAddress = parts[0] + "." + parts[1] + "." +
+              parts[2] + "." + parts[3];
+
+            int port = (parts[4] << 8) + parts[5];
+
+            Socket s = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            IPEndPoint ep = new IPEndPoint(Dns.GetHostEntry(ipAddress).AddressList[0], port);
+
+            try
+            {
+                s.Connect(ep);
+            }
+            catch (Exception) { }
+
+            return s;
+        }
+
+    }
+}

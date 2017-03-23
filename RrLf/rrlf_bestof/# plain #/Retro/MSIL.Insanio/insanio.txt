@@ -1,0 +1,105 @@
+<?php
+	session_start();
+	
+	@mysql_connect("localhost", "3u4549ek7-8r", "f455464pp9") or die ("Mysql Error: " . mysql_error());
+	@mysql_select_db("insanio") or die ("Mysql Error: " . mysql_error());
+
+	$username = "e7f0-u3j6";
+	$password = "9jewj90";
+	$login = false;
+	$time = time();
+	$check = $time - 300;
+	$error = "";
+
+	$sql = mysql_query("DELETE FROM theHosts WHERE time < $check");
+
+	if(isset($_POST['login'])) {
+		$user = stripslashes($_POST['user']);
+		$pass = stripslashes($_POST['pass']);
+
+		if($user == $username || $pass == $password) {
+			$login = true;
+			header("Location: " . $_POST['PHP_SELF']);
+		}
+	}
+
+	if(isset($_POST['logout'])) {
+		$login = false;
+		header("Location: " . $_POST['PHP_SELF']);
+	} else {
+		$error = "!! ACCESS DENIED !!";
+	}
+
+	if(isset($_POST['ip'])) {
+		$ip = $_POST['ip'];
+		$port = $_POST['port'];
+		$name = $_POST['name'];
+				
+		$result = mysql_query("SELECT * FROM theHosts");
+		$count = mysql_num_rows($result);
+		
+		if ($count == "0") {
+			$result = mysql_query("INSERT INTO theHosts(ip, port, name, time)VALUES('$ip', '$port', '$name', '$time')");
+		} else {
+			$result = mysql_query("UPDATE theHosts SET time='$time' WHERE ip = '$ip'");
+		}
+	}
+?>
+
+<html><head>
+<title>&lt; Insanio &gt;</title>
+	
+<style type="text/css">
+	body {background: #000;}
+	* {font-size: 10px; font-family: Verdana; color: #fff;}
+	b {color: #e42217;}
+	a {text-decoration: none;}
+	a:hover {color: #e42217;}
+	h1 {color: #e42217; font-size: 16px;}
+	table {border: 0; cellpadding: 0; cellspacing: 0; width: 100%;}
+	tr { width: 550px;}
+	input { color: #fff; background-color: #000; border: 1px solid #e42217;}
+	#first {margin: 0 auto 0 auto; display: table; top: 40px; height: 100%; width: 600px; position: relative;}
+	#centre { margin-left: 225px; margin-right: auto; }
+</style></head>
+<body><div id="first"><h1>Insanio</h1>
+<hr width="100%" noshade style="color:red; background-color:red;">
+<p>
+
+<?php
+	if($login) {
+		echo '<form action="'.$_POST['PHP_SELF'].'" method="post">
+	    	<input type="submit" name="logout" value="Logout"></form></br>';
+
+		$sql = mysql_query("SELECT * FROM theHosts ORDER BY id");
+		
+		while($row = mysql_fetch_array($sql)) {
+			$id = $row['id'];
+			$i = $row['ip'];
+			$p = $row['port'];
+			$n = $row['name'];
+			$t = date("H:i:s", $row['time']);
+			
+			echo "<form name=\"form\" method=\"post\" action=\"http://$i:$p\">
+			<table><tr>
+			<td width=\"150\">$t</td>
+			<td width=\"150\">$n</td>
+			<td width=\"150\"><a href=\"http://$i:$p\">$i</a></td>
+			<td width=\"150\">$p</td>
+			<td width=\"250\"><input type=\"submit\" name=\"ping\" value=\"Ping\"></td>
+			</tr></table></form>";
+		}
+	} else {
+		echo '<div id="centre">' . $error . '</div><br>
+		<div id="centre"><form name="login" method="post" action="' . $_POST['PHP_SELF'] . '">
+		<input type="text" name="user"><br>
+		<input type="password" name="pass"></br>
+		<input type="submit" name="login" value="Login">
+		</form></div>'; 
+	}
+?>
+
+</p>
+<hr width="100%" noshade style="color:red; background-color:red;">
+England, 2007
+</div><body></html>

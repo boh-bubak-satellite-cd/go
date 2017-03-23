@@ -1,0 +1,7 @@
+bat.ina was the first batch virus, able to update itself via the internet using ftp.
+the url, from where it would download it's upate is still working. check out:
+http://de.geocities.com/batina_rrlf/
+of course the virus needs the password to log in to the ftp-account, so it's given in the code.
+please don't be a lameass and "crack" the page. leave it as it is, for historical reasons. ty.
+
+philie

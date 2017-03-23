@@ -1,0 +1,93 @@
+                       ,
+                      dM
+                      AMMr
+                     4MMML                  .
+                     MMMMM.                xf
+     .              "M6MMM               .MM-
+      Mh..          +MM5MMM            .MMMM
+      .MMM.         .MMMMML.          MMMMMh              Finding DC++ ShareFolders Via Xml in C#
+       )MMMh.        MM5MMM         MMMMMMM                             by Retro
+        3MMMMx.     'MMM3MMf      xnMMMMMM"
+        '*MMMMM      MMMMMM.     nMMMMMMP"
+          *MMMMMx    "MMM5M\    .MMMMMMM=
+           *MMMMMh   "MMMMM"   JMMMMMMP
+             MMMMMM   GMMMM.  dMMMMMM            .                    2nd April 2006
+              MMMMMM  "MMMM  .MMMMM(        .nnMP"
+   ..          *MMMMx  MMM"  dMMMM"    .nnMMMMM*
+    "MMn...     'MMMMr 'MM   MMM"   .nMMMMMMM*"
+     "4MMMMnn..   *MMM  MM  MMP"  .dMMMMMMM""
+       ^MMMMMMMMx.  *ML "M .M*  .MMMMMM**"
+          *PMMMMMMhn. *x > M  .MMMM**""
+             ""**MMMMhx/.h/ .=*"                                   http://retro.host.sk
+                      .3P"%....                                       www.rrlf.de.vu
+                    nP"     "*MMnx 
+					
+					
+					
+				1.  I N T R O
+					
+				If you dont already know, DC++ is a free open-source P2P client, like edonkey or kazaa.
+				On the eve of writting of this code, I had never heard of DC++. It wasn't untill I
+				asked a friend about the most common P2P clients today, his first answer as he's coming
+				at me was, DC++.  So as i'm bangaging my wounds, I installed DC to see what the hype was 
+				about.  Unlike eDonkey for example, DC lets you choose which folders to share with others
+				by default, whereas eDonkey creates it's own, in My Documents. All of DC settings are 
+				contained in a XML in the root install dir, wherever that maybe, called 'DCPlusPlus.xml'.
+					
+					
+				2.  R E Q U I R E M E N T S
+					
+				For the code, i'm using Visual Studio .NET 2005 Beta 2, along side .NET 2.0 Framework.
+				I had too many problems working with 1.1, and so I upgraded. It should work with 1.1
+				but you may need to edit 'XmlReader.Create' to 'New XmlReader' but dont quote me on
+				that.
+					
+					
+				3. T H E  C O D E
+					
+				static void dcShares()
+				{
+					// Check to see if DCPlusPlus is installed
+					RegistryKey p2pKey = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\DC++");
+
+					// Get the installation key 
+					object p2p = p2pKey.GetValue("Install_Dir");
+        
+					// If the key isnt there, then exit if statement
+					if (p2p == null) { }
+					else
+					{
+						// Append backslash to Path
+						p2p += @"\";
+
+						// Open the Config File
+						XmlReader xmlRead = XmlReader.Create(p2p + "DCPlusPlus.xml");
+
+						// Read Xml File
+						while (xmlRead.Read())
+						{
+							// If the current node is 'Directory'
+							if (xmlRead.Name == "Directory")
+							{
+								// Read the element 
+								string dccShare = xmlRead.ReadString();
+								
+								// Show folder
+								Console.WriteLine(dccShare);
+							}
+						}
+						
+						// Close the XmlReader
+						xmlRead.Close();
+					}
+				}
+
+				
+				4.  O U T R O
+				
+				As you can see its very easy to understand, and can be applied to anything you wish,
+				but obviously you'd want to copy itself to the folders though. Anyway enjoy the code.
+					
+  
+
+

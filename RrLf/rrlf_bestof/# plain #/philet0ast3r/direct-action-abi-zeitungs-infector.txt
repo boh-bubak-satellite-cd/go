@@ -1,0 +1,11 @@
+the following was printed in my abi-zeitung (a journal, a german class brings out, after finishing high-school)
+under the section "goodbyes".  philie
+
+
+0100 77 77 20 31 73 74 20 64 69 72 65 63 74 2D 61 63
+0110 74 69 6F 6E 2D 61 62 69 2D 7A 2D 69 6E 66 65 63
+0120 74 6F 72 21 0D 0A 61 62 69 2D 7A 20 69 73 20 65
+0130 68 20 66 FC 72 6E 20 61 72 73 63 68 2E 2E 64 61
+0140 73 20 68 69 65 72 20 67 66 75 6E 64 6E 3F 6D 61
+0150 69 6C 20 6D 69 72 0D 0A 70 68 69 6C 65 74 30 61
+0160 73 74 33 72 40 72 52 6C 66 2E 64 65 D4

