@@ -1,0 +1,6 @@
+bin\Debug\Baldr.exe
+bin\Debug\Baldr.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Baldr.exe
+obj\Debug\Baldr.pdb
+obj\Release\ResolveAssemblyReference.cache

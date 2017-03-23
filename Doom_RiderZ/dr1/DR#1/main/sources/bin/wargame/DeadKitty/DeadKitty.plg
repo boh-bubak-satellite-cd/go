@@ -1,0 +1,134 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DeadKitty - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x410 /fo"Release/hello_kitty_rulez.res" /d "NDEBUG" "C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\hello_kitty_rulez.rc"" 
+Creating temporary file "C:\DOCUME~1\AngeloP\IMPOST~1\Temp\RSPA.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/DeadKitty.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\ZipStuff\adler32.c"
+"C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\ANIExploit.c"
+"C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\AVKiller.c"
+"C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\ZipStuff\compress.c"
+"C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\ZipStuff\crc32.c"
+"C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\DeadKitty.c"
+"C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\ZipStuff\deflate.c"
+"C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\DriveSpread.c"
+"C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\ZipStuff\gzio.c"
+"C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\ZipStuff\infback.c"
+"C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\ZipStuff\inffast.c"
+"C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\ZipStuff\inflate.c"
+"C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\ZipStuff\inftrees.c"
+"C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\ZipStuff\ioapi.c"
+"C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\ZipStuff\iowin32.c"
+"C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\LinkSPAM.c"
+"C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\misc.c"
+"C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\NetShareSpread.c"
+"C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\P2PScanner.c"
+"C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\PayLoad.c"
+"C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\ZipStuff\trees.c"
+"C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\ZipStuff\uncompr.c"
+"C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\ZipStuff\unzip.c"
+"C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\ZipStuff\zip.c"
+"C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\ZipStuff\zutil.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\AngeloP\IMPOST~1\Temp\RSPA.tmp" 
+Creating temporary file "C:\DOCUME~1\AngeloP\IMPOST~1\Temp\RSPB.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib wsock32.lib advapi32.lib imagehlp.lib mpr.lib shell32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/DeadKitty.pdb" /machine:I386 /out:"Release/DeadKitty.exe" 
+.\Release\adler32.obj
+.\Release\ANIExploit.obj
+.\Release\AVKiller.obj
+.\Release\compress.obj
+.\Release\crc32.obj
+.\Release\DeadKitty.obj
+.\Release\deflate.obj
+.\Release\DriveSpread.obj
+.\Release\gzio.obj
+.\Release\infback.obj
+.\Release\inffast.obj
+.\Release\inflate.obj
+.\Release\inftrees.obj
+.\Release\ioapi.obj
+.\Release\iowin32.obj
+.\Release\LinkSPAM.obj
+.\Release\misc.obj
+.\Release\NetShareSpread.obj
+.\Release\P2PScanner.obj
+.\Release\PayLoad.obj
+.\Release\trees.obj
+.\Release\uncompr.obj
+.\Release\unzip.obj
+.\Release\zip.obj
+.\Release\zutil.obj
+.\Release\hello_kitty_rulez.res
+]
+Creating command line "link.exe @C:\DOCUME~1\AngeloP\IMPOST~1\Temp\RSPB.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+adler32.c
+ANIExploit.c
+C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\ANIExploit.c(47) : warning C4133: 'function' : incompatible types - from 'struct sockaddr_in *' to 'struct sockaddr *'
+C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\ANIExploit.c(80) : warning C4244: 'function' : conversion from 'unsigned long ' to 'unsigned short ', possible loss of data
+C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\ANIExploit.c(87) : warning C4133: 'function' : incompatible types - from 'struct sockaddr_in *' to 'const struct sockaddr *'
+C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\ANIExploit.c(128) : warning C4013: 'sprintf' undefined; assuming extern returning int
+C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\ANIExploit.c(202) : warning C4133: 'function' : incompatible types - from 'struct sockaddr_in *' to 'const struct sockaddr *'
+C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\ANIExploit.c(213) : warning C4133: 'function' : incompatible types - from 'struct sockaddr_in *' to 'struct sockaddr *'
+AVKiller.c
+C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\ANIExploit.c(80) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\ANIExploit.c(104) : warning C4716: 'Th_tftpd' : must return a value
+C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\ANIExploit.c(183) : warning C4716: 'Th_HandleRequest' : must return a value
+C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\AVKiller.c(32) : warning C4047: '==' : 'void *' differs in levels of indirection from 'const int '
+compress.c
+crc32.c
+DeadKitty.c
+C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\DeadKitty.c(85) : warning C4013: 'sprintf' undefined; assuming extern returning int
+C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\DeadKitty.c(160) : warning C4013: 'PayLoad' undefined; assuming extern returning int
+deflate.c
+DriveSpread.c
+C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\DriveSpread.c(27) : warning C4013: 'sprintf' undefined; assuming extern returning int
+gzio.c
+infback.c
+inffast.c
+inflate.c
+inftrees.c
+ioapi.c
+iowin32.c
+LinkSPAM.c
+C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\LinkSPAM.c(9) : warning C4013: 'sprintf' undefined; assuming extern returning int
+C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\LinkSPAM.c(57) : warning C4101: 'msg' : unreferenced local variable
+C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\LinkSPAM.c(105) : warning C4047: '=' : 'char ' differs in levels of indirection from 'void *'
+misc.c
+C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\LinkSPAM.c(50) : warning C4716: 'Th_SkypeSPAM' : must return a value
+C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\LinkSPAM.c(132) : warning C4716: 'Th_MapiSPAM' : must return a value
+C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\misc.c(10) : warning C4018: '<' : signed/unsigned mismatch
+NetShareSpread.c
+C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\NetShareSpread.c(26) : warning C4013: 'sprintf' undefined; assuming extern returning int
+P2PScanner.c
+C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\NetShareSpread.c(118) : warning C4716: 'Th_LocalScan' : must return a value
+C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\P2PScanner.c(23) : warning C4090: 'function' : different 'const' qualifiers
+C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\P2PScanner.c(23) : warning C4024: 'MakeZip' : different types for formal and actual parameter 1
+C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\P2PScanner.c(40) : warning C4013: 'sprintf' undefined; assuming extern returning int
+C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\P2PScanner.c(32) : warning C4101: 'DropName' : unreferenced local variable
+C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\P2PScanner.c(31) : warning C4101: 'file' : unreferenced local variable
+PayLoad.c
+C:\Hack\Progetti\Sorgenti\Vari\DeadKitty\PayLoad.c(11) : warning C4013: 'sprintf' undefined; assuming extern returning int
+trees.c
+uncompr.c
+unzip.c
+zip.c
+zutil.c
+Linking...
+
+
+
+<h3>Results</h3>
+DeadKitty.exe - 0 error(s), 27 warning(s)
+</pre>
+</body>
+</html>

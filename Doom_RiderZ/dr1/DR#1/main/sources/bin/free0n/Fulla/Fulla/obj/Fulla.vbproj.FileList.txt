@@ -1,0 +1,9 @@
+obj\Debug\Fulla.exe
+obj\Debug\Fulla.xml
+obj\Debug\Fulla.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Fulla.Resources.resources
+obj\Debug\Fulla.vbproj.GenerateResource.Cache
+bin\Debug\Fulla.exe
+bin\Debug\Fulla.pdb
+bin\Debug\Fulla.xml
