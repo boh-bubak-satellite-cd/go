@@ -1,0 +1,2070 @@
+################################################################################
+###      ! FUCK ANONYMOUS ! FUCK ANTISEC ! FUCK ANONYMOUS ! FUCK ANTISEC     ###
+################################################################################
+###                                   .                                      ###
+###         `7MM"""Yp, `7MM"""Mq.   .dM   .g8"""bgd `7MMF' `YMM'             ###
+###           MM    Yb   MM   `MM.-YMMM .dP'     `M   MM   .M'               ###
+###           MM    dP   MM   ,M9  `7MM dM'       `   MM .d"                 ###
+###           MM"""bg.   MMmmdM9     MM MM            MMMMM.                 ###
+###           MM    `Y   MM  YM.     MM MM.           MM  VMA                ###
+###           MM    ,9   MM   `Mb.   MM `Mb.     ,'   MM   `MM.              ###
+###         .JMMmmmd9  .JMML. .JMM..JMML. `"bmmmd'  .JMML.   MMb             ###
+###                                                                          ###
+###                                                                          ###
+###         .M"""bgd   .g8""8q. `7MMF'   `7MF'         `7MM"""Yb.            ###
+###        ,MI    "Y .dP'    `YM. MM       M             MM    `Yb.          ###
+###        `MMb.     dM'      `MM MM       M      ,AM    MM     `Mb          ###
+###          `YMMNq. MM        MM MM       M     AVMM    MM      MM          ###
+###        .     `MM MM.      ,MP MM       M   ,W' MM    MM     ,MP          ###
+###        Mb     dM `Mb.    ,dP' YM.     ,M ,W'   MM    MM    ,dP'          ###
+###        P"Ybmmd"    `"bmmd"'    `bmmmmd"'.AmmmmmMMmm.JMMmmmdP'            ###
+###                        MMb                     MM                        ###
+###                         `bood'                 MM              #############
+###                                                                ## vol. 1 ###
+################################################################################
+###      ! FUCK ANONYMOUS ! FUCK ANTISEC ! FUCK ANONYMOUS ! FUCK ANTISEC     ###
+################################################################################
+ .       ______
+  `  .  /      \          `   +-'~`---------------------------------/\--
+    ` \| ~~  ~~ |           >||"""""""""""""""""""""""""""""""" \\\\\\  \/~)
+<== . >| x || X |< -  -  -  >||             1   0   1   7        \\\\\\  \/_
+   ,  ,|\_/--\_/|          ,  |~~~~~~~~-________________-_________________\ ~--_
+    ,   \==__==/               !---------|_________       ------~~~~~(--   )--~~
+;        \_[]_/                               \ /~~~~\~~\   )--- \_ /(
+ .    ___--__--___                             ||     |  | \   ()   \\
+     /   \_\/_/   \                            \\____/_ / ()\        \\
+    /      /\      \                            `~~~~~~~~~-. \        \\
+   /  /   |  |   \  \                                       \ \  <($)> \\
+  (   |   |  |   |   )                                       \ \        \\
+   \  |   |  |   |  /                                         \ \        \\
+    \ |   \  /   | /                                           \ \        \\
+     `|____\/____|,                                             \ \  ()    \|
+      |====<>====|                                               `_\_\__====~~
+      |          |
+      |    ||    |
+################################################################################
+# Download the full version (with images and logs):                            #
+################################################################################
+http://www.megaupload.com/?d=5ZZPKUJK
+http://www.fileserve.com/file/axxTYEa/br1cksqu4d.zip
+http://www.sendspace.com/file/74bfup
+http://www.zshare.net/download/94922629c6b8408b/
+http://ge.tt/9KcUPw8
+
+################################################################################
+# 0) Intro                                                                     #
+################################################################################	
+# Now playing: http://www.youtube.com/watch?v=oU2DuzQnd-M #
+###########################################################
+
+	* Fuck Antisec *
+	* Fuck Lulzsec *
+	* Fuck School4Lulz *
+	* Fuck Snitches *
+
+You claimed you are anonymous so we thought it would be lulzy to expose you all.
+You claimed you are leaderless so we thought we'd show you how you're being used like the young sluts you are.
+You claimed you are secure so we thought we'd infiltrate your servers, clientside your PCs, read through your facebook accounts and share all your priv8 shit.
+Your scene is led by pedofiles, junkies, emos, posers, snitches, media whores, botkids and lame script kids who barely know how to SQLi, while the rank and file get raided and sent to prison.
+Fuck your ideological bullshit, no one cares what a bunch of rich whiny white people think about the terrible 'injustices' commited against them.
+
+Anyways, we have all your private SILC chat logs, personal info, nude pictures, IP addresses, internal documents, and any other priv8 shit we felt like sharing.
+All the dox has been extensively researched and has references, so you can verify for yourself if you don't think they're legit, we didn't put anything in that we weren't confident was correct.
+You don't seem to have a problem releasing innocent people's information, so we thought you wouldn't mind if we did the same to you.
+
+So much for being anonymous. RIP Skids.
+
+Oh, and we also infiltrated your daddy Lulzsec's shit... twice
+	
+################################################################################
+# 1) #ANTISEC                                                                  #
+################################################################################
+# Now Playing: http://www.youtube.com/watch?v=KlanabKGV5E  #
+############################################################
+
+Lulzsec tries to claim antisec is the ressurection of pr0j3kt m4yh3m.
+They even lie about being in oldschool groups to impress each other (hi hatter, hi abraxas).
+Except they are not the underground, they are the furthest possible thing from the underground.
+Well anons, we think maybe you need to read ZF0 3 and 4 over again, you know the ones where a real underground group decides to rm -rf anonymous and that guy you stole the "anti-sec" name from?
+How about the one where g00ns was rmed, you know the guys you jacked the "expect us" tagline from ?
+Or maybe you could go read R3M again, the part where they destroyed raidchan and various other anonymous shitgroups? 
+
+Antisec started as Sabu's way of using anonymous to deflect attention from Lulzsec and also as a way to continue using other people's hacks without crediting them.
+It was also a way to vicariously mediawhore and to motivate his army of script kids attack the FBI/.mil/.gov/political targets for him
+So let's recap on how that war is going:
+
+Anon Arrest Highscore
+---------------------
+1 	Netherlands             http://www.pcworld.com/businesscenter/article/213120/dutch_arrest_16yearold_related_to_wikileaks_attacks.html
+40 	US                      http://www.itworld.com/security/135077/40-search-warrants-executed-fbi-goes-after-anonymous
+5 	UK                      http://uk.reuters.com/article/2011/01/27/idINIndia-54454720110127
+1	Australia               http://www.smh.com.au/technology/security/meet-the-hacktivist-who-tried-to-take-down-the-government-20110314-1btkt.html
+3 	Spain                   http://www.bbc.co.uk/news/technology-13727639
+32	Turkey                  http://www.pcmag.com/article2/0,2817,2386803,00.asp
+1	UK                      http://blogs.forbes.com/andygreenberg/2011/06/21/arrested-uk-teen-may-be-lulzsec-hacker/
+31	Italy                   https://www.infosecisland.com/blogview/15001-Anonymous-Remains-Defiant-in-Wake-of-Italian-Arrests.html
+21	International           http://www.theregister.co.uk/2011/07/20/europe_anon_suspects_cuffed/
+12	UK                      http://www.thesmokinggun.com/file/koch-industries-attack?page=7
+3	UK                      http://hothardware.com/News/UK-Authorities-Claim-Arrest-of-LulzSecs-Topiary/
+4	UK                      http://www.techspot.com/news/45347-four-more-suspected-lulzsec-and-anonymous-members-arrested.html
+3	US                      http://www.theregister.co.uk/2011/09/22/anonymous_arrests/
+=
+157 DUMB SCRIPT KIDDIES
+
+And you wonder why the 90s groups you shout out (with kids and families) won't come out of retirement to help you?
+You have accomplished nothing except inflaming 'cyberwar' rhetoric and fueling legislation that will end up with hackers getting 50 years in prison.
+
+The most retarded part is that you dont even realize you are the cause of the very thing you hate;
+Every time you DDoS a company Prolexic or DOSarrest sign up a new customer.
+Every time you SQL inject some irrelevant site a pentesting company gets a new contract.
+Every time you declare cyberwar on the government federal contractors get drowned in grant money.
+You claim you're are doing it for free speech and then DDoS anyone you don't agree with.
+You claim you're trying to do it for social justice and then release the creditcards and personal accounts of innocent people.
+Antisec will go down as nothing more than a term of meaningless hysteria that helped boost whitehat revenue across the globe.
+Congratulations, you're the APT of 2011.
+
+Seeing as most antisec operations are focused around AnonOps (irc.anonops.li) & Twitter so that was our primary target, but we also went after AnonNet, Facebook and anywhere else we felt like we needed to subjugate some peasants.
+Anonymous, you are a cancer on the scene, go black to captioning funny pics and sharing hentai you do not belong here.
+
+---------
+Power2All
+---------
+Dox:
+	Name: Jasper Lingers
+	Location: Bergblauwstraat 226, Zaandam, 1503 MK, Netherlands
+	Born: October 5th 1982
+	Phone: +31.756120977
+	Job: Network Admin @ Mizuho Financial Group [IM NOT A WHITEHAT I JUST... PRETEND TO BE ONE! YEAH, THATS IT!]
+	Education: Regio College
+	E-Mail: power2all@gmail.com
+	MSN: power2all@gmail.com
+	Skype: power2all2
+	
+	Father:
+		Name: Ad Lingers
+		Location: Oostzaan, Netherlands
+		Job: United Biscuits Verkade
+		Profiles:
+			https://www.facebook.com/ad.lingers
+			
+	Mother:
+		Name: Aafke Lingers
+		Profiles:
+			https://www.facebook.com/profile.php?id=100001125788085
+			
+	Sister:
+		Name: Eve Lingers
+		Job: Madame Tussauds Wax Museum
+		Location: Amsterdam, Netherlands
+		Profiles:
+			https://www.facebook.com/profile.php?id=100001709378174
+		
+Computer:
+	OS: Windows 7
+	IP: 212-182-165-44.ip.telfort.nl
+	Browser: Firefox
+	Anti-Virus: ESET AV
+
+Profiles:
+	http://twitter.com/#!/Power2All
+	http://www.facebook.com/profile.php?id=1618841753
+	http://soundcloud.com/power2all
+	http://en.wikipedia.org/wiki/User:Power2All
+	http://www.youtube.com/user/Power2All2007
+	www.ustream.tv/channel/dj-power2all
+	http://steamcommunity.com/id/power2all
+	http://forums.animesuki.com/member.php?u=33348
+	https://thepiratebay.org/user/Power2All/
+	http://www.mixcloud.com/Power2All
+	http://forums.phoenixlabs.org/user-16809.html
+	http://www.internetdj.com/user/Power2All
+	http://www.villainrom.co.uk/forum/member.php/7830-Power2All
+	http://www.last.fm/music/Power2All
+	http://forum.stichtingabunai.nl/member.php?u=88
+	https://picasaweb.google.com/101239916496801976175
+	
+Sites:
+	anirena.com
+	aniradio.org
+	power2all.com
+	
+Quotes:
+	(2:55:50 PM) p2a: office..
+	(2:55:59 PM) p2a: If you call having a desktop under stairs a office.
+	(2:55:59 PM) p2a: xD
+	(2:56:11 PM) p2a: But it has privacy
+	(2:56:13 PM) p2a: So yah, I dont mind it
+	(2:56:27 PM) p2a: fyi
+	(2:56:31 PM) p2a: My boss knows Im hosting AnonOps
+	(2:56:39 PM) p2a: And so do all my colleagues ;)
+	[...]
+	(2:59:06 PM) p2a: some months ago
+	(2:59:17 PM) p2a: They did a sweep
+	(2:59:21 PM) p2a: to caught LulzSec
+	(2:59:28 PM) p2a: They put owen in the list too
+	(2:59:29 PM) poofus: for what, what did he do? did he get warrants?
+	(2:59:47 PM) p2a: Yah, for computer miss-use and shit like that.
+	(2:59:50 PM) p2a: He doesnt even know how to hack.
+	(2:59:52 PM) p2a: xD
+	(3:00:15 PM) p2a: The only thing he knows, is how LOIC works.
+	(3:00:17 PM) p2a: And thats actually it.
+	(3:00:26 PM) p2a: Oh yah, and he is good with IRC though.
+	(3:00:32 PM) p2a: And security he learned now mostly from me ;)
+	
+Note:
+	Founder of anonops, operator of #antisec
+	Basement-dwelling 29 Year old gay furry (seriously this is your leader AnonOps?)
+	Collects dolls & statues of anime schoolgirls
+	Reads comics when he's not pirating WoW on TPB or making shitty 'anonymous' techno remixes
+	Dox confirmed by Facebook, Picasa, IRC, and multiple DJ forum accounts
+	Yeah so hes already been doxed but we thought we'd do a much more thorough job than those before us
+	
+-----
+st0rm
+-----
+Dox:
+	Name: Mike Walker
+	Location: Vancouver, British Columbia, Canada
+	Phone:
+			(778) 330-5937 [Cellphone] ?
+			(403) 389-3601 [Previous]
+	Education: Medicine Hat College 2004
+			   Western Canada High School 2000
+	E-Mail: mikewalker187@hotmail.ca
+	
+	Wife:
+		Name: Amber Walker
+		Profiles: https://www.facebook.com/profile.php?id=563615004
+		
+	Brother:
+		Name: Jon Walker
+		Location: Calgary, Alberta, Canada
+		Profiles: https://www.facebook.com/profile.php?id=813445289
+		
+	Sister:
+		Name: Georgina Walker
+		Location: Okotoks, Alberta, Canada
+		Education:	Dr. E.P. Scarlett High School 2001
+		Profiles: https://www.facebook.com/FrankensteinsBride
+		
+	Father:
+		Name: Scott Walker
+		Location: Okotoks, Alberta, Canada
+	
+Computer:
+	Handles: st0rm, strom, Niternat, Corestorm, Mikewalker187, voodoo
+	IP: 97-120-249-224.ptld.qwest.net
+
+Profiles:
+	http://twitter.com/#!/niternat
+	https://www.facebook.com/profile.php?id=515250870
+	
+Sites:
+	niternat.com
+	
+Quotes:
+	18:20 <@strom> I was involved in phreaking from about 2001-2002 until 2007
+	18:23 <@strom> so anyway
+	18:24 <@strom> I was a phone phreak from 2002-2008
+	18:24 <@strom> ask me anything
+	[...]
+	18:26 <@strom> those questions make no sense
+	
+Note:
+	IRCop of AnonOps
+	Lulzsec affiliate
+	Operator of #antisec
+	Taught at #school4lulz
+	Youtube conirmed by social engineering
+	Dox confirmed by youtube, IRC and facebook
+	Dox supplied to us by a fellow blackhat (greetz from the red power ranger!)
+	
+----
+Owen
+----
+Dox:
+	First Name: Owen
+		
+Computer:
+	IP: 72.240.102.219 (cblmdm72-240-102-219.buckeyecom.net)
+		72.241.169.45 (July 14 2011)
+		
+Note:
+	BRB FBI LOL
+	Cofounder of anonops, operator of #antisec
+	Name confirmed by IRC
+	
+--------
+Trivette
+--------
+Dox:
+	Name: Vincent Kershaw
+	Gender: Male
+	Age: 27
+	Location: Fort Collins, Colorado
+	Job: Fort Collins Landscaping - Foreman
+	Education: Poudre High School
+	
+Computer:
+	IP: 80-254-75-147.dynamic.swissvpn.net [July 2011]
+		109-205-169-25.dynamic.swissvpn.net
+	OS: Vista
+	
+Profiles:
+	https://www.facebook.com/PnPTrivette
+	
+Sites:
+	
+Notes:
+	BRB FBI LOL
+	Operator of #antisec
+	Stupid feds gave away our dox :(
+	Buttbuddies with media whore Barrett Brown (frequently tiny chats with him)
+
+-----
+Wolfy
+-----
+Dox:
+	Gender: Male
+	Location: Tennesee
+	
+Computer:
+	IP: c-98-193-221-91.hsd1.tn.comcast.net
+	
+Quotes:
+	(4:01:37 PM) Wolfy: Also, I am not a tranny  :P
+	[...]
+	(4:01:48 PM) Wolfy: Gay furry, yes, but not tranny.
+	
+	[06:38] <@Wolfy> heya IT
+	[06:39] <storm> damn you keep posting pics of half naked kids
+	[06:39] <@InformationTerrorism> Wolfy <3
+	[06:39] <storm> wolfy you sick cunt
+	[06:39] <storm> lol
+	[06:39] <@Wolfy> mmmm, colby's cute
+	[06:39] <@Wolfy> <3
+	[06:39] <Warfistprime> LOL
+	[06:39] <storm> hahaha
+	[06:39] <storm> i'm calling ehap
+	[...]
+	[06:39] <@Wolfy> I got ahold of his FB profile. I'm gonna convince him to cam for me  ;)
+	[06:39] <storm> i'm having serious fucking issues
+	[06:39] <storm> Wolfy, jesus bro
+	[06:39] <storm> how old are you
+	[...]
+	[06:40] <@Wolfy> storm: I'm 25. *Shrugs* Pedo happens
+	[...]
+	[06:40] <@Wolfy> Nah, I'm comfortable with myself about it these days.
+	[...]
+	[06:41] <Warfistprime> humans are beautiful
+	[06:41] <Warfistprime> especially childhood =)
+	[...]
+	[06:42] <@Wolfy> lol, that's fine, so long as he removes his clothes
+	[06:42] <@joepie91> ahaha
+	[06:42] <storm> jesus fuck
+	[06:42] <ti> he'd show me the same pictures of his 1-year-old niece
+	[06:42] <storm> Yoe
+	[06:42] <storm> Wolfy
+	[06:42] <storm> I hope you're fucking around.
+	[06:42] <@Wolfy> No, why? Welcome to AnonOps.
+
+Notes:
+	Operator of #antisec
+	Gay pedofile furry, got in argument w/ st0rm (sabu had to get called in to settle it) because he wouldn't stop talking about CP
+	
+--------
+Foxboron
+--------
+Dox:
+	First Name: Morten Linderud
+	Location: Elverum, Norway
+	Born: July 2nd, 1994
+	E-Mail: mc-ax@hotmail.com
+	MSN: mc-ax@hotmail.com
+	WoW: Character->Mortenius
+		 Realm->Ravencrest
+		 Realm Location->Europe
+	
+Computer:
+	OS: Windows 7
+	
+Profiles:
+	http://twitter.com/#!/foxboron
+	http://elitistjerks.com/members/359110-foxboron/
+	http://www.vfxtalk.com/members/40719-Foxboron
+	http://forums.riftgame.com/members/foxboron.html
+	http://www.theguildlife.com/users/?gl_user=627394
+	http://www.livestream.com/foxboron
+	http://parkour.no/forum/index.php?action=profile;u=8462
+	http://s11.zetaboards.com/Roleplay_Adventures/profile/3008902/
+	http://forums.logitech.com/t5/user/viewprofilepage/user-id/233746
+	http://blog.cgcareerguide.com/author/foxboron/
+	http://soundcloud.com/foxboron
+	http://pastebin.com/nc0T58hq
+	http://pastie.org/pastes/1878483/text
+	https://github.com/Foxboron
+	http://www.youtube.com/user/Foxboron
+	http://projectillegaldanish.forumotion.com/t4-foxboron-dropping-by#4
+	http://forums.gathering.org/member.php?7844-foxboron
+	http://www.last.fm/user/FOXBORON
+	https://www.recordunion.com/Profile/5778
+	http://www.voxamps.com/profile/foxboron/
+	http://profile.ultimate-guitar.com/Foxboron/
+	http://forums.wowace.com/member.php?u=73193
+	http://forums.curseforge.com/member.php?u=73193
+	http://forums.whyweprotest.net/members/foxboron.59060/
+	http://www.bigchords.com/the_razorbax_chords/something_to_believe_in_tab.html
+	http://martyriumguild.guildportal.com/UserClick.aspx?p=540214660&g=376131
+	http://www.guildportal.com/Guild.aspx?GuildID=243345&TabID=2047395
+	http://webcache.googleusercontent.com/search?q=cache:rptJfnnY02MJ:dekrakilskepapegoyer.smfforfree2.com/index.php%3Faction%3Dprofile%3Bu%3D18+%22mc-ax%40hotmail.com%22&cd=12&hl=en&ct=clnk&gl=ca&client=firefox-a
+
+Notes:
+	Member of #hackers on anonops
+	Leader of #opnorway and involved with #opindia , frequents #antisec
+	Doesn't really hack anything just codes shitty IRC flooder bots and gets other people to DDoS for him
+	Enjoys LARPing and pretending to know Ninjutsu
+	Makes terrible techno-emo music, big Green Day fan
+	First name, birthday & e-mail confirmed from multiple forum accounts
+	Location confirmed from soundcloud
+	Last name confirmed from last profile link (google webcache)
+	
+----------
+VitaoDoida
+----------
+Dox:
+	Name: Victor Gabriel
+	Born: July 29th
+	Location: Rua Brawmelia 171, Centro, Rio de Janeiro, 21345678
+	Phone: +55.3188681468
+	Email: vitaodoidao@gmail.com
+	Skype: VictorGabrielVD
+	ICQ: 157602232
+	YIM: VictorGabrielz7z@yahoo.com.br
+	MSN: msn@VitaoDoidao.com
+		 VictorGabriel@z7z.cc
+	
+Computer:
+	Handles: VD, VG, VitaoDoida
+	
+Profiles:
+	http://www.myfxbook.com/members/VitaoDoidao
+	http://forum.fxopen.com/converse.php?u=3236&u2=141038
+	https://www.fxstat.com/pt/user/profile/VitaoDoidao
+	http://instaforex.com/de/pamm_monitoring.php?trader=3033195
+	http://www.cashbackforex.com/forum/tabid/330/afv/profile/uid/17862/Default.aspx
+	http://services.runescape.com/m=hiscore/compare.ws?user1=VitaoDoidao
+	http://goldage.co/forum/members/vitaodoidao-m5716/
+	http://www.gunzfactor.com/members/vitaodoidao/
+	http://www.affiliateseeking.com/forums/members/vitaodoidao.html
+	http://wssfx.com/forum/member.php?82-VitaoDoidao
+	http://www.formspring.me/VitaoDoidao
+	
+Sites:
+	http://www.vitaodoida.com
+	http://www.z7z.cc
+	
+Notes:
+	Brazilian member of #hackers 
+	Heavily invovled with #opBrazil
+	Check out his forex stats ( http://instaforex.com/de/pamm_monitoring.php?trader=3033195 )
+	Dox confirmed by forex profiles, formspring, whois information, and IRC
+	
+------
+zephr0
+------
+Dox:
+	Location: Lancaster, UK
+	Languages: English, French, German (Probably born in Netherlands)
+	
+Computer:
+	Handles: Zephr0, Zarrtak
+	IP: 84.45.27.220 [May 18th 2011]
+	
+Profiles:
+	http://twitter.com/#!/Zephr0
+	http://translate.google.com/translate?hl=en&sl=auto&tl=en&u=http%3A%2F%2Fwww.eveger.de%2Fforum%2Fshowthread.php%3Ft%3D11583
+	http://pastebin.com/xqsHdjD5
+	http://pastebin.com/8PrW7R0d
+	http://www.eveonline.com/ingameboard.asp?a=topic&threadID=1358354
+	http://eve.battleclinic.com/killboard/combat_record.php?type=player&name=ZePhr0
+	http://native-stranger.net/kills/?a=pilot_detail&plt_id=39159
+	http://malin.evekb.co.uk/?a=pilot_detail&plt_id=59807
+	http://kb.redoverlord.com/?a=pilot_detail&plt_id=58955
+	http://bdeal.org/killboard/?a=pilot_detail&plt_ext_id=966701165
+	http://wowforum.gamona.de/members/zarrtak.html
+	
+Notes:
+	#hackers idler invovled with #opGreenRights
+	EVE profile confirmed by IRC
+	Location/Handles confirmed by eveger.de posts
+	
+----------
+AshleyEpic
+----------
+Dox:
+	Name: Ashley Poots
+	Gender: Female
+	Born: April 13 1994
+	Phone:
+		803.201.2179 (Cellphone)
+		803-269-9934 (Old Cellphone)
+		803-587-2922 (Home) ?
+	Location: Irmo, South Carolina
+	Location: 3101 Gadsden St, Irmo, SC 29201 ?
+	Education:
+		Dutch Fork High School, 1400 Old Tamah Rd Irmo, SC 29063
+		River Springs Elementary School, 115 Connie Wright Rd Irmo, SC 29063
+	AIM: DFashley12, Eouxkykz
+	YIM: Sleepyperson2, irmoashley12
+	Skype: Epixlulz
+	Steam: AshleyEpic
+	PS3: EpixLulz
+	XBL: AP ReSpecTeD
+	E-Mail: dfashley12@aim.com
+	
+	Brother:
+		Name: Steven Poots
+		Location: Columbia, South Carolina
+		Born: February 4 1989
+		Profiles: http://www.facebook.com/StevenPoots
+		
+	Mother:
+		Name: Beverly Simpson-Poots
+		Born: May 22 1961
+		Location: Taylors, South Carolina
+		Profiles: http://www.facebook.com/profile.php?id=100002488556971
+		
+	Father:
+		Name: Thomas Russell Cushman
+		Born: 15 January
+		Location: Columbia, South Carolina
+		Job: Interim Student Minister @ Seacost Church
+		Profiles: http://www.facebook.com/DickGraysonIsBatman
+	
+	Sister:
+		Name: Tapanga Autumn Brigman
+		Location: San Juan, Puerto Rico
+		Profiles: http://www.facebook.com/profile.php?id=1624261696
+		
+	Sister:
+		Name: Jessie Gorick
+		Location: Colubmia, South Carolina
+		Profiles: http://www.facebook.com/profile.php?id=1418547086
+		
+	Aunt:
+		Name: Elizabeth Down
+		Profiles: http://www.facebook.com/elizdown		
+		
+	Ex-Boyfriend:
+		Name: Avery Cooke
+		Born: December 9 1993
+		Location: Columbia, South Carolina
+		Profiles: http://www.facebook.com/profile.php?id=100001817806167
+		
+	Boyfriend:
+		Name: Ethan Gates
+		Born: May 29 1990 (holy shit what a pedo)
+		Location: Gaston, South Carolina
+		Job: Military Police for the US Army
+		Profiles: http://www.facebook.com/profile.php?id=566192708
+		
+	Xbox 'Hacking' Partner:
+		Handles: c1own
+		Name: Gareth Stanford
+		Location:
+			Waycross, Georgia
+			Atlanta, Georgia [Previous]		
+		Profiles: http://www.facebook.com/profile.php?id=100000063763927
+	
+Computer:
+	Handles: CaptainOfTheLulzBoat, Ashley, Ashley Poop, AP, Creamsicle, dfashley12
+	IP: 24.17.163.71
+	
+Profiles:
+	http://www.facebook.com/profile.php?id=100000607271225
+	--> http://www.facebook.com/CaptainOfTheLulzBoat
+	http://twitter.com/#!/LulzyGoddess
+	http://www.youtube.com/user/AshleyEpic
+	http://64.12.89.195/stream/dfashley12
+	http://www.gorgeousgamers.com/profile.php?user=Creamsicle
+	http://www.designbyhumans.com/humans/detail/87030
+	http://www.plumbingmart.ca/overcasthalo_net/member.php?u=21 ?
+	http://www.facepunch.com/members/142740-HU-Creamsicl
+	http://www.gorgeousgamers.com/forum_topic.php?forum_id=5&topic_id=2646&post_id=61106#post_61106
+	http://www.urbandictionary.com/define.php?term=Ashley%20Poots
+	http://pastebin.com/TFe3F0hk
+	http://www.se7ensins.com/forums/topic/55912-dashboard-help-pl0x/page__st__20
+	http://forums.ksiglobal.com/index.php/user/13441-shley/page__tab__awards
+	http://viza.proboards.com/index.cgi?action=viewprofile&user=ashley
+	http://crack0hack.wetpaint.com/account/CreamsicleMods
+	
+Sites:
+	http://fear-none.org <-- we have root on this as well
+	http://departmentofhomelandsecurity.tumblr.com
+	
+Notes:
+	Communal whore of #hackers / #antisec / #school
+	Knew jester before #antisec from xbox hacking & modding scene, twitter BFFs with Fox from #school
+	Brags about constantly carding shit on twitter & youtube ( http://www.youtube.com/watch?v=ncciEyxLmBE ) what a stupid bitch
+	Begs for someone to deface her highschool so she can take credit ( http://crack0hack.wetpaint.com/thread/3701914/Deface+this+site )
+	Resets XBOX live accounts and uses their CCs to buy purses, thinks this qualifies her as an "EPIC HACKER" ( in her own words )
+	"Leading Female in NetSec since... forever" ROFL
+
+----
+z3th
+----
+Dox:
+	Name: Alan Huynh
+	Born: February 21, 1989
+	Location: Socorro, New Mexico
+			  Albuquerque, New Mexico [Previous] 
+			  Orange County, California [Previous]
+	AIM: lythxl
+	
+Computer:
+	Handles: z3th, lyth, lythxl, r, Aeternity
+	
+Profiles:
+	http://forums.hackervoice.co.uk/index.php?showuser=2562
+	http://www.flickr.com/people/z3th/
+	http://www.last.fm/music/z3th
+	http://myanimelist.net/profile/z3th
+	http://answers.yahoo.com/activity?show=AA10601930
+	http://www.squaresound.com/forums/members/z3th.html
+	http://www.habbo.com/home/-z3th-
+	http://audiosurfthegame.com/mypage.php?u=z3th
+	http://soshified.com/forums/user/140448-z3th/
+	http://www.pbnation.com/member.php?s=1339cae19c7f5d9a39ad5210c7e01b14&u=428743
+	http://www.thenethernet.com/users/z3th
+	http://www.sythe.org/member.php?u=57692
+	http://www.pascal-id.org/memberlist.php?mode=viewprofile&u=571
+	http://blip.fm/listen/z3th
+	http://doujinstyle.com/forum/index.php?/user/25264-z3th/
+	http://forum.nihonomaru.com/members/z3th-639345.html
+	http://instaview.me/user/z3th/
+	http://z3th.deviantart.com/
+	
+Sites:
+	http://www.rainender.com
+	
+Notes:
+	Hangs out on #hackers and #programmers despite not knowing how to do either
+	Obsessed with anime and cosplaying
+	Locations confirmed by flickr, myanimelist, yahoo
+	Name confirmed by last.fm, flickr
+	
+-----
+Aha2Y
+-----
+Dox:
+	Name: Scott Aikin ?
+	Age: 17
+	Location: Netherlands
+	MSN: aha2y@hawkee.nl
+	
+Computer:
+
+Profiles:
+	http://twitter.com/#!/Aha2Y
+	http://musicvideoswiz.com/user/Aha2Y
+	http://www.lastfm.fr/user/Aha2Y
+	http://forum.animewolken.nl/showthread.php?t=70786
+	http://forum.rizon.net/member.php?32306-Aha2Y
+	http://forums.mirc.com/ubbthreads.php/ubb/showflat/Number/230839/page/2
+	
+Sites:
+	
+Notes:
+	Faggety #hacker member who likes Katy Perry & Bruno Mars
+	Also a member of #school
+	Has written many amazing hacking tools ( http://pastebay.com/137202 ) and IRC bots ( http://pastebin.com/xaLrgi7E )
+	
+---------
+El_Rigolo
+---------
+Dox:
+	Name: Antoine Renier
+	Location: Roubaix, France
+	Postal Code: 59053
+	Phone: +33.899701761
+	
+Profiles:
+	http://topsy.com/twitter/el_rigolo
+	http://www.mpgh.net/forum/members/112744-el_rigolo.html
+	http://forum.abysse-tech.com/member.php?416-El_Rigolo
+	http://complex-city.com/profile.php?id=108
+	http://www.worldofwarcrafthacks.org/member.php?u=60652
+	http://pastebin.com/U2DctJmy
+	http://steamcommunity.com/profiles/76561198042864526
+	
+Sites:
+	http://libertux.org
+	
+Notes:
+	French anti-secer with a spanish handle
+	Nationality confirmed from twitpic, multiple IRC logs and forum accounts
+	Dox confirmed by whois, various forum accounts
+	
+------
+Xeross
+------
+Dox:
+	Name: Justin Brunk
+	Born: December 2nd 1992
+	Location: Noord-Brabant, Netherlands
+	E-Mail: trutherton@wehaslinks.com
+	
+Computer:
+	IP: 94.210.96.100 (5ED26064.cm-7-3b.dynamic.ziggo.nl)
+	OS: Fedora
+	
+Profiles:
+	http://twitter.com/Xeross
+	http://twitpic.com/photos/Xeross
+	http://stackoverflow.com/users/327687/xeross
+	http://www.youtube.com/user/Xeross
+	http://steamcommunity.com/id/xeross155
+	
+Sites:
+	http://theelitist.net/
+	
+Notes:
+	Gay furry programmer (literally) that wears Guy Fawkes masks to parties
+	Still plays pokemon on gameboy
+	Writes WoW fanfiction ( http://theelitist.net/the-battle-for-undercity )
+	Dox confirmed by reddit, website
+	
+---------
+Shakhburz
+---------
+Dox:
+	Age: 16
+	Location: Swabia, Germany
+	
+Profiles:
+	http://twitter.com/#!/Shakhburz
+	http://photo.knuddels.de/photos-profile.html?id=shakhburz
+	http://www.whatis-theplan.org/u47255
+	http://www.whatis-theplan.org/t17082-kleine-aktion-im-raum-oberschwaben-bad-saulgau
+	http://forum.tabletop-hdr.de/memberlist.php?mode=viewprofile&u=6302
+	http://forum.ea.com/de/posts/listByUser/28492.page
+	http://forums.taleworlds.com/index.php?PHPSESSID=kct4k5h1dmc9do131p7emamu61&action=profile;u=156703
+
+Notes:
+	Likes to build clay castles to play with his tabletop toys ( http://forum.tabletop-hdr.de/viewtopic.php?f=2&t=22864 )
+	Antoher non-hacker of #hackers
+	
+---------
+KannabisX
+---------
+Dox:
+	Name: Ty Lovett
+	Location: Chambersburg, Pennsylvania
+	
+Computer:
+	Handles: Suga, kannabis, kannabisx
+	
+Profiles:
+	https://www.facebook.com/ty.lovett
+	http://www.youtube.com/user/KannibisX?feature=mhum
+	
+Sites:
+	http://a99guild.webs.com/
+	https://www.facebook.com/A99guild
+	
+Notes:
+	Runs a fucking gay anonymous "guild" for #antisec
+	Dox confirmed by facebook, youtube
+	
+------
+CB3ROB
+------
+Dox:
+	Name: Sven Olaf Kamphuis
+	Location: Berlin, Germany
+	Job: CB3ROB Cyberbunker
+	Gender: Male
+	
+	Sister:
+		Name: Jessica Kamphuis
+		Location: Wieringerwerf, Germany
+		Education: Roc Den Helder
+		Profiles:
+			https://www.facebook.com/profile.php?id=1276184430
+	
+Profiles:
+	https://www.facebook.com/cb3rob
+	
+Sites:
+	http://www.cb3rob.net/
+	
+Notes:
+	Frequent contributor of #antisec and idles in the channel 24/7
+	Works for Rebuplic CyberBunker which hosts ThePirateBay
+	'Likes' 4chan, Julian Assange, Piratebay and the Pirate Party
+	Dox confirmed by website whois and facebook
+	
+-------
+dettman
+-------
+Dox:
+	Name: Jonathan Dettman
+	Location: Davis, California
+	Job: Student at University of California
+	Email: dettman@gmail.com
+	Phone: (347) 338-8626
+	
+Computer:
+	Handles: dettman
+	
+Profiles:
+	https://twitter.com/#!/dettman
+	
+Notes:
+	Procured nude pics of the BART employee who suggested jamming cellphones during protests for #opBART
+	Thinks that posting dick pics of people qualifies as "imperialist revolution"
+	Hipster liberal douche: "My dissertation is on post-Soviet Cuban novels"
+	Dox 100% confirmed but for security reasons we cannot reveal source
+	
+-----
+k4n0n
+-----
+Dox:
+	First Name: Wesley
+	Location: El Salvador
+			  Lima, Peru [Previous]
+	Born: March 9, 1985
+	E-Mail: gmk4n0n@gmail.com
+	XBL: k4n0n
+	
+Computer:
+
+Profiles:
+	http://twitter.com/#!/k4n0n
+	http://myanimelist.net/profile/k4n0n
+	http://www.myspace.com/1000782086
+	https://www.playfire.com/k4n0n/buddies
+	https://flattr.com/profile/k4n0n
+	http://villavu.com/forum/member.php?u=2265
+	http://es-pe.hi5.com/friend/p106489429--K4N0N--html
+	http://www.flixya.com/user/k4n0n
+	http://www.peekyou.com/username=k4n0n
+	
+Sites:
+	http://www.angelfire.com/weird2/k4n0nbootproject/bootproject1.htm
+	
+Notes:
+	Involved with various spanish speaking ops
+	
+-------
+iViking
+-------
+Dox:
+	First Name: Wesley
+	Phone: +1.801796167
+	
+Computer:
+
+Profiles:
+	http://twitter.com/#!/k4n0n
+	http://myanimelist.net/profile/k4n0n
+	http://www.myspace.com/1000782086
+	https://www.playfire.com/k4n0n/buddies
+	https://flattr.com/profile/k4n0n
+	http://villavu.com/forum/member.php?u=2265
+	http://es-pe.hi5.com/friend/p106489429--K4N0N--html
+	http://www.flixya.com/user/k4n0n
+	http://www.peekyou.com/username=k4n0n
+	
+Sites:
+	http://www.iViking.org
+	
+Notes:
+	Gay antisecer 
+	
+-----------
+CharrieWong
+-----------
+Dox:
+	Name: Charlie Floate
+	Gender: Male
+	Race: White
+	Location: Birmingham, UK
+	Born: 1996
+	Phone:	•••••••••57
+			0156-420-0532 ?
+	E-Mail: charliefloate@gmail.com , sc2ish@gmail.com, s•••@live.co.uk
+	Skype: gadgy-tronix, sc2ish
+	Education: St.Georges Church of England School
+	
+	Father:
+		Name: Philip Floate
+		Job: Asset Management at Grontmij
+		Education: Imperial College London 
+		Profiles:
+			http://uk.linkedin.com/pub/philip-floate/11/723/9b5
+			
+	Mother:
+		Name: Janet Floate
+		Location: Isle of Mann, UK
+		Education: Sheffield Hallam University
+		Profiles:
+			http://uk.linkedin.com/pub/janet-floate/23/817/432
+	
+Computer:
+	Handles: Charrie Wong, Charlinator, Charliehax, Charlie, sc2ish, gadgy-tronix
+	
+Profiles:
+	https://www.facebook.com/profile.php?id=100000557572424
+	http://de.xfire.com/profile/charlinator/
+	http://twitter.com/#!/TehWongZ
+	http://www.justin.tv/charriewong
+	http://tinychat.com/charriewongf
+	http://uk.linkedin.com/in/charliefloate
+	http://friendfeed.com/charliefloate
+	http://lifestream.aol.com/stream/sc2ish@gmail.com
+	http://twitter.com/#!/SC2ish
+	http://www.youtube.com/SC2ish#p/u
+	http://www.youtube.com/TheW0ngZ
+	http://www.myspace.com/472421567/photos#
+	http://www.coroflot.com/public/individual_details.asp?job_seeker_id=282882&t=&country=216&specialty=6&experience_range=3&&page_no=&c=1
+	https://profiles.google.com/113364312251132409816/buzz
+	http://www.lulu.com/browse/search.php?fSearchData[author]=charlie+floate+%28The+Random+Projects+Team&fSearchData[lang_code]=all&fSort=salesRankEver_asc&showingSubPanels=advancedSearchPanel_title_creator
+	http://www.battlefieldheroes.com/en/groups/68675
+	http://www.battlefieldheroes.com/en/heroes/215630746
+	http://www.gosugamers.net/wow/members/sc2ish
+	http://www.ukbusinessforums.co.uk/forums/showthread.php?t=127487
+	
+Sites:
+	http://www.dawongz.blogspot.com/
+	http://stores.lulu.com/TheRandomProjectsTeam
+	
+Quotes:
+	''''''''''''''''''''''''''''''''''''
+	Don't fuck with Da WongZ Bitches...'
+	''''''''''''''''''''''''''''''''''''
+	You will see what happens when we come,
+	Don't piss us off because there won't be much of you left once we're done,
+	You can cry and scream all the motherfucking night,
+	But we will still be there and you can't clip our wing's we're in a constant flight,
+	Snitches get Stitches,
+	and hoes get slapped,
+	Be careful out there... You could get swatted at any moment.
+	
+Notes:
+	#antisec's doxer and (literal) script kiddie
+	Leader of "TehWongz" hacking crew
+	Claims to have doxed hackforums.net owner among others
+	Frequently releases random names and doesn't say who they are supposed to be associated with
+	Originally from HackForums.net
+	Has asked at least 5 other groups to "team up" with him on twitter
+	Location, Race & Gender confirmed from twitter
+	Dox confirmed by xfire account, hackforums account, and youtube videos showing his own info
+	Handle confirmed by youtube
+	Age confirmed by #antisec
+	E-mail confirmed by aol lifestream
+	Education confirmed by myspace
+	
+----------------
+Colby the Genius
+----------------
+Dox:
+	Name: Colby Serpa
+	Gender: Male
+	Born: 3rd December 1997
+	Location: Fresno, California
+	Education: Clovis North Granite Ridge
+	E-Mail: colby3316@gmail.com
+	AIM: mod4lyfex
+	
+Computer:
+	Handles: colby, colby3316
+	
+Profiles:
+	http://www.facebook.com/Colby0Serpa
+	http://www.youtube.com/user/Colby3316
+	http://twitter.com/#!/Colby3316
+	http://www.video4asian.com/video?u=Colby3316
+	http://www.blogtv.com/people/Colby3316
+	http://www.minecraftforum.net/user/337075-colby3316/
+	http://www.thetechgame.com/Colby3316
+	http://www.belchfire.net/index.php?s=43e8c353909c51717df8477d3ccff0d2&showuser=357404
+	http://www.xboxmb.com/members/colby3316/
+	http://www.viruzmafia.info/member.php?action=profile&uid=65
+	http://www.senstic.com/forum.aspx?g=profile&u=3336
+	
+Sites:
+	http://www.dawongz.blogspot.com/
+	
+Notes:
+	CharrieWong's underage gay life partner and doxer
+	Basically does all the same stupid shit as Charlie
+	Former admin of hackforums.net
+	Dox confirmed by photobucket and facebook profile picture (so much for opsec)
+	
+--------
+Lulzamac
+--------
+Dox:
+	Name: Lester
+	Gender: Male
+	Location: Winnipeg, Maintoba, Canada
+	E-Mail: sgt.kibbles@hotmail.com
+			Yobbler@hotmail.com
+			killer-ddoogg007@hotmail.com
+	MSN: killer-ddoogg007@hotmail.com
+	
+Computer:
+	Handles: LulzaMac, Mr Props, SgtKibbles, yobblergmodcake, yobbler, sonny, funnybox, mingebag, Kiro, arma2broadcast
+	Password: cakeisalie
+
+Profiles:
+	https://www.facebook.com/thesgt?sk=wall
+	https://www.facebook.com/home.php?sk=group_154980844566892&ref=ts
+	https://www.facebook.com/pages/Mr-Props-Youtube-Channel/218031441547777
+	http://steamcommunity.com/id/Mr_Props
+	http://www.livestream.com/yobblergmodcake
+	http://www.youtube.com/user/yobblergmodcake
+	http://steamcommunity.com/groups/YobblerGmodCake 
+	http://steamcommunity.com/id/YobblerGmodCake 
+	http://randomvideogamevideos.webs.com/apps/profile/51164675/
+	http://www.livestream.com/arma2broadcast
+	http://www.wegame.com/users/YobblerGmodCake/
+	
+Sites:
+	http://randomvideogamevideos.webs.com/index.htm
+	http://propkill.com/
+
+Notes:
+	Another "TehWongz" emo script kiddie
+	Has 25+ videos of him griefing kids in gmod and claims to be a propkiller (whatever the fuck that is)
+	SQL injected some shitty managed shared hosting sites and thinks he is 31337
+	Location confirmed from steam profiles
+	First name & location confirmed from randomvideogamevideos.com profile
+	
+################################################################################
+# 2) LULZSEC                                                                   #
+################################################################################
+# Now Playing: http://www.youtube.com/watch?v=SP2MeG95-Ko #
+###########################################################
+
+A short resume of Lulzsec:
+-PBS hack given to them by abraxas
+-Senate.gov hack given to them by mindwar
+-Infragard hack given to them by Scott Arciszewski
+-thesun.co.uk hack given to them by palladium
+
+Although Lulzsec outwardly appear to be trying to continue the fight, internally they are fractured and scared. 
+Or more accurately, what is left of Lulzsec.
+Since the A-Team released their utter rape of Lulzsec most of gn0sis remains in hiding (Br1cksqu4d watched your reactions on facebook afterwards to it and they were quite hilarious).
+While dipshit journalists blathered about the "planned retirement", shiny black vans descended on Guy Fakwes mask wearing virgins across the country.
+Ryan was raided. Tflow was raided. Topiary was raided.
+Reading Sabu's twitter feed was like watching Joseph Goebells talking to himself. 
+Kayla continued to tweet, however 'she' very rarely joined AnonOps or private silc servers anymore.
+Sabu did however manage to re-fill his rank of skid minions, mostly through his bot-inflated twitter account and via AnonOps skids.
+Old Lulzsec affilites from the #hq logs (marduk, glomeX) were promoted back into the fold out of desperation. 
+AnonOps administrators (jaychow, elChe) also joined.
+Shortly after we had a little talk with Sabu he shut down his twitter account. 
+Then the two dudes pretending to be Kayla got raided followed by recursion (the real Kayla has in fact not yet been raided).
+We were going to keep this release buried until Sabu decided to rear his ugly Puerto Rican head again.
+Unfortunately we had to release this posthumously, but we thought the world would enjoy it anyways.
+
+Let me make this clear to any of you reading your nicks here:
+
+You are a disservice to the hacking world, you are bringing heat onto the scene in an attempt to boost your ego.
+Despite 1.. 2.. 3.. 4... now _5_ penetrations of your priv8 chat channels little security has been added internally.
+You wanted attention, so we gave it to you. What? You didn't think we saw you at defcon Sabu?
+
+Shortly after trolling Sabu on reddit with his SILC key and his crew's home IPs he got mad and tried to downplay what happened. 
+~WHICH OF THE FOLLOWING IS BULLSHIT~
+He tried to claim:
+[ ] a)He had "12 different silc servers"
+[ ] b)No one's personal security was compromised
+[ ] c)We logged for too short
+[ ] d)We are whitehats/snitches/prosec
+[ ] e)He is not a media whore
+[x] f)All of the above
+
+~ANSWERS~
+a) 
+Nigger please, you're entire team was barely able to setup a single server. 
+We also have logs of your entire team talking about how this was the first one they'd used, and testing out what nick changes could be done 'only on SILC'.
+Your own server admin (jayChow) who ran 125.5.113.179 (the SILC server) was bitching about how long it took to setup, and he STILL couldn't even figure out how to mask hostnames.
+
+b) 
+WE HAVE YOUR HOME IPS. WE HAVE YOUR BOUNCES. WE HAVE YOUR WORK ADDRESSES. WE HAVE YOUR DOX.
+
+c) 
+When we first confronted you said we could have only logged "for 4 days", then "1 week at most" and now "a week or two" according to your reddit:
+You tried to claim we used rum's credentials, spoofed our hostname, and a bunch of other stupid bullshit that never happened. 
+You have no fucking idea what happened, how long we had access and what we did or didn't get.
+We'll let you think about that.
+The logs here represent only a small fraction of what we had, the last few days of logging after we had our logbot setup in your channel forwarding back to our channel to LOL at.
+Unfortunately one of our members rmed the majority of them after a little drug-induced law-enforcement paranoia which turned out to be an overreaction (no, we didnt get raided).
+If you lulzsec faggots don't believe us compare your logs to ours, this is WELL after we had initially joined the channel, although I'm sure Sabu will claim otherwise anyways.
+Anyways, we still have ~3000 lines for you to laugh at.
+
+d)
+During our initial talk with him, Sabu tried to claim multiple times he had hacked the FBI and had emails of us talking about how we were snitching on him.
+He letter apologized to us on twitter ( http://twitter.com/#!/anonymouSabu/status/122536887008235521 ), but now he seems to have change his mind again and says we are snitches.
+We are not white/back/greyhats, we hate all faggots equally.
+We are not part of any crew, we are not faggoty ass 'patriot' hackers and and we don't follow any political beliefs.
+We are simply doing it because we honestly enjoy laughing at your failure and dislike faggoty ass media whores.
+
+e)
+Your crew THAT YOU RAN had two people whose ONLY jobs was to do PR for you.
+You've consistently kept close ties with Barrett Brown and others just so they could do PR for you and spread your links.
+You frequently tweet journalists to get stories done and famous musicians to try and spread your political agenda.
+You did an AMA on reddit to accept open questions from anybody so you could generate lots of media articles based on that information.
+Your life revolves around retweeting people who support you, and talking shit to those who don't.
+You directed and encouraged both your old and new crew to give interviews and talk with media figures to 'maximize damage'.
+You are a media whore and as long as you don't accept this no real hacker will respect you.
+
+######################
+# LULZTACULAR QUOTES #
+######################
+
+/* --------------------------------------- */
+/* Nope, script kiddies like you do it too */
+/* --------------------------------------- */
+< Sabu> because only whitehats will downplay a group of people who are capable of surpassing their security capabilities
+
+/* --------------------------------------------- */
+/* Marduk: there's trouble in ur priv8 paradise! */
+/* --------------------------------------------- */
+(9:30:14 PM) af0zol@jabber.org/el8: nice finally :)
+(9:30:30 PM) af0zol@jabber.org/el8: so
+(9:30:35 PM) af0zol@jabber.org/el8: who are those other guys
+(9:30:38 PM) af0zol@jabber.org/el8: on intel??
+(9:30:45 PM) clm: our crew?
+(9:31:58 PM) af0zol@jabber.org/el8: yeah some names i dont recognize maybe im just being retarded or something?
+(9:32:18 PM) clm: They are all fully trusted otherwise they wouldnt be there
+(9:32:27 PM) clm: with some wo only communicated 1-to-1 before
+[...]
+(6:42:45 AM) clm: no host masking
+(6:42:50 AM) clm: but it's only the most trusted people <---- LOLOLOL
+(6:43:02 AM) clm: but you may wanna use tor/vpn whatever
+(6:43:20 AM) af0zol@jabber.org/el8: ok cool
+(6:43:28 AM) af0zol@jabber.org/el8: i think im gonna be stickin off anonops for a while
+(6:43:36 AM) af0zol@jabber.org/el8: whos server is that?
+(6:43:46 AM) clm: jaychow. chinese anonops admin
+(6:43:48 AM) af0zol@jabber.org/el8: bulletproof somewhere i hope
+(6:43:53 AM) clm: server is on the philippines
+(6:43:59 AM) clm: its very priv8 <--- LOLOLOL NOT ANYMORE
+
+/* ------------------------------- */
+/* Real hackers don't respect Sabu */
+/* ------------------------------- */
+< Sabu> esc, those crazy germans in #pwnedpwnies are really good
+< Sabu> they're doing some .gov research etc
+< Sabu> dv0's with them
+< Sabu> but they're paranoid faggots. keep kicking me. I don't know if they realize who I am or how bad I'll own them :X
+
+/* --------------------------- */
+/* Special olympics dream team */
+/* --------------------------- */
+< Sabu> this is a dream team right here. the feds will cum on themselves if they saw this squad
+
+/* ------------------------ */
+/* Sabu's amazing OTR opsec */
+/* ------------------------ */
+(3:35:55 AM) af0zol@jabber.org/el8: hello? your showin up as not authorized in my contacts list
+(1:38:42 AM) leondavidson@jabber.org: q and a: cocks
+
+/* -------------------------------------------------------------------------------------- */
+/* We're Still waiting on you to tweet our dox and uname 'in 5 minutes' like you promised */
+/* -------------------------------------------------------------------------------------- */
+(10:23:25 AM) leondavidson@jabber.org: I got your fucking email
+(10:23:25 AM) af0zol@jabber.org/el8: second
+(10:23:29 AM) af0zol@jabber.org/el8: oh yeah?
+(10:23:30 AM) af0zol@jabber.org/el8: what is it
+(10:23:33 AM) af0zol@jabber.org/el8: whats my identity?
+(10:23:42 AM) leondavidson@jabber.org: I'll tweet it in a few
+[...]
+(10:41:57 AM) af0zol@jabber.org/el8: tweet my emails and uname then
+(10:42:05 AM) af0zol@jabber.org/el8: or tell me my dox?
+(10:42:34 AM) leondavidson@jabber.org: don't worry mate wait for the tweets
+(10:42:39 AM) leondavidson@jabber.org: its goign to fucking blow your mind
+(10:42:39 AM) af0zol@jabber.org/el8: i am
+(10:42:41 AM) af0zol@jabber.org/el8: please
+[...]
+(10:42:07 AM) leondavidson@jabber.org: how does it feel to get fucking owned in 5 minutes?
+(10:42:10 AM) af0zol@jabber.org/el8: own me
+(10:42:10 AM) leondavidson@jabber.org: that shit is funny
+(10:42:14 AM) af0zol@jabber.org/el8: own me then
+(10:42:19 AM) af0zol@jabber.org/el8: show me my a uname
+(10:42:20 AM) leondavidson@jabber.org: hit me up on efnet
+(10:42:23 AM) af0zol@jabber.org/el8: show me my uname
+(10:42:25 AM) af0zol@jabber.org/el8: show me my dox
+(10:42:26 AM) af0zol@jabber.org/el8: my emails
+[...]
+(10:52:28 AM) leondavidson@jabber.org: listen
+(10:52:30 AM) leondavidson@jabber.org: you fucking lamer
+(10:52:31 AM) af0zol@jabber.org/el8: ROFL
+(10:52:33 AM) af0zol@jabber.org/el8: STILL WAITING
+(10:52:34 AM) leondavidson@jabber.org: you dont represent shit
+(10:52:38 AM) af0zol@jabber.org/el8: I THOUGHT U OWNED ME MANG
+(10:52:39 AM) leondavidson@jabber.org: keep it in your mind
+(10:52:42 AM) leondavidson@jabber.org: how fucking lame you are
+(10:52:42 AM) af0zol@jabber.org/el8: COME ON ESSE
+(10:52:44 AM) af0zol@jabber.org/el8: WHERE ARE MY EMAILZ
+(10:52:45 AM) af0zol@jabber.org/el8: WHERE IS MY UNAME
+(10:52:46 AM) leondavidson@jabber.org: nigga I did own you
+(10:52:48 AM) af0zol@jabber.org/el8: WHERE ARE THE TWEETS WITH MY SHIT IN IT
+(10:52:51 AM) af0zol@jabber.org/el8: THEN SHOW IT TO ME
+(10:52:53 AM) af0zol@jabber.org/el8: SHOW IT TO ME
+(10:52:54 AM) af0zol@jabber.org/el8: SHOW IT TO ME
+(10:52:56 AM) af0zol@jabber.org/el8: IM BEGGING YOU
+(10:53:02 AM) af0zol@jabber.org/el8: OH MASTER HACKER I THOUGHT U HAD SO MUCH SKILLZ
+(10:53:03 AM) leondavidson@jabber.org: when I tweet that shit I wanna see the damage control
+(10:53:04 AM) leondavidson@jabber.org: you fucking snitch
+(10:53:08 AM) af0zol@jabber.org/el8: tweet it
+(10:53:12 AM) leondavidson@jabber.org: I will
+(10:53:12 AM) af0zol@jabber.org/el8: u said it would be in afew minutes
+(10:53:15 AM) af0zol@jabber.org/el8: its been more than a few
+(10:53:16 AM) af0zol@jabber.org/el8: do it now
+(10:53:18 AM) af0zol@jabber.org/el8: what are you waiting on
+(10:53:25 AM) af0zol@jabber.org/el8: we both know youre not going to tweet shit
+(10:53:26 AM) leondavidson@jabber.org: I'll tweet that shit at my convenience
+[...]
+(10:53:39 AM) leondavidson@jabber.org: You got owned
+(10:53:42 AM) leondavidson@jabber.org: big time son
+(10:53:43 AM) af0zol@jabber.org/el8: i got owned?
+(10:53:45 AM) leondavidson@jabber.org: and when I tweet that email
+(10:53:47 AM) leondavidson@jabber.org: you're over with
+(10:53:48 AM) af0zol@jabber.org/el8: MAN IM SO SCARED
+(10:53:49 AM) af0zol@jabber.org/el8: HOLD ME SABU
+(10:53:59 AM) leondavidson@jabber.org: I'm going to personally print your dox out and throw that shit from tall buildings
+[...]
+(10:55:33 AM) af0zol@jabber.org/el8: im still waiting
+(10:55:33 AM) leondavidson@jabber.org: yeah pussy
+(10:55:35 AM) af0zol@jabber.org/el8: for my uname
+(10:55:35 AM) leondavidson@jabber.org: run along
+(10:55:36 AM) af0zol@jabber.org/el8: and my dox
+(10:55:37 AM) leondavidson@jabber.org: you got your shit roced
+(10:55:37 AM) af0zol@jabber.org/el8: and my emails
+(10:55:39 AM) af0zol@jabber.org/el8: post them
+(10:55:40 AM) af0zol@jabber.org/el8: POST IT PLEASE
+[...]
+(10:55:48 AM) af0zol@jabber.org/el8: post it in the next five minutes
+(10:55:48 AM) leondavidson@jabber.org: I will
+
+/* --------------------- */
+/* Sabu about to cry :'( */
+/* --------------------- */
+(1:45:20 AM) af0zol@jabber.org/el8: ANTISEC IS NOT PROJECT MAYHEM
+(1:45:21 AM) leondavidson@jabber.org: Fuck your words lamer
+(1:45:24 AM) leondavidson@jabber.org: your words dont mean shit
+(1:45:24 AM) af0zol@jabber.org/el8: you are the fucking opposite of project mayhem
+(1:45:30 AM) leondavidson@jabber.org: Thats funny
+(1:45:32 AM) af0zol@jabber.org/el8: ok sabu dont worry
+(1:45:42 AM) leondavidson@jabber.org: considering we cause more mayhem in one day than the project ever did
+
+------
+Sabu
+------
+Dox:
+	Gender: Male
+	Race: Puerto Rican
+	Location: Bronx, New York
+	Jabber: leondavidson@jabber.org
+	
+Computer:
+	Handles: Sabu, leon, Leon,
+	SILC Key:
+		18:43 -!- Client sabu (No Name sabu@nl01ubu.com)
+		18:43 -!- Fingerprint and babbleprint for the client key are 
+		18:43 -!-  401C 5703 0023 FAA1 356B  9871 5F67 3AEA A5D7 FC0C
+		18:43 -!-  xibac-sihyb-fybud-fovip-cotek-rokul-celuk-lavov-panut-lezab-sixyx
+		18:43 -!- Verified successfully user sabu's (No Name sabu@nl01ubu.com) cached public key
+	IRC/SILC Client: irssi v0.8.15
+		
+Profiles:
+	http://twitter.com/#!/anonymousabu
+	
+Notes:
+	Race confirmed by statements made in previous defacements (before anonymous) claiming he is puerto rican
+	We have a lot more suspected dox but didnt feel it would be responsible until it was 100% confirmed
+
+-----
+elChe
+-----
+Computer:
+	IP: elChe [elChe@wserv111.woodcrane.com]
+		elChe [elChe@vhost129.dominopiece.com] 
+	SILC Key:
+		18:42 -!- Client elChe (k0mp k0mp@spunk)
+		18:42 -!- Fingerprint and babbleprint for the client key are 
+		18:42 -!-  1511 8147 AF34 A156 C169  396B 3008 6F3C 9888 D493
+		18:42 -!-  xehec-cobyg-loraf-gameh-kabik-nevyk-resob-miruf-sukem-mehin-fexox
+		18:43 -!- Verified successfully user elChe's (k0mp k0mp@spunk) cached public key
+
+-------
+jaychow
+-------
+Computer:
+	SILC Key:
+	18:43 -!- Client jaychow (No Name jaychow@ubuntu-07012011.solidhosting.ph)
+	18:43 -!- Fingerprint and babbleprint for the client key are 
+	18:43 -!-  37A8 B2E5 8438 8FF4 C9DC  411A CE72 AD3C 5160 EAF0
+	18:43 -!-  xetop-misyv-hecif-myfaz-godut-sibyc-pofel-durof-sugik-bopaz-baxox
+	18:43 -!- Verified successfully user jaychow's (No Name jaychow@ubuntu-07012011.solidhosting.ph) cached public key
+
+Notes:
+	Owns and operates the secret phillipenean SILCd where they chatted on
+	
+-------
+abraxas
+-------
+Dox: 
+	Name: Brandon Mckenzie
+	Location: 205 Pines St, Savannah, GA
+	Postal Code : 31408
+	Phone : 9123132599
+ 
+Computer:
+	Handles: abhaxas, abraxas, movl, syk, alex, _alex
+	IP: movl [kev@host354388.mpdedicated.com]
+		movl [movl@host354388.mpdedicated.com]
+		movl [movl@184-22-219-142.static.hostnoc.net]
+		
+	SILC Key:
+		21:02 -!- Client ouch (No Name ouch@anniesherman0-p23)
+		21:02 -!- Fingerprint and babbleprint for the client key are 
+		21:02 -!-  185C 913A 721B AF69 BF73  D6F4 A344 F5D2 A1E6 3B47
+		21:02 -!-  xekah-sogof-pysyc-rerik-nezel-fuhuz-gomug-gytut-dymiv-kuvig-laxex
+		21:02 -!- Verified successfully user ouch's (No Name ouch@anniesherman0-p23) cached public key
+
+Sites:
+	evilnet.org
+	
+Notes:
+	Lies about being in el8 to impress lulzsec
+	
+-------
+LulzRum
+-------
+Computer:
+	Handles: LulzRum, rum
+	SILC Key:
+		18:43 -!- Client LulzRum (root root@elite.tigersecurity.it)
+		18:43 -!- Fingerprint and babbleprint for the client key are 
+		18:43 -!-  BE19 EA23 E3A6 7C5A C485  6A72 D089 3CB4 6E02 835E
+		18:43 -!-  xozic-nepad-fumyp-kozoh-pycim-hupal-dugom-nizyr-gyrib-diboh-voxax
+		18:43 -!- Verified successfully user LulzRum's (root root@elite.tigersecurity.it) cached public key
+	
+-----
+shift
+-----
+Computer:
+	SILC Key:
+		02:20 -!- Client shift (at0m at0m@mythtv)
+		02:20 -!- Fingerprint and babbleprint for the client key are 
+		02:20 -!-  9147 FC02 CBA8 3406 75B5  E96C DDD3 733C D1B9 A5DE
+		02:20 -!-  xogeg-lizeb-dadap-mitab-kotur-hypuk-salet-fusuf-segir-ninit-voxax
+		02:20 -!- Verified successfully user shift's (at0m at0m@mythtv) cached public key
+		
+------
+glomeX
+------
+Dox:
+	Location: Australia
+	Gender: Male
+	Jabber: glx1@jabber.ccc.de
+	
+Computer:
+	IP: glomex@147.153.202.84.customer.cdi.no [August 2nd 2011]
+		glomex@vps18345.ovh.net [August 3rd 2011]
+
+Notes:
+	Former anonops operator
+	Operator of #antisec
+	Location confirmed from jabber
+	
+---
+POW
+---
+Dox:
+	
+Computer:
+	Handles: POW, ouch
+	IP: ouch [ouch@184-22-219-141.static.hostnoc.net]
+	SILC Key:
+		21:02 -!- Client ouch (No Name ouch@anniesherman0-p23)
+		21:02 -!- Fingerprint and babbleprint for the client key are 
+		21:02 -!-  185C 913A 721B AF69 BF73  D6F4 A344 F5D2 A1E6 3B47
+		21:02 -!-  xekah-sogof-pysyc-rerik-nezel-fuhuz-gomug-gytut-dymiv-kuvig-laxex
+		21:02 -!- Verified successfully user ouch's (No Name ouch@anniesherman0-p23) cached public key
+	
+-----
+kayla
+-----
+Computer:
+	Handles: kayla, pop 
+	IP: pop [pop@184-22-219-141.static.hostnoc.net] [August 3rd 2011]
+	
+	
+################################################################################
+# 3) #SCHOOL4LULZ                                                              #
+################################################################################
+# Now Playing: http://www.youtube.com/watch?v=YVrTpKcqpBM #
+###########################################################	
+
+The "Blackhat Academy" (as they like to call themselves now) is probably the single lamest group of anti-secers on the earth.
+It consists of anonops rejects, known snitches, minor lulzsec members and posers who lie about being in el8 (hatter) to impress people.
+This group of frauds is run by a fat, pale & sweaty IT admin who goes by the name Fox.
+He tries to claim he is the millionaire head of a global pentesting company to anyone who will listen (we're not joking) but in reality he is a script kid who used to go by the name [g00n]ri0t (before g00ns got rmed by zf0), and who got into g00ns on account of begging from his e-gf Angyl.
+Doxbin.com beat us to dropping all of Fox's shit however so we didn't think we'd include it in here.
+For similar reasons other 'teachers' (Laurelai garrett, etc) who have been repeatedly owned or doxed by other groups we chose not to include.
+But despite this, and despite the rest of the team having no real knowledge or skills of any kind they go around the internet parading themselves as 'computer security experts'.
+They then have the audacity to charge ridiculous rates on their private classes which is just an even shittier +i channel called #academy 
+
+Take a look at some their impressive curriculum:
+################################################
+	- Linux from the ground up
+		- Gentoo Installation
+        - Bash : simple usage
+        - Bash : Loops vs. Stream Editing
+		
+Act now for this limited time offer of only 20 BTC to learn how to google "how to install gentoo" !
+
+Thankfully they also offer public classes which include:
+########################################################
+	- Fox's guide to laying the pipe ( http://pastebin.com/nBHrnZYZ )
+	- Fox's guide to dressing with style
+	- How to use NMAP 
+	- How to use IP tables
+	- Social engineering
+	- Social engineering
+	- Staying anonymous on the internet
+
+Note they have two guides on social engineering as they are obviously masters of socialing and staying secure on the web.
+
+Seriously though, we also grabbed all of their INCREDIBLY TERRIBLE priv8 #academy guides theyre charging retards bitcoins for, and we decided to drop that as well
+You can grab them in the "school priv8" foldar.
+
+BTW  We didnt pay a dime for your shit classes, maybe you should figure that one out you fucking dumb skids
+
+######################
+# LULZTACULAR QUOTES #
+######################
+/* ---------------------------------------------------- */
+/* 'Blackhat Academy' is run by greedy whitehat retards */
+/* ---------------------------------------------------- */
+(7:55:56 AM) hatter: I figure afterwards
+(7:56:02 AM) hatter: we can compile everything into a giant ebook
+(7:56:55 AM) hatter: we can probably do the same next semester
+(7:57:03 AM) hatter: Have had requests for additional class modules
+(7:57:07 AM) Sav: yup
+(7:57:10 AM) hatter: like cryptography
+(7:57:10 AM) Sav: one big ebook
+(7:57:15 AM) Sav: put it on some online printer
+(7:57:16 AM) hatter: etc
+(7:57:18 AM) hatter: ^
+(7:57:25 AM) Sav: and sell it for $35
+(7:57:40 AM) hatter: meh
+(7:57:42 AM) hatter: we should charge more
+(7:57:45 AM) hatter: if they weren't in class
+(7:57:46 AM) hatter: haha
+(7:57:50 AM) hatter: $50
+(7:57:52 AM) hatter: <3
+(7:58:00 AM) Sav: well, you can't copy a paperback version that easily
+(7:58:06 AM) garrett: welp
+(7:58:09 AM) hatter: True.
+(7:58:09 AM) garrett: i accidentally the kief
+(7:58:13 AM) Sav: and $35 is fair
+
+/* -------------------------------------------- */
+/* Topiary: professional media whore AND snitch */
+/* -------------------------------------------- */
+(1:30:45 PM) Shrew: Topiary: I don't care for whatever drama is caused, all I know is I'm going to have that paste taken down and the IP it was uploaded from railed into the ground
+(1:30:46 PM) Shrew: Topiary: so we better hope it was a VPN
+(1:30:46 PM) Shrew: Shrew: It was
+(1:30:46 PM) Shrew: Shrew: don't worry.
+(1:30:46 PM) Shrew: Topiary: then we better hope it was a VPN that won't cut off the person using it and have Feds at their doors for downing the entire datacenter its hosted on
+(1:30:54 PM) Shrew: he is snitching on me for #OpGentrification
+(1:34:29 PM) hobbyte: Shrew: he's bluffin
+[..]
+(1:45:22 PM) hobbyte: doubt that he can.
+(1:45:33 PM) hobbyte: his botnet is going to get routed out if he tries.
+(1:45:38 PM) hobbyte: vpn providers tend to have some bandwidth.
+(1:45:52 PM) hobbyte: topiary = little skill
+
+/* --------------------------------------------------------- */
+/* Other anons think are also fed up with your faggotry Sabu */
+/* --------------------------------------------------------- */
+(7:32:42 PM) McGarnigle: I remember back in the day when hacktivism was making software so people in opressed countries could communicate freely/encrypted/safely
+(7:33:24 PM) McGarnigle: Now we have faggots saying they do it for the lulz, but then in fucking interviews say shit like 
+(7:33:28 PM) McGarnigle: I'm a man who believes in human rights and exposing abuse and corruption. I generally care about people and their situations. I'm into politics and I try my best to stay on top of current events.
+(7:33:35 PM) McGarnigle: OY VEY
+(7:34:12 PM) hatter: ^
+(7:34:30 PM) McGarnigle: Whitehats say APT! Lulzsec! and move a fuckton of software and services
+(7:34:39 PM) McGarnigle: getting rich like motherfuckers
+(7:34:40 PM) nachash: At least he's not doing that + beekeeping like the anonops guys
+(7:35:06 PM) Pstrix: hatter: did my pm go thru?
+(7:35:25 PM) nachash: Am I the only one who thought that lulzsec was playing with fire once they started talking about antisec and dropping group names in greetz?
+(7:36:53 PM) McGarnigle: nachash: what groups were they greeting?
+(7:37:07 PM) nachash: ~el8, zfo, and a few others.
+(7:37:31 PM) nachash: It was in that pastebin rls in which they announced operation antisec
+(7:37:42 PM) nachash: After that, it seemed like the number of people after them tripled.
+
+/* -------------------------------- */
+/* Even the students know the truth */
+/* -------------------------------- */
+(8:11:47 PM) anon9819823: CygnusX: Honestly, this IRC is more of a skiddie flood than a place to organize.
+(8:11:56 PM) CygnusX: I simply came here because I thought it was "school" for anons
+(8:12:07 PM) mib_ba9u5n left the room (quit: Quit: http://www.mibbit.com ajax IRC Client).
+(8:12:08 PM) redrock: it's a school
+(8:12:08 PM) Zekiel_: aww
+(8:12:08 PM) Zekiel_: ya
+(8:12:08 PM) redrock: what do you want to know
+(8:12:09 PM) fingerfuck: its a school for how to remain a virgin
+(8:12:19 PM) fingerfuck: and pretend you know how to hack
+
+/* ---------------------- */
+/* Wheres my money bitch? */
+/* ---------------------- */
+(6:52:51 PM) Fox: and qwintuplets 
+(6:52:54 PM) Fox: I'll tell you what
+(6:52:57 PM) qwintuplets: nigr i aint seen no /nick how am i supposed to know
+(6:53:04 PM) Fox: if you can out-fox all are staff
+(6:53:07 PM) Fox: oh man
+(6:53:09 PM) qwintuplets: ?
+(6:53:13 PM) Fox: *our
+(6:53:25 PM) Fox: I will pay you a grand, out of my own pocket.
+[..]
+(7:01:07 PM) Fox: qwintuplets
+(7:01:24 PM) Fox: 1g.
+(7:01:26 PM) Fox: cash money
+	
+--------
+mepholic
+--------
+Dox:
+	First Name: Daniel
+	Age: 18
+	Location: Detroit
+	MSN: djt_93@hotmail.com
+	AIM: mepholic
+		 gikid0
+		 hoopdee93
+	
+Computer:
+	Handles: mepholic, gikid, gikid0
+	IP: 
+		mepholic@daIRC-699312B9.try.wideopenwest.com [August 2007]
+		mepholic@89.46.37.204 [November 2008]
+		mepholic@star.emokid.nu [2009]
+		mepholic@67.202.101.69 [April 2009]
+		mepholic@mopar-7CB0E640.try.wideopenwest.com [June 2011]
+		mepholic@bha-E6F639BB.try.wideopenwest.com [September 2011]
+	
+Profiles:
+	http://twitter.com/#!/mepholic
+	http://soundcloud.com/mepholic
+	http://steamcommunity.com/id/mepholic
+	http://www.rune-server.org/members/mepholic/
+	http://www.reddit.com/user/mepholic
+	http://nobullcraft.com/profile/mepholic
+	http://www.rune-server.org/miscellaneous/spam/223721-jagex-using-linux.html
+	http://www.rune-server.org/members/gikid/
+	http://www.od-sierra.org/forum/member.php?u=525
+	http://www.thewhuffiebank.org/mepholic
+	http://www.moparisthebest.com/smf/index.php?action=profile;u=8339
+	http://www.rune-server.org/1838677-post12.html
+	http://pastie.org/pastes/177578/text
+	
+Sites:
+	
+Notes:
+	Leader of the public #school channel
+	Responsible for running all talks on #school
+	Emo faggot that lives with his parents and cries to #school about how unfair his life is
+	Likes to have cybersex with other dudes / chatbots ( http://www.moparisthebest.com/smf/index.php?topic=191985.0 )
+	Used to work for frantech until he got fired for being an incompetent retard
+	Location confirmed by ISP and soundcloud
+	Name confirmed by rune-server.org posts and IRC logs
+	IPs confirmed by IRC logs
+	
+------
+selkie
+------
+Dox:
+	Name: Katie Luke
+	Gender: Female
+	Location: Auckland, New Zealand
+	Phone: 419 595 0187 (Private Google Voice #)
+	Education:	University of Auckland [Currently Attending]
+				Rutherford College 1997
+				Wesltake Girls High School 1996
+				Massey High School 1995
+	
+Computer:
+	Handles: Selkie, selket
+	IRC Client: irssi
+	
+Profiles:
+	https://www.facebook.com/selketraz
+	https://plus.google.com/u/0/111275720674344751913
+	http://twitter.com/#!/selketraz
+	
+Quotes:
+	/* -- Hangs out with known snitches -- */
+	(4:11:35 AM) Terminal: i can't believe their shuvin 15 yrs at that girl for the paypal ddos
+	(4:12:41 AM) kratos: what?
+	(4:12:57 AM) selket: yeah
+	(4:13:02 AM) selket: sin
+	(4:13:04 AM) selket: :(
+	(4:13:18 AM) selket: shes muh baby
+	(4:13:27 AM) Terminal: aww
+	(4:13:38 AM) toad: I'm not even sure if no fired packets
+	(4:13:46 AM) toad: she was just loling around
+	(4:14:34 AM) selket: they were investigating her for ages before she got v&
+	(4:14:41 AM) oldsk00l [magicman@AN-sod.gb6.61e8fb.IP] entered the room.
+	(4:14:46 AM) selket: so they must have something
+	(4:15:00 AM) selket: but FFS are you fucking srs 15 years for THAT
+	(4:15:18 AM) selket: i mean i doubt shell get anything like that, thats just max sentence
+	(4:15:38 AM) toad: yah
+	(4:16:15 AM) kratos: hah
+	(4:16:18 AM) selket: shed had them come around to her house n shit, it wasnt unexpected
+	
+	/* -- Irony -- */
+	<selket> people are dumb
+	<Fox> its the same principle on a larger scale
+	<selket> :)
+	<selket> and trusting by nature
+	
+Notes:
+	CHEX OUT 'SELKIE' FOLDAR FOR HER NEWD PICTARZ
+	Long-term operator of #school
+	Brought in m4tr1c3s and others to become 'teachers' on #school
+	Also frequently chats in #antisec with other non-hackers
+	Has no technical abilities or skills but gets ops cause she hangs around all day
+	Location & Google+ confirmed from IRC
+	Dox & Nudes confirmed by facebook & google+
+	Phone confirmed by IRC
+	Stupid slut barely knows how to operate a keyboard
+	[eNF] Die Young or Live Forever [eNF]
+	
+---
+Sav
+---
+Dox:
+	Name: Jackie Singh
+	Location: Rebpulic of Djibouti
+			  United States [Previous]
+	Gender: Female
+	Race: East Indian
+	Born: USA
+	Timezone: UTC +3
+	
+Computer:
+	Handles: Savitri, Savitri Devi, Savitri Von Hacks
+	IP: 180.189.157.92 [July 2011]
+	Browser: Firefox 5.0
+	OS: Debian
+	Languages: Ruby, PHP
+	
+Profiles:
+	http://twitter.com/#!/savitrivonh4x
+
+Quotes:
+	/* -- OK JACKIE WHATEVER YOU SAY LUL -- */
+	(6:17:06 AM) Sav: yup
+	(6:17:11 AM) Sav: because I have to like
+	(6:17:12 AM) Sav: cover my tracks :)
+	(6:17:15 AM) Sav: and don't leave tracks
+	
+	/* --  A non-white non-male infosec worker, I think thats an oxymoron but thanks for narrowing it down for us :) -- */
+	(1:34:08 AM) kwando: where were you born? india ??
+	(1:34:15 AM) kwando: is the real question
+	[...]
+	(1:34:38 AM) Sav: nope, not born there, though my descent is :)
+	[...]
+	(1:36:50 AM) Sav: jewfro: I'm one of the rare skilled indian females in security, though my passport is not indian due to my birth outside and the absence of will from my parents for it
+	(1:36:57 AM) Sav: I re-appropriated the indian culture as a teen
+	(1:36:59 AM) Sav: well
+	(1:37:01 AM) Sav: around 19
+	(1:37:05 AM) Sav: some years ago
+	
+Notes:
+	Operator/teacher of #school
+	OS, Languages & Timezone confirmed by twitter
+	Claims to have learned Krav Manga and Pa Kua
+	Race, Gender & Birthplace confirmed by IRC
+	Dox confirmed by IRC, twitter
+	RAH RAH RAH #ANTISEC FUCK WHITEHATS FUCK SNITCHES... Oops your a whitehat .mil contractor LAWL
+	How many female east-indian network security admins born in the USA living abroad in the UTC +3 timezone (smallest timezone in the world), who are fluent in english and recently embraced their 'indian roots' do you think there are Jackie?
+	
+-----
+Shrew
+-----
+Dox:
+	Gender: Male
+	
+Profiles:
+	https://plus.google.com/u/0/107501886593591000631
+	
+Sites:
+	http://casper.so/
+
+Notes:
+	Hooked up VPNs for half the ops in #school
+	Led #opGentrification against whatis-theplan.org and claims to have 'rooted their irc server'
+	Topiary threatened to snitch him out
+	
+------
+Mutiny
+------
+Dox:
+	Education: North Michigan University [Currently Attending]
+	Email: anonymutiny@gmail.com
+		   t•••••••m@gmail.com
+	
+Computer:
+	Handles: Mutiny, anonymutiny
+	IP: 204.38.59.242 [rvr59wimax242.nmu.edu] (July 16th 2011)
+		24.213.35.92 (24-213-35-92.static.mrqt.mi.charter.com)
+	OS: Windows 7
+	Browser: Chrome
+	
+Profiles:
+	http://twitter.com/AnonyMutiny (RUH ROH HE DELETED IT)
+	http://dl.dropbox.com/u/19769353/Suicide%20Bomber.mp3
+	http://soundcloud.com/anonymutiny
+	http://lockergnome.net/users/5325/anonymutiny/
+	
+Images:
+	http://i.imgur.com/dei51.jpg
+	
+Sites:
+	
+Notes:
+	Resident skid of #school and #antisec
+	Designed CSS for canthack.us
+	DJs for http://radiopayback.com/
+	Likes to talk about how SECURE AND ANONYMOUS he is while connecting to IRC from his university IP (HOST MASKING WONT SAVE YOU SON)
+	
+--------
+klikevil
+--------
+Dox:
+	Name: Jessica Hawkins
+	Location: Houston, Texas
+			  Tulsa, Oklahoma [Previous]
+	Education: Lutheran High North 2008 ( 1130 W 34th St., Houston, TX )
+	Phone: 1.9185552323
+	Postal Code: 74133
+	E-Mail: klikevil@seotechi.net 
+	AIM: klikevil@seotechi.net
+	
+Computer:
+	Handles: klikevil, Ev][l, evil, apple
+	IP: 70.240.201.162
+	OS: Ubuntu 10.04 Lucid Lynx
+		OSE Debian
+		
+Profiles:
+	http://www.youtube.com/user/klikevil
+	http://www.ffxiah.com/player/Bismarck/Klikevil
+	http://forums.lunariansls.com/member.php?u=3580
+	http://ubuntuforums.org/member.php?u=958384
+	http://ubuntuforums.org/showthread.php?t=1656869
+	https://launchpad.net/~klikevil
+	http://pastebin.com/XxemfK4p
+	http://old.nabble.com/-Bug-280847--New%3A-Custom-IRCD-Segfault-p32343895.html
+	https://bugzilla.mozilla.org/show_bug.cgi?format=multiple&id=498919
+	http://board.scenecoderz.cc/member.php?u=4238
+	http://forum.go6.net/viewtopic.php?t=420&sid=0cdebe7f7fd23d07dfb8939928e677c5
+	http://www.destroytheweb.net/player.php?tag=klikevil
+	http://forums.ccshe.com/thread-17881-1-1.html
+	http://books.dreambook.com/humans/help.html
+	http://www.tunnelbroker.net/forums/index.php?action=profile;u=12818
+	https://profiles.google.com/klikevil/about
+	http://www.pandora.com/people/klikevil
+	http://forum.cartoon-world.org/memberlist.php?mode=viewprofile&u=39231
+	http://foros.aol.com/aol/es_us/articles.php?articleId=220&func=5&boardId=540443&inc_reply=1&is_ref=1
+	http://www.demonoid.me/files/details/1908280/002130706434/
+	http://www.lunariansls.com/forums/member.php?u=3580
+	http://comments.gmane.org/gmane.comp.kde.devel.konversation/4173
+	http://comments.gmane.org/gmane.comp.kde.bugs/562091
+	http://article.gmane.org/gmane.comp.kde.devel.konversation/4173/match=
+	http://article.gmane.org/gmane.comp.kde.devel.bugs/1184753/match=
+	
+Notes:
+	Frequent #school student
+	Lazy bitch ( http://pastebin.com/XxemfK4p )
+	Friends with p0ke (from #antisec) from iC0de.org
+	Still watches fairly odd parents...
+	OS confirmed by ubuntu forum & launchpad.net
+	IP confirmed by go6 post
+	Locations confirmed by IP and tunnelbroker profile and whois information
+	First name confirmed from google+, whois information & pandora account
+	Last name confirmed by konversation KDE mailing list (gmane.org)
+	Dox confirmed from lutheran high north alumni
+	
+-----
+Ma77o
+-----
+Dox:
+	Name: Matthew Ryan Jenkins
+	Location: Katy, Texas
+			  Seattle, Washington [Previous]
+	Born: March 8, 1990
+	Job: Tech Support @ HostGator
+	Height: 5' 11"
+	Hair: Brown
+	Eyes: Blue
+	E-mail: matt23019@yahoo.com
+	AIM: matt23019
+	
+	Mother:
+		Name: Risa Jenkins
+		Location: Houston, Texas
+		Profiles: https://www.facebook.com/risaj?ref=ffl
+		
+	Sister:
+		Name: Kelly Jenkins
+		Location: Houston, Texas
+		Profiles: https://www.facebook.com/profile.php?id=520740029&ref=ffl
+		
+Computer:
+	Handles: Ma770, ma7702, matto
+	
+Profiles:
+	http://www.hackthissite.org/user/view/Ma77o
+	http://steamcommunity.com/id/Ma77o
+	http://www.pof.com/viewprofile.aspx?profile_id=18665783
+	http://gamebattles.majorleaguegaming.com/profile/Ma77o
+	http://www.youtube.com/user/ma77o
+	http://greatbigsea.guildlaunch.com/users/index.php?gl_user=2130053&gid=108403
+	http://myworld.ebay.ca/ma77o
+	http://www.vvv-gaming.com/forum/user/6736-ma77o/
+	http://www.xfire.com/profile/ma77o/
+	http://www.scribd.com/MA77O/info
+	http://dailybooth.com/Ma77o
+	http://www.ocztechnologyforum.com/forum/member.php?73944-Ma77o
+	http://www.askeachother.com/profile/189
+	https://www.facebook.com/matt23019?sk=info
+	
+Notes:
+	Another gullible #school student
+	Completed a fuckton of hackthissite challenges
+	Name & Location confirmed by steam profile, plenty of fish profile, ffxivcore.com profile & xfire
+	Birthday confirmed by ffxivcore.com profile
+	Dox confirmed by facebook
+	
+	
+--------
+eagledjk
+--------
+Dox:
+	Name: David Korb
+	Born: January 11th, 1986
+	Location: Broken Arrow, Oklahoma
+			  Rochester, New York [Previous]
+			  Broken Arrow, Oklahoma [Previous]
+	Education: Broken Arrow Senior High School 2004 ( 1901 East Albany St., Broken Arrow, Oklahoma )
+	Religion: Protestant Christian
+	E-Mail: eagledjk@hotmail.com
+	AIM: eagledjk
+	
+Computer:
+	Handles: eagledjk, whodk
+	
+Profiles:
+	http://eagledjk.xanga.com/
+	http://wwww.imperialconflict.com/forum/profile.php?id=15105
+	http://www2.ba.k12.ok.us/schools/bahs/nlyons/Alumni/Alumni/2004-8.htm
+	http://www2.ba.k12.ok.us/schools/bahs/nlyons/Alumni/Alumni/alpha134.htm
+	http://www.youtube.com/user/eagledjk
+	
+Quotes:
+	Expertise: Computers mainly, but I am an Eagle Scout so I can do pretty much anything if I have enough time to figure it out.
+	
+Notes:
+	Christian eaglescout (not joking) #school student
+	Dox confirmed by school alumni & xanga 
+
+################################################################################
+# 4) SNITCHES - BONUS POINTS                                                   #
+################################################################################
+# Now playing: http://www.youtube.com/watch?v=YVrTpKcqpBM #
+###########################################################
+
+"NIGGA FUCK DA FEDS"- Big L
+
+For some reason despite being kicked out of multiple IRCds by kayla and topiary for admitting he was a snitching on them, Sabu has recently started actively communicating with him over IRC and twitter.
+Hmmm... it's weird Sabu only starts doing this after the rest of his team gets raided.
+Feel free to send a couple swat teams to his or his dad's house as he loves to send them to other people.
+
+---------
+shadowdxs
+---------
+
+CONFIRMED & SELF-ADMITTED PAID FBI INFORMANT
+
+Dox:
+	Name: Branndon Pike AKA Brandon Pike AKA Branndon Emery Pike
+	Location: Daytona Beach, FL, United States
+	Location: 
+		100 BAYWOOD, DAYTONA BEACH, FL 32119 ?
+		135 Armstrong St, Apt 4, Daytona Beach, FL 32118-5104
+	Birthdate: 1990
+	Family: Gina Pike, Brian Pike, Patricia Dempsey
+	Email: ShadowDXS@hotmail.com , ShadowDXS@gmail.com , ShadowDx@aol.com , shadowdx@yahoo.com, depps4@cfl.rr.com ?, shadowdxs@l•••.com
+	MSN: ShadowDXS@hotmail.com
+	Phone:	(386) 760-0368 ? 
+			(386)-506-1095 ? 
+			••••••••07 <- Confirmd by gmail
+	Work: Synergistyx Computer Repair, 560 N. Oleander Ave Daytona Beach, FL 32118
+	Music: Insane Clown Posse
+	
+Father:
+	Dox:
+		Name: Brian E. Pike
+		Location: 
+			3072 Ocean Shore Blvd.    Ormond Beach, FL 32176    US ?
+			Carrolton, Texas ?
+		Hometown: Lubbock, Texas
+		Email: brianpike7@hotmail.com , Brian@PikePages.com
+		Business: Webwax.net (386) 441.6999 
+		Cell: (386) 451.9500 
+	Sites:
+		www.pikepages.com
+		www.webwax.net
+	Profiles:
+		http://www.facebook.com/brianepike
+	
+Mother:
+	Dox:
+		Name: Gina Pike
+		Education: Pine Tree High School 1985, Louisiana Tech University 1989
+		
+	Profiles:
+		http://www.facebook.com/profile.php?id=100002204083685
+
+Fiance:
+	http://www.myspace.com/shaded_seductions
+	Dox:
+		Name: Shade
+		Status:	Engaged
+		Hometown:	Tralee, Ireland
+		Body type:	179cm / Some extra baggage
+		Ethnicity:	White / Caucasian
+		Religion:	Wiccan
+		Zodiac Sign:	Aries
+		Smoke / Drink:	Yes / Yes
+		Income:	Less than $30,000
+		Occupation: 
+			7-Eleven, Inc.
+			Daytona, Florida US
+			Asst. Manager	
+
+Friends:
+	http://www.myspace.com/xxemo_modelxxbmth
+	http://www.myspace.com/hortdean
+	http://www.myspace.com/Snowfire11889
+	http://www.myspace.com/ronnie66c
+	http://www.myspace.com/kyana98
+	http://www.myspace.com/pxx
+	
+Computer:
+	Mac OS X 10.7
+	Backtrack 5
+	
+Websites:
+	http://d4rk-side.net/
+	http://opmetalgear.zxq.net/
+	
+Quotes:
+	"We are the breed that makes the world move forward. The ones that look at the rules that man has placed before us and lol. 
+	We believe that it tech and software is like a muscle, if you want to make it stronger.. you have to break it down first.
+	Lets build a stronger generation of hackers, a more intelligent breed of Administrators."
+	
+Proof of Faggotry:
+	http://www.youtube.com/watch?v=Z4XwxZ2ANEw
+	http://www.youtube.com/watch?v=PTUNUM7C_IE
+
+Profiles:
+	https://www.facebook.com/branndon.pike?sk=friends
+	http://twitter.com/#!/ShadowDXS/
+	http://www.myspace.com/shadow_dxs
+	http://www.woome.com/ShadowDXS/
+	http://compiz-themes.org/usermanager/search.php?username=ShadowDXS
+	https://profiles.google.com/100659361192541760471/about
+	http://www.linkedin.com/pub/shadow-dxs/24/264/723
+	http://compiz-themes.org/usermanager/search.php?username=ShadowDXS&action=profile
+	http://www.youtube.com/user/shadowDXS
+	http://www.lolbase.net/us/Shadowdxs
+	http://funnyjunk.com/user/ShadowDXS
+	http://www.paltalk.com/people/users/ShadowDXS/photo.wmt
+	http://www.rtwincustomize.net/web/index.php?/user/3498-shadowdxs/
+	http://www.dcemu.co.uk/vbulletin/members/125805-ShadowDXS
+	http://www.myspace.com/shadowdxs
+	http://gizmodo.com/people/ShadowDXS/
+	http://lifehacker.com/people/ShadowDXS/
+	http://twicsy.com/u/%2540ShadowDXS
+	http://www.xfire.com/profile/ShadowDXS/
+	http://www.ustream.tv/user/ShadowDXS/info-stats
+	http://s754.photobucket.com/home/ShadowDXS
+	http://shadowdxs.deviantart.com
+	http://www.dailymotion.com/ShadowDXS
+	http://myworld.ebay.com/ShadowDXS/
+	http://urbanchat.com/shadowdxs
+	http://www.veoh.com/users/ShadowDXS
+	http://www.reddit.com/user/ShadowDXS/
+	http://www.last.fm/user/ShadowDXS
+	http://profile.imageshack.us/user/ShadowDXS
+	http://club.ign.com/b/about?username=ShadowDXS
+	http://www.43places.com/person/ShadowDXS
+	http://www.paltalk.com/people/users/ShadowDXS/index.wmt
+	http://www.vokle.com/people/280970
+	http://174.133.255.180/member.php?u=58331
+	http://www.3doorsdown.com/profile/shadowDXS
+	http://shadowdx.newgrounds.com/
+	http://en.wikipedia.org/wiki/User:ShadowDx
+	
+Notes:
+	Hangs out in #jester
+	Never hacked anything but still claims to be part of a hacking group
+	Claims to be prosec but has gotten lonely lately so he also claims to be anonymous
+	After the PBS hack lulzsec defaced with "shadowdxs is our leader he paid us" 
+	Afterwards he promptly called the FBI and voluntarily handed over his computers to 'clear his name'
+	Has started recanting his snitching stories to gain e-fame
+	
+################################################################################
+# 6) Prologue                                                                  #
+################################################################################
+# Now Playing: http://www.youtube.com/watch?v=YGh0yVtQbLA  #
+############################################################
+
+Fuck whitehats
+Fuck th3j35t3r
+Fuck team poison
+Fuck the web ninjas
+Fuck backtracesecurity
+Fuck snitches
+Fuck the feds
+
+Greetz Digerati
+Greetz A-Team
+Greetz SealTeam666
+Greetz GSG-999
+Greetz SwagSec
+Greetz doxbin
+Greetz Presstorm
+Greetz Einsatzgruppen
+Greetz PoserSec
+Greetz Power Rangers
+Greetz Team Golden Lucky Supreme Dragon 99
+And a special special greetz to the CIA
+
+If you support antisec in any way you will be targeted.
+Journalists, musicians, laywers, webhosts, VPN providers, political commentators, profiteering businesses, you are all valid targets.
+You stepped into OUR world if you don't want to play the game get the fuck off the playing field.
+
+We are not oldschool or newschool and don't claim to speak on the behalf of any group besides our own.
+We do this in our spare time because we think its lulzy.
+We have <3 for the scene. Fuck the media.
+-BR1CKSQU4D
